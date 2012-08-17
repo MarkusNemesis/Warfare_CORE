@@ -69,14 +69,14 @@ if (local player) then {
 if (isServer) then {
 	if (isNil 'EastMHQ' || isNil 'WestMHQ') exitWith {};
 	
-	sleep 10;
+	//sleep 10; // Markus - Removed a really fucking stupid sleep
 
 	_supplyValue = 0;
 	if (isNil {_camp getVariable "sideID"}) then {_camp setVariable ["sideID",RESISTANCEID,true]};
 	/* OA Camps are made of kryptonite */
 	if (WF_A2_Arrowhead || WF_A2_CombinedOps) then {_camp addEventHandler ['handleDamage',{false}]};
 	if (isNil {_camp getVariable "supplyValue"}) then {
-		waitUntil {_supplyValue = _town getVariable "supplyValue"; !isNil "_supplyValue"};
+		waitUntil {_supplyValue = _town getVariable "supplyValue"; !isNil "_supplyValue"}; // Markus - Fix this retarded shit. Make when a town is captured it turns the camps over via a call from the town cap script, not here
 		_camp setVariable ["supplyValue",_supplyValue,true];
 		_flagPole = WFFLAG createVehicle getPos _camp;
 		waitUntil {serverInitComplete && townInit};

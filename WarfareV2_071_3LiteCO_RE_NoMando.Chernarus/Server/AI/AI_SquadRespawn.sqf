@@ -8,7 +8,7 @@ _respawnLoc = objNull;
 _rd = 'WFBE_RESPAWNDELAY' Call GetNamespace;
 _rcm = 'WFBE_RESPAWNCAMPSMODE' Call GetNamespace;
 
-sleep (random 0.5);
+// sleep (random 0.5); // Markus - Removed pointless sleep
 
 while {!gameOver} do {
 	if (isPlayer leader _team) exitWith {};

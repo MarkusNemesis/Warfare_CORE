@@ -58,7 +58,7 @@ while {_i > 0} do {
 	if (isPlayer(_respawnedUnit) || !(alive _respawnedUnit)) exitWith {_skip = true};
 	
 	_i = _i - 1;	
-	sleep 1;
+	//sleep 1; // Markus - Pointless sleep removed
 };
 
 //--- Make sure that the AI didn't die or that a player hasn't replaced him before going any further.

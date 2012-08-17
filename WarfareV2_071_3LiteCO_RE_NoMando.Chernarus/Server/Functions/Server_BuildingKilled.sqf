@@ -67,6 +67,6 @@ if (paramUseWorkers) then {
 	};
 };
 
-sleep 10;
+sleep 5; // Markus - Reduced from 10 to 5
 
 deleteVehicle _structure;

@@ -17,7 +17,7 @@ _structuresNames = Format ['WFBE_%1STRUCTURENAMES',str _side] Call GetNamespace;
 _rlType = _structures select (_structuresNames find _type);
 
 _startTime = time;
-_timeNextUpdate = _startTime + _time;
+_timeNextUpdate = (_startTime + _time) Call GetSleepFPS; // Markus - Make it affected by time dialation.
 
 _objects = [];
 if (WF_A2_Arrowhead) then {_objects = [[_siteName,[0,0,-0.000230789],359.997,1,0],["Paleta2",[0.416992,-5.62012,-0.305746],0.0130822,1,0],["Land_Barrel_sand",[-5.59448,3.26929,6.29425e-005],359.997,1,0],["Paleta1",[-2.62976,-6.04736,5.53131e-005],0.0130822,1,0],["Barrel4",[6.63696,0.694336,0.000753403],359.991,1,0],["Land_Barrel_sand",[-6.73267,2.06372,6.10352e-005],359.997,1,0],["Barrel5",[7.19604,2.8855,0.00028801],0.0135841,1,0],["Barrel1",[6.08984,5.5415,0.00028801],0.0135841,1,0],["Land_Barrel_sand",[-7.13452,4.40747,6.29425e-005],359.997,1,0],["RoadBarrier_long",[0.221924,-8.58496,0.00206566],0.0130822,1,0],["Land_Barrel_sand",[-8.27271,2.80054,6.10352e-005],359.997,1,0],["Barrels",[-7.91895,-4.09668,0.00037384],0.0128253,1,0],["RoadCone",[-10.4381,-8.94336,0.000131607],0.0119093,1,0],["RoadCone",[11.1655,-8.79932,0.00034523],359.991,1,0],["RoadCone",[-10.5692,12.6655,0.000509262],359.948,1,0],["RoadCone",[11.0276,12.3904,0.000509262],359.948,1,0]]};
@@ -42,7 +42,7 @@ if !(paramUseWorkers) then {
 	_nearLogic setVariable ["WFBE_B_Type", _rlType];
 
 	waitUntil {time >= _timeNextUpdate};
-	_timeNextUpdate = _startTime + _time * 2;
+	_timeNextUpdate = (_startTime + _time * 2) Call GetSleepFPS; // Markus - Make it affected by time dialation.
 } else {
 	//--- Grab the logic.
 	_nearLogic = _position nearEntities [["LocationLogicStart"],15];

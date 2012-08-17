@@ -31,7 +31,7 @@ _waitTime = (_unitType Call GetNamespace) select QUERYUNITTIME;
 _position = [getPos _building,_distance,getDir _building + _direction] Call GetPositionFrom;
 _longest = Format ["WFBE_LONGEST%1BUILDTIME",_factoryType] Call GetNamespace;
 
-_ret = 0;
+_ret = 4; // Markus - Was 0.
 _queu2 = [0];
 
 if (count _queu > 0) then {
@@ -39,8 +39,8 @@ if (count _queu > 0) then {
 };
 
 while {_id select 0 != _queu select 0} do {
-	sleep 4;
-	_ret = _ret + 4;
+	sleep _ret; // Markus - Was sleep 4.
+	//_ret = _ret + 4; // Markus - Why is this 0 + 4? Changed to init as 4.
 	_queu = _building getVariable "queu";
 	
 	if (!(alive _building)||(isNull _building)||(isPlayer (leader _team))) exitWith {

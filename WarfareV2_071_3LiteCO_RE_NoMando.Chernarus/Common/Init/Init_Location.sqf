@@ -46,7 +46,7 @@ if (isServer) then {
 		if (isNil '_isSet') then {_location setVariable ["sideID",RESISTANCEID,true]};
 		_location setVariable ["supplyValue",_startingSupplyValue,true];
 		_location setVariable ["resistanceTypes",_resistanceTeamTypes];
-		sleep (random 1);
+		//sleep (random 1); // Markus - Removed random sleep that does nothing. WTF benny
 		waitUntil {serverInitComplete && townInit};
 		//--- Town SV & Control script.
 		[_location,_range] ExecFSM "Server\FSM\updatetown.fsm";

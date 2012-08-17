@@ -29,7 +29,7 @@ while {alive _object && !(isNull _object)} do {
 		};
 	};
 	
-	sleep 1;
+	//sleep 1; // Markus - Removed useless sleep
 };
 
 deleteMarkerLocal _markerName;

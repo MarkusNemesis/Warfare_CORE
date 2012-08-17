@@ -24,7 +24,7 @@ if ((side _killer == _side)&&(isPlayer(_killer))) then {
 	diag_log Format["[WFBE (INFORMATION)][frameno:%3 | ticktime:%4] Server_HQKilled: Player %1 (%2) has teamkilled the MHQ.",name _killer,_uid,diag_frameno,diag_tickTime];
 };
 
-sleep random(2);
+//sleep random(2); // Markus - Removed random sleep
 if (_deployed) then {
 	_HQName = Format["WFBE_%1MHQNAME",_side] Call GetNamespace;
 	_MHQ = _HQName createVehicle _pos;

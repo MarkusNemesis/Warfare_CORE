@@ -61,7 +61,7 @@ while {true} do {
 	if (_vehicleCoord distance _positionCoord < 200) exitWith {};
 };
 
-_delay = 1;
+_delay = 0.25; // Markus - Was 1.
 if (_side == WEST) then {_delay = 0.3};
 {_x action ["EJECT",_vehicle];sleep _delay;[_x] join (leader _playerTeam)} forEach _cargo;
 [_grp,(_ranPos select _ran),"MOVE",10] Call AIMoveTo;
