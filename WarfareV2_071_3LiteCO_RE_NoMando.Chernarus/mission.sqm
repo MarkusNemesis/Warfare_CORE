@@ -1350,7 +1350,7 @@ class Mission
 			position[]={2279.6672,514.16913,15295.711};
 			id=16;
 			side="EMPTY";
-			vehicle="M1130_CV_EP1";
+			vehicle="LAV25_HQ";
 			leader=1;
 			lock="LOCKED";
 			skill=0.60000002;

@@ -25,7 +25,7 @@ if (mysql) then {
 
 closeDialog 0;
 
-sleep 0.11;
+//sleep 0.11; // Markus - Removed useless sleep
 
 "dynamicBlur" ppEffectEnable true;
 "dynamicBlur" ppEffectAdjust [1];

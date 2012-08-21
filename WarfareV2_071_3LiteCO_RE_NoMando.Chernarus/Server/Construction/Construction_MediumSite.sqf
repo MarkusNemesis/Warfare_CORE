@@ -1,13 +1,13 @@
 //*****************************************************************************************
 //Description: Creates a small construction site.
 //*****************************************************************************************
-Private ["_construct","_constructed","_direction","_group","_index","_nearLogic","_objects","_position","_rlType","_side","_site","_siteName","_startTime","_structures","_structuresNames","_time","_timeNextUpdate","_type"];
+Private ["_construct","_constructed","_direction","_group","_index","_nearLogic","_objects","_position","_rlType","_side","_site","_siteName","_startTime","_structures","_structuresNames","_time","_timeNextUpdate","_type", "_tidimul"]; // Markus - Tidi
 _type = _this select 0;
 _side = _this select 1;
 _position = _this select 2;
 _direction = _this select 3;
 _index = _this select 4;
-
+_tidimul = WF_Logic getVariable 'Tidimul';
 _time = ((Format ["WFBE_%1STRUCTURETIMES",str _side] Call GetNamespace) select _index) / 2;
 
 _siteName = Format["WFBE_%1CONSTRUCTIONSITE",str _side] Call GetNamespace;
@@ -17,7 +17,7 @@ _structuresNames = Format ['WFBE_%1STRUCTURENAMES',str _side] Call GetNamespace;
 _rlType = _structures select (_structuresNames find _type);
 
 _startTime = time;
-_timeNextUpdate = (_startTime + _time) Call GetSleepFPS; // Markus - Make it affected by time dialation.
+_timeNextUpdate = _startTime + (_time * _tidimul); // Markus - Make it affected by time dialation.
 
 _objects = [];
 if (WF_A2_Arrowhead) then {_objects = [[_siteName,[0,0,0.00242043],359.958,1,0],["Paleta2",[0.430908,-5.60693,-0.30535],359.945,1,0],["Paleta1",[-2.62598,-6.0437,0.000275612],359.951,1,0],["Land_Barrel_sand",[-10.1826,0.356689,7.62939e-005],0.00146227,1,0],["Land_Barrel_sand",[-10.7854,-1.97974,0.000187874],359.987,1,0],["Paleta1",[-9.7251,5.53955,0.000106812],359.976,1,0],["Land_Barrel_sand",[-11.053,-4.12183,0.00019455],359.987,1,0],["Land_Barrel_sand",[-12.3416,-1.57056,7.43866e-005],0.00146227,1,0],["Barrels",[-12.5134,0.682861,0.000136375],0.00146227,1,0],["RoadBarrier_long",[1.63794,-12.8806,-0.000716209],359.92,1,0],["Land_Barrel_sand",[-11.5149,-6.25757,0.00084877],359.938,1,0],["Land_Barrel_sand",[-12.7363,-3.63184,0.000207901],359.938,1,0],["Barrel4",[14.1938,0.500732,0.000412941],359.98,1,0],["Land_Barrel_sand",[-13.0708,-5.9082,0.000863075],359.938,1,0],["Barrel5",[14.7661,-1.11182,0.000411987],359.98,1,0],["Barrel1",[14.7314,2.21338,0.000409126],359.98,1,0],["Paleta2",[12.0034,9.8418,-0.305568],0.0412118,1,0],["RoadCone",[-12.2202,-13.7024,0.000279427],359.984,1,0],["RoadCone",[-12.1877,15.0469,0.000328064],359.969,1,0],["RoadCone",[14.5701,-13.311,0.000322342],359.995,1,0],["RoadCone",[14.6084,14.6824,0.000889778],359.994,1,0]]};
@@ -42,7 +42,7 @@ if !(paramUseWorkers) then {
 	_nearLogic setVariable ["WFBE_B_Type", _rlType];
 
 	waitUntil {time >= _timeNextUpdate};
-	_timeNextUpdate = (_startTime + _time * 2) Call GetSleepFPS; // Markus - Make it affected by time dialation.
+	_timeNextUpdate = _startTime + ((_time * 2) * _tidimul);// Markus - Make it affected by time dialation.
 } else {
 	//--- Grab the logic.
 	_nearLogic = _position nearEntities [["LocationLogicStart"],15];
@@ -66,7 +66,7 @@ if !(paramUseWorkers) then {
 	
 	//--- Awaits for 33% of completion.
 	while {true} do {
-		sleep 1;
+		sleep (1 * _tidimul);
 		if ((_nearLogic getVariable "WFBE_B_Completion") >= 33.33) exitWith {};
 	};
 };
@@ -77,11 +77,11 @@ _constructed = _constructed + ([_position,_direction,_objects] Call _construct);
 
 if !(paramUseWorkers) then {
 	waitUntil {time >= _timeNextUpdate};
-	_timeNextUpdate = (_startTime + _time * 3) Call GetSleepFPS; // Markus - Make it affected by time dialation.
+	_timeNextUpdate = _startTime + ((_time * 3) * _tidimul);// Markus - Make it affected by time dialation.
 } else {
 	//--- Awaits for 66%
 	while {true} do {
-		sleep 1;
+		sleep 1 * _tidimul;
 		if ((_nearLogic getVariable "WFBE_B_Completion") >= 66.66) exitWith {};
 	};
 };

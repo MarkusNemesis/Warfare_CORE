@@ -46,6 +46,10 @@ TrashObject = Compile preprocessFile "Server\Functions\Server_TrashObject.sqf";
 UpdateTeam = Compile preprocessFile "Server\Functions\Server_UpdateTeam.sqf";
 UpdateSupplyTruck = Compile preprocessFile "Server\AI\AI_UpdateSupplyTruck.sqf";
 
+// Markus - Add serverside time dilation
+TimeDilationModule = Compile preprocessFile "Server\Server_TimeDilation.sqf";
+/// Markus
+
 //--- Support Functions.
 KAT_ParaAmmo = Compile preProcessfile "Server\Support\Support_ParaAmmo.sqf";
 KAT_Paratroopers = Compile preProcessfile "Server\Support\Support_Paratroopers.sqf";
@@ -472,7 +476,11 @@ if (paramBaseArea) then {
 	
 	[] ExecFSM "Server\FSM\basearea.fsm";
 };
-
+// Markus - Tidi
+TidiMul = 1;
+WF_Logic setVariable ["Tidimul", 1]; PublicVariable 'TidiMul';
+[] spawn TimeDilationModule;
+/// Markus
 diag_log Format["[WFBE (INIT)][frameno:%1 | ticktime:%2] Init_Server: Network Variables - [Done]",diag_frameno,diag_tickTime];
 
 //--- Allies base.

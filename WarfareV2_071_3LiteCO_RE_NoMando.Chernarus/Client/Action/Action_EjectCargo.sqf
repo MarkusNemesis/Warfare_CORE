@@ -19,5 +19,5 @@ _cargo = (crew _vehicle) - [driver _vehicle, gunner _vehicle, commander _vehicle
 			};
 		};
 	};
-	sleep 0.25; // Markus - Make Eject cargo speedier
+	sleep 0.35; // Markus - Make Eject cargo speedier
 } forEach _cargo;

@@ -16,7 +16,7 @@ if (WF_A2_Vanilla) then {
 	_killed Spawn TrashObject;
 };
 
-sleep random(2)+random(4);
+//sleep random(2)+random(4); // Markus Remove totally pointless sleep
 
 //--- Civilian's death.
 if (!isNull _killerTeam && (_sideKiller == west) || (_sideKiller == east)) then {

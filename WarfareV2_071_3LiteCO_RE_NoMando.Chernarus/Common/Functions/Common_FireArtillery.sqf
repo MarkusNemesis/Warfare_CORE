@@ -38,7 +38,7 @@ _FEH = Call Compile Format ["_artillery addEventHandler ['Fired',{[_this select 
 _watchPosition = [_destination select 0, _destination select 1, (_artillery distance _destination)/(tan(90-_angle))];
 (_gunner) doWatch _watchPosition;
 
-sleep 10;
+//sleep 10; // Markus - What's the deal with this sleep?
 if !(alive (_gunner)) exitWith {if !(isNull _artillery) then {_artillery removeEventHandler ['Fired',_FEH]}};
 if !(alive _artillery) exitWith {
 	if (alive (_gunner)) then {{_gunner enableAI _x} forEach ['ANIM','MOVE','TARGET','AUTOTARGET']};

@@ -3,9 +3,7 @@ _unit = _this select 0;
 _side = _this select 1;
 
 if (isNull _unit) exitWith {};
-
 waitUntil {commonInitComplete};
-
 if !(local player) exitWith {};
 
 //sleep 2; // Markus - Removed pointless sleep
@@ -19,8 +17,9 @@ if !(_isMan) then {
 		if ('WFBE_THERMALIMAGING' Call GetNamespace < 2) then {Call Compile '_unit disableTIEquipment true;'};
 	};
 };
+
 // Markus - Does the server really need to call this?
-if !(isServer) then
+if !(isServer) then // If it's not on the server, then care about marker updates
 {
 	if (sideJoined != _side) exitWith {};
 
@@ -30,7 +29,7 @@ if !(isServer) then
 	_txt = "";
 	if ((typeOf _unit) in (Format['WFBE_%1SUPPLYTRUCKS',str _side] Call GetNamespace)) then {_type = "SupplyVehicle";_size = [1,1]};
 	if ((typeOf _unit) in (Format['WFBE_%1REPAIRTRUCKS',str _side] Call GetNamespace)) then {_type = "RepairVehicle"};
-	if ((typeOf _unit) in (Format['WFBE_%1AMBULANCES',str _side] Call GetNamespace)) then {_txt = "Ambulance"}; // Markus - Add different icon to ambulances
+	if ((typeOf _unit) in (Format['WFBE_%1AMBULANCES',str _side] Call GetNamespace)) then {_txt = "[+]"}; // Markus - Add different icon to ambulances
 	//if ((typeOf _unit) in ['Camp_EP1', 'CampEast']) then {_txt = "MASH";_type = "mil_dot";_size = [1,1]}; // Markus - Add icon to MASH
 
 	unitMarker = unitMarker + 1;
@@ -52,5 +51,5 @@ if !(isServer) then
 	};
 
 	_params Spawn MarkerUpdate;
-}
+};
 /// Markus 

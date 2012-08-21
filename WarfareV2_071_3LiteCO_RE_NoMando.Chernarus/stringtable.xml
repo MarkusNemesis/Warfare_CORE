@@ -910,7 +910,7 @@
         <Italian>Tactical Center</Italian>
       </Key>
       <Key ID="STR_WF_MAIN_Uptime">
-        <English>Uptime: %1 days, %2 hours, %3 minutes, %4 seconds</English>
+        <English>Uptime: %1 days, %2 hours, %3 minutes. Dilation: \%%4</English>
         <French>Uptime: %1 jours, %2 heures, %3 minutes, %4 secondes</French>
         <German>Spielzeit: %1 Tage, %2 Stunden, %3 Minuten, %4 Sekunden</German>
         <Russian>Время работы: %1 день, %2 часов, %3 минут, %4 секунд</Russian>

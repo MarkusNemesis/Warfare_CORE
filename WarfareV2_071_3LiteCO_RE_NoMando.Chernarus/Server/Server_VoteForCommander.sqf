@@ -1,14 +1,15 @@
-Private ['_aibase','_commanderTeam','_comVoteTime','_delay','_side','_sideText'];
+Private ['_aibase','_commanderTeam','_comVoteTime','_delay','_side','_sideText', '_tidimul'];
 _side = _this select 0;
 _sideText = _side;
-
+_tidimul = WF_Logic getVariable 'Tidimul';
 _comVoteTime = 'WFBE_VOTETIME' Call GetNamespace;
 WF_Logic setVariable [Format["%1CommanderVoteTime",_sideText],_comVoteTime,true];
 
 while {_comVoteTime > 0} do {
-	sleep 1;
+	sleep (1  * _tidimul);
 	_comVoteTime = _comVoteTime - 1;
 	WF_Logic setVariable [Format["%1CommanderVoteTime",_sideText],_comVoteTime,true];
+	_tidimul = WF_Logic getVariable 'Tidimul';
 };
 	
 WF_Logic setVariable [Format["%1CommanderVoteTime",_sideText],_comVoteTime,true];
@@ -19,7 +20,7 @@ if (!IsNull _commanderTeam) then {WF_Logic setVariable [Format ["%1CommanderTeam
 _delay = 0;
 if (_side == East) then {_delay = 1};
 
-sleep _delay;
+sleep (_delay  * _tidimul);
 
 WFBE_CommanderVote = [_side,'CLTFNCCOMMANDERVOTE',_commanderTeam];
 publicVariable 'WFBE_CommanderVote';

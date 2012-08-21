@@ -1,8 +1,9 @@
-Private ['_current','_find','_killer','_structure','_structures','_side','_tked','_type','_uid'];
+Private ['_current','_find','_killer','_structure','_structures','_side','_tked','_type','_uid', '_tidimul']; // Markus - Tidi
 _structure = _this select 0;
 _killer = _this select 1;
 _side = _this select 2;
 _type = _this select 3;
+_tidimul = WF_Logic getVariable 'Tidimul';
 
 diag_log Format["[WFBE (INFORMATION)][frameno:%3 | ticktime:%4] Server_BuildingKilled: A %1 %2 Structure has been destroyed (By: %5)",str _side,_type,diag_frameno,diag_tickTime,_killer];
 
@@ -67,6 +68,6 @@ if (paramUseWorkers) then {
 	};
 };
 
-sleep 5; // Markus - Reduced from 10 to 5
+sleep (5 * _tidimul); // Markus - Reduced from 10 to 5
 
 deleteVehicle _structure;

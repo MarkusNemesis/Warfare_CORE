@@ -1,11 +1,11 @@
-Private ["_building","_built","_config","_crew","_direction","_dir","_distance","_factoryType","_factoryPosition","_gbq","_id","_index","_isVehicle","_longest","_position","_queu","_queu2","_ret","_side","_sideText","_soldier","_team","_turrets","_type","_unitType","_vehicle","_waitTime"];
+Private ["_building","_built","_config","_crew","_direction","_dir","_distance","_factoryType","_factoryPosition","_gbq","_id","_index","_isVehicle","_longest","_position","_queu","_queu2","_ret","_side","_sideText","_soldier","_team","_turrets","_type","_unitType","_vehicle","_waitTime", "_tidimul"];
 _id = _this select 0;
 _building = _this select 1;
 _unitType = _this select 2;
 _side = _this select 3;
 _team = _this select 4;
 _isVehicle = _this select 5;
-
+_tidimul = WF_Logic getVariable 'Tidimul';
 _sideText = str _side;
 
 if (!(alive _building)||(isPlayer (leader _team))) exitWith {
@@ -39,7 +39,7 @@ if (count _queu > 0) then {
 };
 
 while {_id select 0 != _queu select 0} do {
-	sleep _ret; // Markus - Was sleep 4.
+	sleep (_ret * _tidimul); // Markus - Was sleep 4.
 	//_ret = _ret + 4; // Markus - Why is this 0 + 4? Changed to init as 4.
 	_queu = _building getVariable "queu";
 	
@@ -68,7 +68,7 @@ while {_id select 0 != _queu select 0} do {
 	};
 };
 
-sleep _waitTime;
+sleep (_waitTime * _tidimul);
 
 _queu = _building getVariable "queu";
 _queu = _queu - [_id select 0];

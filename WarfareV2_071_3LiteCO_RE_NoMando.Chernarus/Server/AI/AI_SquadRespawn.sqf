@@ -1,4 +1,4 @@
-Private ["_availableSpawn","_autonomous","_buildings","_checks","_closestRespawn","_deathLoc","_enemySide","_hq","_isForcedRespawn","_leader","_mobileRespawns","_moveMode","_pos","_ran","_range","_rcm'","_rd","_respawn","_respawnLoc","_side","_sideText","_team","_update","_upgrades"];
+Private ["_availableSpawn","_autonomous","_buildings","_checks","_closestRespawn","_deathLoc","_enemySide","_hq","_isForcedRespawn","_leader","_mobileRespawns","_moveMode","_pos","_ran","_range","_rcm'","_rd","_respawn","_respawnLoc","_side","_sideText","_team","_update","_upgrades", "_tidimul"];// Markus Tidi
 _side = _this select 0;
 _team = _this select 1;
 _sideText = str _side;
@@ -19,7 +19,9 @@ while {!gameOver} do {
 	if (isPlayer leader _team) exitWith {};
 	waitUntil {alive leader _team || isPlayer leader _team};
 	if (isPlayer leader _team) exitWith {};
-
+	// Markus - Tidi
+	_tidimul = WF_Logic getVariable 'Tidimul';
+	/// Markus - Tidi
 	_respawn = (_team) Call GetTeamRespawn;
 	
 	//--- Place the AI.
@@ -49,7 +51,7 @@ while {!gameOver} do {
 		};
 	};
 	
-	sleep _rd;
+	sleep (_rd * _tidimul);
 
 	//--- Equip the AI.
 	_ran = 1 + round(random(2));

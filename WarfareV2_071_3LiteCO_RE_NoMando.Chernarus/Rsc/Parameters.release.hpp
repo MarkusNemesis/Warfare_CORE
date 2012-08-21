@@ -5,7 +5,7 @@ class Params {
 		title = "$STR_WF_PARAMETER_GroupSizeAI";
 		values[] = {2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,35,40,45,50,60,70,80,90,100};
 		texts[] = {"2","4","6","8","10","12","14","16","18","20","22","24","26","28","30","35","40","45","50","60","70","80","90","100"};
-		default = 16;
+		default = 2;
 	};
 	class aiGroupSizePlayer {
 		title = "$STR_WF_PARAMETER_GroupSizePlayer";
@@ -23,7 +23,7 @@ class Params {
 		title = "$STR_WF_PARAMETER_AI";
 		values[] = {0,1};
 		texts[] = {"$STR_WF_Disabled","$STR_WF_Enabled"};
-		default = 1;
+		default = 0;
 	};
 	class artilleryCalls {
 		title = "$STR_WF_PARAMETER_Arty";
@@ -55,7 +55,7 @@ class Params {
 		title = "$STR_WF_PARAMETER_AICommander";
 		values[] = {0,1};
 		texts[] = {"$STR_WF_PARAMETER_No","$STR_WF_PARAMETER_Yes"};//{"$STR_WF_Disabled","$STR_WF_Enabled"};
-		default = 1;
+		default = 0;
 	};
 	//--- OA has no suitable allies for both side (yet).
 	#ifndef ARROWHEAD
@@ -172,25 +172,25 @@ class Params {
 		title = "$STR_WF_PARAMETER_Funds_East";
 		values[] = {800,1600,2400,3200,4000,4800,6400,8000,12800,25600,51200,102400,204800,409600,819200};
 		texts[] = {"$ 800","$ 1600","$ 2400","$ 3200","$ 4000","$ 4800","$ 6400","$ 8000","$ 12800","$ 25600","$ 51200","$ 102400","$ 204800","$ 409600","$ 819200"};
-		default = 9999999;
+		default = 2400;
 	};
 	class economyStartingFundsWest {
 		title = "$STR_WF_PARAMETER_Funds_West";
 		values[] = {800,1600,2400,3200,4000,4800,6400,8000,12800,25600,51200,102400,204800,409600,819200};
 		texts[] = {"$ 800","$ 1600","$ 2400","$ 3200","$ 4000","$ 4800","$ 6400","$ 8000","$ 12800","$ 25600","$ 51200","$ 102400","$ 204800","$ 409600","$ 819200"};
-		default = 9999999;
+		default = 2400;
 	};
 	class economyStartingSupplyEast {
 		title = "$STR_WF_PARAMETER_Supply_East";
 		values[] = {1200,2400,3600,4800,6000,7200,8400,9600,19200,38400,76800};
 		texts[] = {"S 1200","S 2400","S 3600","S 4800","S 6000","S 7200","S 8400","S 9600","S 19200","S 38400","S 76800"};
-		default = 9999999;
+		default = 2400;
 	};
 	class economyStartingSupplyWest {
 		title = "$STR_WF_PARAMETER_Supply_West";
 		values[] = {1200,2400,3600,4800,6000,7200,8400,9600,19200,38400,76800};
 		texts[] = {"S 1200","S 2400","S 3600","S 4800","S 6000","S 7200","S 8400","S 9600","S 19200","S 38400","S 76800"};
-		default = 9999999;
+		default = 2400;
 	};
 	class economySupplySystem {
 		title = "$STR_WF_PARAMETER_SupplySystem";
@@ -361,13 +361,13 @@ class Params {
 		title = "$STR_WF_PARAMETER_Upgrades_East";
 		values[] = {0,1};
 		texts[] = {"$STR_WF_Disabled","$STR_WF_Enabled"};
-		default = 0;
+		default = 1;
 	};
 	class gameplayUpgradesWest {
 		title = "$STR_WF_PARAMETER_Upgrades_West";
 		values[] = {0,1};
 		texts[] = {"$STR_WF_Disabled","$STR_WF_Enabled"};
-		default = 0;
+		default = 1;
 	};
 	class gameplayVictoryConditions {
 		title = "$STR_WF_PARAMETER_VictoryCondition";

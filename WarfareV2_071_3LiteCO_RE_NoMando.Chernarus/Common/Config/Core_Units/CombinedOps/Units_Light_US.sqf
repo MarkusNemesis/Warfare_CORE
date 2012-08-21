@@ -26,7 +26,7 @@ _u = _u		+ ['HMMWV_M2'];
 _u = _u		+ ['HMMWV_Armored'];
 _u = _u		+ ['HMMWV_MK19'];
 // Markus - Remove the TOW humvee
-_u = _u		+ ['HMMWV_TOW'];
+//_u = _u		+ ['HMMWV_TOW'];
 /// Markus
 _u = _u		+ ['HMMWV_Avenger'];
 _u = _u		+ ['HMMWV_Ambulance'];

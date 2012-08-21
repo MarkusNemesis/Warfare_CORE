@@ -98,7 +98,7 @@ for [{_count = count _v - 1},{_count >= 0},{_count = _count - 1}] do {
 	[Format["WFBE_WEST%1TYPE",_v select _count],_count,true] Call SetNamespace;
 };
 
-['WFBE_WESTMHQNAME',if (WF_Camo) then {'LAV25_HQ'} else {'M1130_CV_EP1'},true] Call SetNamespace;
+['WFBE_WESTMHQNAME',if (WF_Camo) then {'LAV25_HQ'} else {'LAV25_HQ'},true] Call SetNamespace;
 
 ['WFBE_WESTSTRUCTURES',_v,true] Call SetNamespace;
 ['WFBE_WESTSTRUCTURENAMES',_n,true] Call SetNamespace;

@@ -1,16 +1,16 @@
-Private ["_index","_index2","_name","_side","_sideText","_time","_upgrades","_upgrades_old"];
+Private ["_index","_index2","_name","_side","_sideText","_time","_upgrades","_upgrades_old", "_tidimul"]; // Markus - tidi
 _time = _this select 0;
 _index = _this select 1;
 _index2 = _this select 2;
 _name = _this select 3;
 _side = _this select 4;
 _sideText = Str _side;
-
+_tidimul = WF_Logic getVariable 'Tidimul';
 Call Compile Format ["WFBE_%1_Upgrading = true; publicVariable 'WFBE_%1_Upgrading';",_sideText];
 
 _upgrades_old = (_sideText) Call GetSideUpgrades;
 
-sleep _time;
+sleep (_time * _tidimul);
 
 _upgrades = (_sideText) Call GetSideUpgrades;
 

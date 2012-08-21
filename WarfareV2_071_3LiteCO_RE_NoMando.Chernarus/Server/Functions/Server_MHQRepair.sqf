@@ -1,7 +1,7 @@
-Private ["_commanderTeam","_direction","_hq","_HQName","_MHQ","_position","_side","_sideText","_text"];
+Private ["_commanderTeam","_direction","_hq","_HQName","_MHQ","_position","_side","_sideText","_text", "_tidimul"]; // Markus - Tidi
 _side = _this select 0;
 _sideText = str _side;
-
+_tidimul = WF_Logic getVariable 'Tidimul';
 _hq = (_sideText) Call GetSideHQ;
 _position = getPos _hq;
 _direction = getDir _hq;
@@ -13,7 +13,7 @@ if !(isNull _commanderTeam) then {
 	if (isHostedServer) then {[vehicleVarName (leader _commanderTeam),'CLTFNCSETHQSTATUS',false] Spawn HandlePVF};
 };
 
-sleep 15;
+sleep (15 * _tidimul);
 
 _HQName = Format["WFBE_%1MHQNAME",_sideText] Call GetNamespace;
 _MHQ = _HQName createVehicle _position;

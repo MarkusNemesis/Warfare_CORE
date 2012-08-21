@@ -29,7 +29,7 @@ _u = _u + ["HMMWV_Armored"];
 
 _n = _n + ["SmallVehTeam2"];
 _u		= ["USMC_Soldier_SL"];
-_u = _u + ["HMMWV_TOW"];
+//_u = _u + ["HMMWV_TOW"];
 _u = _u + ["LAV25"];
 [Format["WFBE_WEST%1UNITS",_n select (count _n - 1)],_u,true] Call SetNamespace;
 

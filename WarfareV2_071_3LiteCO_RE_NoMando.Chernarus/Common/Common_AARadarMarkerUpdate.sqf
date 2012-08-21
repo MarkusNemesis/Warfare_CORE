@@ -1,7 +1,7 @@
 Private ["_height","_object","_markerName","_side","_zOffset"];
 
 waitUntil {commonInitComplete};
-sleep 2;
+//sleep 2; // Markus - Removed useless sleep
 
 _object = _this select 0;
 _side = _this select 1;
@@ -29,7 +29,7 @@ while {alive _object && !(isNull _object)} do {
 		};
 	};
 	
-	//sleep 1; // Markus - Removed useless sleep
+	sleep 1;
 };
 
 deleteMarkerLocal _markerName;
