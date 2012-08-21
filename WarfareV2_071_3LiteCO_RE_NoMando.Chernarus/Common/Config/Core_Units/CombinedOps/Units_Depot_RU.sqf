@@ -1,8 +1,20 @@
 Private ['_u'];
 
 /* Russian Depot Vehicles */
-_u 			= ["MMT_Civ"];
-_u = _u		+ ["Old_bike_TK_CIV_EP1"];
+_u 			= ["Old_bike_TK_CIV_EP1"];
+_u = _u		+ ["MMT_Civ"];
+_u = _u		+ ["Old_moto_TK_Civ_EP1"];
+_u = _u		+ ["Lada1_TK_CIV_EP1"];
+_u = _u		+ ["SkodaBlue"];
+_u = _u		+ ["car_sedan"];
+_u = _u		+ ["car_hatchback"];
+_u = _u		+ ["Volha_1_TK_CIV_EP1"];
+_u = _u		+ ["datsun1_civil_1_open"];
+_u = _u		+ ["datsun1_civil_3_open"];
+_u = _u		+ ["hilux1_civil_1_open"];
+_u = _u		+ ["LandRover_TK_CIV_EP1"];
+_u = _u		+ ["V3S_Open_TK_CIV_EP1"];
+_u = _u		+ ["Ikarus_TK_CIV_EP1"];
 _u = _u		+ ["TT650_Civ"];
 _u = _u		+ ["Tractor"];
 _u = _u		+ ["Lada2_TK_CIV_EP1"];

@@ -100,10 +100,10 @@ _c = _c + ['BAF_Merlin_HC3_D'];
 _i = _i + [['','',14000,45,-2,1,3,0,'British',[]]];// Markus - Airlift capable to AF1, price tweak.
 
 _c = _c + ['CH_47F_BAF'];
-_i = _i + [['','',14000,40,-2,1,3,0,'British',[]]];// Markus - Airlift capable to AF1, price tweak
+_i = _i + [['','',16000,40,-2,1,3,0,'British',[]]];// Markus - Airlift capable to AF1, price tweak
 
 _c = _c + ['BAF_Apache_AH1_D'];
-_i = _i + [['','',80000,60,-2,2,3,0,'British',[]]]; // Markus - Price tweak
+_i = _i + [['','',86000,60,-2,2,3,0,'British',[]]]; // Markus - Price tweak
 
 _c = _c + ['AW159_Lynx_BAF'];
 _i = _i + [['','',65000,35,-2,1,3,0,'British',[]]];// Markus - price tweak

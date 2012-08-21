@@ -113,7 +113,7 @@ while {alive player && dialog} do {
 	
 	//--- Uptime.
 	_uptime = Call GetTime; //added-MrNiceGuy
-	ctrlSetText [11015,Format[localize 'STR_WF_MAIN_Uptime',_uptime select 0,_uptime select 1,_uptime select 2, Call Compile "TidiMul"]];
+	ctrlSetText [11015,Format[localize 'STR_WF_MAIN_Uptime',_uptime select 0,_uptime select 1,_uptime select 2, TidiMul]];
 
 	_enable = false; //added-MrNiceGuy
 	if (!isNull(commanderTeam)) then {if (commanderTeam == group player) then {_enable = true}};

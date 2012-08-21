@@ -159,10 +159,10 @@ _c = _c + ['UH1H_TK_EP1'];
 _i = _i + [['','',8500,30,-2,0,3,0,'Takistani Army',[]]]; // Markus - Price tweak UH1H
 
 _c = _c + ['Mi24_D_TK_EP1'];
-_i = _i + [['','',55000,40,-2,1,3,0,'Takistani Army',[]]]; // Markus - Price tweak Mi-24D
+_i = _i + [['','',60000,40,-2,1,3,0,'Takistani Army',[]]]; // Markus - Price tweak Mi-24D
 
 _c = _c + ['L39_TK_EP1'];
-_i = _i + [['','',55000,50,-2,2,3,0,'Takistani Army',[]]]; // Markus - Price tweak L39
+_i = _i + [['','',50000,50,-2,2,3,0,'Takistani Army',[]]]; // Markus - Price tweak L39
 
 _c = _c + ['Su25_TK_EP1'];
 _i = _i + [['','',90000,55,-2,3,3,0,'Takistani Army',[]]];

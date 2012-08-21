@@ -316,7 +316,7 @@ while {alive player && dialog} do {
 											_upgr = (missionNamespace getVariable _x) select QUERYGEARUPGRADE;
 											if ((_currentUpgrades select 13) >= _upgr) exitWith {_use = _x};
 										} forEach _currentMags;
-										//_currentMagazines = [_use,_oldMags,_currentMagazines] Call ReplaceInventoryAmmo; // Markus - Fix gear exploits
+										//_currentMagazines = [_use,_oldMags,_currentMagazines] Call ReplaceInventoryAmmo; // Markus - Comment this out to stop automagazine changing.
 									};
 								};
 							};
@@ -525,6 +525,17 @@ while {alive player && dialog} do {
 		_currentMagazines = magazines _currentUnit;
 		_slistMagazines = [];
 		
+		{
+			_get = _x Call GetNamespace;
+			if (_get select QUERYGEARUPGRADE > _currentUpgrades select 13 ) then // Markus - If the magazine's gear level is higher than what's upgraded, then remove.
+			{
+				_currentMagazines = _currentMagazines - [_x];
+				//diag_log format ["[CORE] Weapon found level is too high for current gear level, Req: %1. Current: %2. Name: %3", _get select QUERYGEARUPGRADE, _currentUpgrades select 13, _get select QUERYGEARLABEL];
+				hint parseText(Format ["The %1 requires a gear level of %2. The current gear level is %3.", _get select QUERYGEARLABEL, _get select QUERYGEARUPGRADE, _currentUpgrades select 13]);
+			};
+			diag_log format ["[CORE] Current mags: %1, level: %2", _x, _get select QUERYGEARUPGRADE];
+		} forEach _currentMagazines;
+		
 		_currentPrimary = '';
 		_currentSecondary = '';
 		_currentSidearm = '';
@@ -534,7 +545,14 @@ while {alive player && dialog} do {
 		_currentWeapons = _sideGear;
 		
 		_sideGear = _currentMagazines;
-		{if (!(_x in _misc) && !(_x in _magazine)) then {_sideGear = _sideGear - [_x]}} forEach _currentMagazines;
+		_currentUpgrades = (sideJoinedText) Call GetSideUpgrades;
+		{
+			if (!(_x in _misc) && !(_x in _magazine)) then 
+			{
+				_sideGear = _sideGear - [_x];
+			};
+		} forEach _currentMagazines; // Markus - If the magazine exists in the system, then keep it, otherwise don't display it.
+		
 		_currentMagazines = _sideGear;
 		
 		_currentPrimaryCost = 0;
@@ -554,33 +572,40 @@ while {alive player && dialog} do {
 			if (isNil '_get') then {
 				_get = _cwep Call GetNamespace;
 			};
-			
-			if !(isNil '_get') then {
-				_found = false;
-				_index = {_x == _cwep} count _primary;
-				if (_index > 0) then {_currentPrimary = _cwep;_currentPrimaryCost = _get select QUERYGEARCOST;ctrlSetText[_primaryIDC,_get select QUERYGEARPICTURE];_found = true};
-				if !(_found) then {
-					_index = {_x == _cwep} count _secondary;
-					if (_index > 0) then {_currentSecondary = _cwep;_currentSecondaryCost = _get select QUERYGEARCOST;ctrlSetText[_secondaryIDC,_get select QUERYGEARPICTURE];_found = true};
+			// Markus - Disallow buying gear outside of current gear level
+			if (_get select QUERYGEARUPGRADE > _currentUpgrades select 13) then
+			{
+				diag_log format ["[CORE] Weapon found level is too high for current gear level, Req: %1. Current: %2. Name: %3", _get select QUERYGEARUPGRADE, _currentUpgrades select 13, _get select QUERYGEARLABEL];
+				hint parseText(Format ["The %1 requires a gear level of %2. The current gear level is %3.", _get select QUERYGEARLABEL, _get select QUERYGEARUPGRADE, _currentUpgrades select 13]);
+				_currentWeapons = _currentWeapons - [_x];
+			} else {
+				if !(isNil '_get') then {
+					_found = false;
+					_index = {_x == _cwep} count _primary;
+					if (_index > 0) then {_currentPrimary = _cwep;_currentPrimaryCost = _get select QUERYGEARCOST;ctrlSetText[_primaryIDC,_get select QUERYGEARPICTURE];_found = true};
 					if !(_found) then {
-						_index = {_x == _cwep} count _sidearm;
-						if (_index > 0) then {_currentSidearm = _cwep;_currentSidearmCost = _get select QUERYGEARCOST;ctrlSetText[_sidearmIDC,_get select QUERYGEARPICTURE];_found = true};
+						_index = {_x == _cwep} count _secondary;
+						if (_index > 0) then {_currentSecondary = _cwep;_currentSecondaryCost = _get select QUERYGEARCOST;ctrlSetText[_secondaryIDC,_get select QUERYGEARPICTURE];_found = true};
 						if !(_found) then {
-							_index = {_x == _cwep} count _misc;
-							if (_index > 0) then {
-								switch (_get select QUERYGEARTYPE) do {
-									case 'Special': {
-										_currentSpecials = _currentSpecials + [_x];
-										_currentSpecialCost = _currentSpecialCost + (_get select QUERYGEARCOST);
-										_u = 0;
-										{
-											_zt = _x Call GetNamespace;
-											ctrlSetText[_specialIDC + _u,_zt select QUERYGEARPICTURE];
-											_u = _u + 1;
-										} forEach _currentSpecials;
-									};
-									case 'Item': {
-										_currentItems = _currentItems + [_x];
+							_index = {_x == _cwep} count _sidearm;
+							if (_index > 0) then {_currentSidearm = _cwep;_currentSidearmCost = _get select QUERYGEARCOST;ctrlSetText[_sidearmIDC,_get select QUERYGEARPICTURE];_found = true};
+							if !(_found) then {
+								_index = {_x == _cwep} count _misc;
+								if (_index > 0) then {
+									switch (_get select QUERYGEARTYPE) do {
+										case 'Special': {
+											_currentSpecials = _currentSpecials + [_x];
+											_currentSpecialCost = _currentSpecialCost + (_get select QUERYGEARCOST);
+											_u = 0;
+											{
+												_zt = _x Call GetNamespace;
+												ctrlSetText[_specialIDC + _u,_zt select QUERYGEARPICTURE];
+												_u = _u + 1;
+											} forEach _currentSpecials;
+										};
+										case 'Item': {
+											_currentItems = _currentItems + [_x];
+										};
 									};
 								};
 							};
@@ -589,7 +614,18 @@ while {alive player && dialog} do {
 				};
 			};
 		} forEach _currentWeapons;
-
+		
+		{
+			_get = _x Call GetNamespace;
+			if (_get select QUERYGEARUPGRADE > _currentUpgrades select 13 ) then // Markus - If the magazine's gear level is higher than what's upgraded, then remove.
+			{
+				_currentMagazines = _currentMagazines - [_x];
+				//diag_log format ["[CORE]2 Weapon found level is too high for current gear level, Req: %1. Current: %2. Name: %3", _get select QUERYGEARUPGRADE, _currentUpgrades select 13, _get select QUERYGEARLABEL];
+				hint parseText(Format ["The %1 requires a gear level of %2. The current gear level is %3.", _get select QUERYGEARLABEL, _get select QUERYGEARUPGRADE, _currentUpgrades select 13]);
+			};
+			//diag_log format ["[CORE]2 Current mags: %1, level: %2", _x, _get select QUERYGEARUPGRADE];
+		} forEach _currentMagazines;
+		
 		_currentWeapons = _currentWeapons - _misc;
 		_data = [_currentMagazines,_currentItems] Call DisplayInventory;
 		_inventorySlots = _data select 0;
@@ -668,22 +704,29 @@ while {alive player && dialog} do {
 						if (isNil '_get') then {
 							_get = _cwep Call GetNamespace;
 						};
-						
-						if !(isNil '_get') then {
-							_index = {_x == _cwep} count _primary;
-							if (_index > 0) then {_currentWeapons = _currentWeapons + [_x];_currentPrimary = _x;_currentPrimaryCost = _get select QUERYGEARCOST;ctrlSetText[_primaryIDC,_get select QUERYGEARPICTURE]} else {
-								_index = {_x == _cwep} count _secondary;
-								if (_index > 0) then {_currentWeapons = _currentWeapons + [_x];_currentSecondary = _x;_currentSecondaryCost = _get select QUERYGEARCOST;ctrlSetText[_secondaryIDC,_get select QUERYGEARPICTURE]} else {
-									_index = {_x == _cwep} count _sidearm;
-									if (_index > 0) then {_currentWeapons = _currentWeapons + [_x];_currentSidearm = _x;_currentSidearmCost = _get select QUERYGEARCOST;ctrlSetText[_sidearmIDC,_get select QUERYGEARPICTURE]} else {
-										_index = {_x == _cwep} count _misc;
-										if (_index > 0) then {
-											switch (_get select QUERYGEARTYPE) do {
-												case 'Special': {
-													_currentSpecials = _currentSpecials + [_x];
-												};
-												case 'Item': {
-													_currentItems = _currentItems + [_x];
+						// Markus - Disallow buying gear outside of current gear level
+						_currentUpgrades = (sideJoinedText) Call GetSideUpgrades;
+						if (_get select QUERYGEARUPGRADE > _currentUpgrades select 13) then
+						{
+							//diag_log format ["[CORE]2 Weapon found level is too high for current gear level, Req: %1. Current: %2. Name: %3", _get select QUERYGEARUPGRADE, _currentUpgrades select 13, _get select QUERYGEARLABEL];
+							respawnWeapons = respawnWeapons - [_x];
+						} else {
+							if !(isNil '_get') then {
+								_index = {_x == _cwep} count _primary;
+								if (_index > 0) then {_currentWeapons = _currentWeapons + [_x];_currentPrimary = _x;_currentPrimaryCost = _get select QUERYGEARCOST;ctrlSetText[_primaryIDC,_get select QUERYGEARPICTURE]} else {
+									_index = {_x == _cwep} count _secondary;
+									if (_index > 0) then {_currentWeapons = _currentWeapons + [_x];_currentSecondary = _x;_currentSecondaryCost = _get select QUERYGEARCOST;ctrlSetText[_secondaryIDC,_get select QUERYGEARPICTURE]} else {
+										_index = {_x == _cwep} count _sidearm;
+										if (_index > 0) then {_currentWeapons = _currentWeapons + [_x];_currentSidearm = _x;_currentSidearmCost = _get select QUERYGEARCOST;ctrlSetText[_sidearmIDC,_get select QUERYGEARPICTURE]} else {
+											_index = {_x == _cwep} count _misc;
+											if (_index > 0) then {
+												switch (_get select QUERYGEARTYPE) do {
+													case 'Special': {
+														_currentSpecials = _currentSpecials + [_x];
+													};
+													case 'Item': {
+														_currentItems = _currentItems + [_x];
+													};
 												};
 											};
 										};
@@ -786,11 +829,7 @@ while {alive player && dialog} do {
 		if (_currentSidearm != '') then  {_upgradeCost = _upgradeCost + _currentSidearmCost};
 		if !(_currentSecondary in _listbp) then {_unitBP = ""};
 		_cost = (_upgradeCost+_bpcost) - _currentCost;
-<<<<<<< HEAD
-		if (_cost < -150) then {_cost = -150};
-=======
 		if (_cost < 0) then {_cost = 0};
->>>>>>> Gear pricing, versioning, streamlining
 	};
 	
 	//--- Update the backpack
@@ -836,11 +875,7 @@ while {alive player && dialog} do {
 		buyLoadout = false;
 		_funds = Call GetPlayerFunds;
 		if (_funds >= _cost) then {
-<<<<<<< HEAD
-			if (_cost < -100) then {_cost = -150};
-=======
 			if (_cost < 0) then {_cost = 0};
->>>>>>> Gear pricing, versioning, streamlining
 			(-_cost) Call ChangePlayerFunds;
 			//--- Player's respawn loadout.
 			if (_currentUnit == player && (vehicleVarName player == clientIdentification)) then {

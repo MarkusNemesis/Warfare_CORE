@@ -1,5 +1,5 @@
 Private ["_dmul", "_fps", "_ACTIVATION_FPS"];
-_ACTIVATION_FPS = 25;
+_ACTIVATION_FPS = 30;
 diag_log "[CORE] Time dilation module initialized.";
 while {true} do
 {
@@ -18,7 +18,8 @@ while {true} do
 	
 	// Return
 	WF_Logic setVariable['Tidimul', _dmul];
-	TidiMul = round (100 - (_dmul * 100));
+	TidiMul = round ((_dmul * 100));
+	TidiMul = TidiMul / 100;
 	PublicVariable 'TidiMul';
-	sleep (30); // Markus - This defines the refresh rate of the Tidi. This should probably become a once every 30 seconds thing and should sample three times over 1 second and get the average.
+	sleep (30 * _dmul); // Markus - This defines the refresh rate of the Tidi.
 };

@@ -910,11 +910,11 @@
         <Italian>Tactical Center</Italian>
       </Key>
       <Key ID="STR_WF_MAIN_Uptime">
-        <English>Uptime: %1 days, %2 hours, %3 minutes. Dilation: \%%4</English>
-        <French>Uptime: %1 jours, %2 heures, %3 minutes, %4 secondes</French>
-        <German>Spielzeit: %1 Tage, %2 Stunden, %3 Minuten, %4 Sekunden</German>
-        <Russian>Время работы: %1 день, %2 часов, %3 минут, %4 секунд</Russian>
-        <Italian>Uptime: %1 giorni, %2 ore, %3 minuti, %4 secondi</Italian>
+        <English>Uptime: %1 days, %2 hours, %3 minutes. Dilation: %4x</English>
+        <French>Uptime: %1 jours, %2 heures, %3 minutes. Dilation: %4x</French>
+        <German>Spielzeit: %1 Tage, %2 Stunden, %3 Minuten. Dilation: %4x</German>
+        <Russian>Время работы: %1 день, %2 часов, %3 минут. Dilation: %4x</Russian>
+        <Italian>Uptime: %1 giorni, %2 ore, %3 minuti. Dilation: %4x</Italian>
       </Key>
       <Key ID="STR_WF_MAIN_UpgradeMenu"><!--shared U-->
         <English>Factory Upgrade</English>
