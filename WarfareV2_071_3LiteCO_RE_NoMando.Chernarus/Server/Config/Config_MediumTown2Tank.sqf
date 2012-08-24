@@ -10,4 +10,4 @@ _teams = ['medium3'] Call Compile preprocessFile "Server\Functions\Server_Select
 
 _probability = 70;
 
-[_town,_townName,10,60,_range,_teams,_probability] ExecVM "Common\Init\Init_Location.sqf";
+[_town,_townName,10,30,_range,_teams,_probability] ExecVM "Common\Init\Init_Location.sqf";
