@@ -10,4 +10,4 @@ _teams = ['light2'] Call Compile preprocessFile "Server\Functions\Server_SelectR
 
 _probability = 78;
 
-[_town,_townName,10,50,_range,_teams,_probability] ExecVM "Common\Init\Init_Location.sqf";
+[_town,_townName,10,25,_range,_teams,_probability] ExecVM "Common\Init\Init_Location.sqf";
