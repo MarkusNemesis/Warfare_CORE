@@ -26,10 +26,10 @@ _misca = [];
 
 	if !(isNil '_get') then {
 		switch (_get select QUERYGEARTYPE) do {
-			case 'primary': {_primary set [count _primary, _x};
-			case 'secondary': {_secondary  set [count _secondary, _x};
-			case 'sidearm': {_sidearm set [count _sidearm, _x};
-			case 'CfgMagazines': {_misca set [count _misca, _x};
+			case 'primary': {_primary set [count _primary, _x]};
+			case 'secondary': {_secondary  set [count _secondary, _x]};
+			case 'sidearm': {_sidearm set [count _sidearm, _x]};
+			case 'CfgMagazines': {_misca set [count _misca, _x]};
 			case 'CfgWeapons': {_misca set [count _misca, _x]};
 		};
 	};

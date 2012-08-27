@@ -6,47 +6,47 @@ _i = [];
 /* _i set [count _i, [label, picture, config, belong to type, cost, upgrade level, allowed in camps, belong to the handgun pool, magazines, magazine space, allow two weapons]]*/
 
 /* Magazines - West */
-_u = _u + ['20Rnd_B_AA12_Pellets'];
+_u set [count _u, '20Rnd_B_AA12_Pellets'];
 _i set [count _i, ['','','CfgMagazines','primary',8,0,true,false,0,0,true]];
 
-_u = _u + ['20Rnd_B_AA12_74Slug'];
+_u set [count _u, '20Rnd_B_AA12_74Slug'];
 _i set [count _i, ['','','CfgMagazines','primary',10,0,true,false,0,0,true]];	
 
-_u = _u + ['20Rnd_B_AA12_HE'];
+_u set [count _u, '20Rnd_B_AA12_HE'];
 _i set [count _i, ['','','CfgMagazines','primary',45,3,true,false,0,0,true]];
 
 /* Primary Weapons - West */
-_u = _u + ['AA12_PMC'];
+_u set [count _u, 'AA12_PMC'];
 _i set [count _i, ['','','CfgWeapons','',380,2,true,false,0,0,true]];
 
-_u = _u + ['m8_carbine'];
+_u set [count _u, 'm8_carbine'];
 _i set [count _i, ['','','CfgWeapons','',280,2,true,false,0,0,true]];
 
-_u = _u + ['m8_carbineGL'];
+_u set [count _u, 'm8_carbineGL'];
 _i set [count _i, ['','','CfgWeapons','',290,3,true,false,0,0,true]];
 
-_u = _u + ['m8_compact'];
+_u set [count _u, 'm8_compact'];
 _i set [count _i, ['','','CfgWeapons','',285,2,false,false,0,0,true]];
 
-_u = _u + ['m8_SAW'];
+_u set [count _u, 'm8_SAW'];
 _i set [count _i, ['','','CfgWeapons','',310,3,false,false,0,0,false]];
 
-_u = _u + ['m8_sharpshooter'];
+_u set [count _u, 'm8_sharpshooter'];
 _i set [count _i, ['','','CfgWeapons','',295,3,false,false,0,0,true]];
 
-_u = _u + ['m8_carbine_pmc'];
+_u set [count _u, 'm8_carbine_pmc'];
 _i set [count _i, ['','','CfgWeapons','',290,2,true,false,0,0,true]];
 
-_u = _u + ['m8_compact_pmc'];
+_u set [count _u, 'm8_compact_pmc'];
 _i set [count _i, ['','','CfgWeapons','',295,2,false,false,0,0,true]];
 
-_u = _u + ['m8_holo_sd'];
+_u set [count _u, 'm8_holo_sd'];
 _i set [count _i, ['','','CfgWeapons','',335,3,false,false,0,0,true]];
 
-_u = _u + ['m8_tws'];
+_u set [count _u, 'm8_tws'];
 _i set [count _i, ['','','CfgWeapons','',350,3,false,false,0,0,true]];
 
-_u = _u + ['m8_tws_sd'];
+_u set [count _u, 'm8_tws_sd'];
 _i set [count _i, ['','','CfgWeapons','',385,3,false,false,0,0,true]];
 
 for '_z' from 0 to (count _u)-1 do {

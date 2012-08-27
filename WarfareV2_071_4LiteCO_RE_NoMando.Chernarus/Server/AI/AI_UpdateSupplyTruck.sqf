@@ -17,9 +17,11 @@ while {!gameOver} do {
 		_isDeployed = (_sideText) Call GetSideHQDeployed;
 		_hq = (_sideText) Call GetSideHQ;
 		if ((_isDeployed)&&(alive _hq)&&(!isNull _hq)) then {
-			diag_log Format["[WFBE (INFORMATION)][frameno:%2 | ticktime:%3] AI_UpdateSupplyTruck: A %1 Supply truck has been created",_side,diag_frameno,diag_tickTime];
+			diag_log Format["[WFBE (INFORMATION)][frameno:%2 | ticktime:%3] AI_updateSupplyTruck: A %1 Supply truck has been created",_side,diag_frameno,diag_tickTime];
 			[_side] ExecFSM "Server\FSM\supplytruck.fsm";
 		};
 	};
-	waituntil {diag_frameno >= diag_frameno + 1}; // Markus - Ensures that loops only run once per tick.
+	Private ["_ftlimiter"]; // Markus - The frame time limiter.
+	_ftlimiter = diag_frameno + 1;
+	waituntil {_ftlimiter <= diag_frameno}; // Markus - Ensures that loops only run once per tick.
 };

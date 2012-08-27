@@ -7,108 +7,108 @@ if (!isServer || local player) then {
 	if (side player == EAST) then {
 		/* Magazines. */
 		_m = ["30Rnd_762x39_AK47"];
-		_m = _m + ["30Rnd_556x45_Stanag"];
-		_m = _m + ["30Rnd_545x39_AK"];
-		_m = _m + ["30Rnd_545x39_AKSD"];
-		//_m = _m + ["30Rnd_556x45_G36"];
-		//_m = _m + ["30Rnd_556x45_G36SD"];
-		//_m = _m + ["100Rnd_556x45_BetaCMag"]; // Markus - Removed BetaC mags
-		_m = _m + ["64Rnd_9x19_Bizon"];
-		_m = _m + ["64Rnd_9x19_SD_Bizon"];
-		_m = _m + ["100Rnd_762x54_PK"];
-		_m = _m + ["75Rnd_545x39_RPK"];
-		_m = _m + ["5x_22_LR_17_HMR"];
-		_m = _m + ["10Rnd_762x54_SVD"];
-		_m = _m + ["8Rnd_B_Saiga12_74Slug"];
-		_m = _m + ["8Rnd_B_Saiga12_Pellets"];
-		_m = _m + ["5Rnd_127x108_KSVK"];
-		_m = _m + ["10Rnd_9x39_SP5_VSS"];
-		_m = _m + ["20Rnd_9x39_SP5_VSS"];
-		_m = _m + ["10x_303"];
-		_m = _m + ["30Rnd_762x39_SA58"];
-		_m = _m + ["20Rnd_762x51_FNFAL"];
-		_m = _m + ["PG7V"];
-		_m = _m + ["PG7VL"];
-		_m = _m + ["OG7"];
-		_m = _m + ["PG7VR"];
-		_m = _m + ["RPG18"];
-		_m = _m + ["Dragon_EP1"];
-		//_m = _m + ["SMAW_HEAA"]; // Markus - Removing HEAA
-		//_m = _m + ["SMAW_HEDP"]; // Markus - Removing SMAW from OPFOR
-		_m = _m + ["AT13"];
-		_m = _m + ["Igla"];
-		_m = _m + ["Strela"];
-		_m = _m + ["Laserbatteries"];
-		_m = _m + ["6Rnd_45ACP"];
-		_m = _m + ["8Rnd_9x18_Makarov"];
-		_m = _m + ["8Rnd_9x18_MakarovSD"];
-		_m = _m + ["10Rnd_B_765x17_Ball"];
-		_m = _m + ["20Rnd_B_765x17_Ball"];
-		_m = _m + ["30Rnd_9x19_UZI"];
-		_m = _m + ["30Rnd_9x19_UZI_SD"];
+		_m set [count _m, "30Rnd_556x45_Stanag"];
+		_m set [count _m, "30Rnd_545x39_AK"];
+		_m set [count _m, "30Rnd_545x39_AKSD"];
+		//_m set [count _m, "30Rnd_556x45_G36"];
+		//_m set [count _m, "30Rnd_556x45_G36SD"];
+		//_m set [count _m, "100Rnd_556x45_BetaCMag"]; // Markus - Removed BetaC mags
+		_m set [count _m, "64Rnd_9x19_Bizon"];
+		_m set [count _m, "64Rnd_9x19_SD_Bizon"];
+		_m set [count _m, "100Rnd_762x54_PK"];
+		_m set [count _m, "75Rnd_545x39_RPK"];
+		_m set [count _m, "5x_22_LR_17_HMR"];
+		_m set [count _m, "10Rnd_762x54_SVD"];
+		_m set [count _m, "8Rnd_B_Saiga12_74Slug"];
+		_m set [count _m, "8Rnd_B_Saiga12_Pellets"];
+		_m set [count _m, "5Rnd_127x108_KSVK"];
+		_m set [count _m, "10Rnd_9x39_SP5_VSS"];
+		_m set [count _m, "20Rnd_9x39_SP5_VSS"];
+		_m set [count _m, "10x_303"];
+		_m set [count _m, "30Rnd_762x39_SA58"];
+		_m set [count _m, "20Rnd_762x51_FNFAL"];
+		_m set [count _m, "PG7V"];
+		_m set [count _m, "PG7VL"];
+		_m set [count _m, "OG7"];
+		_m set [count _m, "PG7VR"];
+		_m set [count _m, "RPG18"];
+		_m set [count _m, "Dragon_EP1"];
+		//_m set [count _m, "SMAW_HEAA"]; // Markus - Removing HEAA
+		//_m set [count _m, "SMAW_HEDP"]; // Markus - Removing SMAW from OPFOR
+		_m set [count _m, "AT13"];
+		_m set [count _m, "Igla"];
+		_m set [count _m, "Strela"];
+		_m set [count _m, "Laserbatteries"];
+		_m set [count _m, "6Rnd_45ACP"];
+		_m set [count _m, "8Rnd_9x18_Makarov"];
+		_m set [count _m, "8Rnd_9x18_MakarovSD"];
+		_m set [count _m, "10Rnd_B_765x17_Ball"];
+		_m set [count _m, "20Rnd_B_765x17_Ball"];
+		_m set [count _m, "30Rnd_9x19_uZI"];
+		_m set [count _m, "30Rnd_9x19_uZI_SD"];
 		if (paramDLCPMC) then {
-			_m = _m + ["20Rnd_B_AA12_Pellets"];
-			_m = _m + ["20Rnd_B_AA12_74Slug"];
-			_m = _m + ["20Rnd_B_AA12_HE"];
+			_m set [count _m, "20Rnd_B_AA12_Pellets"];
+			_m set [count _m, "20Rnd_B_AA12_74Slug"];
+			_m set [count _m, "20Rnd_B_AA12_HE"];
 		};
 
 		WF_Logic setVariable ['magazineClasses',_m];
 
 		/* Primary. */
 		_w = ['AK_47_M'];
-		_w = _w + ['AK_47_S'];
-		_w = _w + ['M16A2'];
-		_w = _w + ['M16A2GL'];
-		_w = _w + ['AK_74'];
-		_w = _w + ['AK_74_GL'];
-		_w = _w + ['AK_74_GL_kobra'];
-		_w = _w + ['AK_107_kobra'];
-		_w = _w + ['AK_107_GL_kobra'];
-		_w = _w + ['AK_107_pso'];
-		_w = _w + ['AK_107_GL_pso'];
-		_w = _w + ['AKS_74'];
+		_w set [count _w, 'AK_47_S'];
+		_w set [count _w, 'M16A2'];
+		_w set [count _w, 'M16A2GL'];
+		_w set [count _w, 'AK_74'];
+		_w set [count _w, 'AK_74_GL'];
+		_w set [count _w, 'AK_74_GL_kobra'];
+		_w set [count _w, 'AK_107_kobra'];
+		_w set [count _w, 'AK_107_GL_kobra'];
+		_w set [count _w, 'AK_107_pso'];
+		_w set [count _w, 'AK_107_GL_pso'];
+		_w set [count _w, 'AKS_74'];
 		if (_tiMode) then {// Markus - Move Thermal weapons to be affected by the Ti weapons limitation
-			_w = _w + ['AKS_74_GOSHAWK'];
-			_w = _w + ['AKS_74_NSPU'];
-			_w = _w + ['FN_FAL_ANPVS4'];
-			_w = _w + ['SVD_NSPU_EP1'];
+			_w set [count _w, 'AKS_74_GOSHAWK'];
+			_w set [count _w, 'AKS_74_NSPU'];
+			_w set [count _w, 'FN_FAL_ANPVS4'];
+			_w set [count _w, 'SVD_NSPU_EP1'];
 		};
-		_w = _w + ['AKS_74_kobra'];
-		_w = _w + ['AKS_74_pso'];
-		_w = _w + ['AKS_74_U'];
-		_w = _w + ['AKS_74_UN_kobra'];
-		_w = _w + ['AKS_GOLD'];
-		_w = _w + ['bizon'];
-		_w = _w + ['bizon_silenced'];
-		_w = _w + ['FN_FAL'];
-		_w = _w + ['LeeEnfield'];
-		_w = _w + ['PK'];
-		_w = _w + ['Pecheneg'];
-		_w = _w + ['RPK_74'];
-		_w = _w + ['huntingrifle'];
-		_w = _w + ['Sa58P_EP1'];
-		_w = _w + ['Sa58V_EP1'];
-		_w = _w + ['Sa58V_RCO_EP1'];
-		_w = _w + ['Sa58V_CCO_EP1'];
-		_w = _w + ['SVD'];
-		_w = _w + ['SVD_des_EP1'];
-		_w = _w + ['SVD_CAMO'];
-		_w = _w + ['Saiga12K'];
-		_w = _w + ['ksvk'];
-		_w = _w + ['VSS_vintorez'];
-		_w = _w + ['m8_carbine'];
-		_w = _w + ['m8_carbineGL'];
-		_w = _w + ['m8_compact'];
-		_w = _w + ['m8_sharpshooter'];
-		_w = _w + ['m8_SAW'];
+		_w set [count _w, 'AKS_74_kobra'];
+		_w set [count _w, 'AKS_74_pso'];
+		_w set [count _w, 'AKS_74_u'];
+		_w set [count _w, 'AKS_74_uN_kobra'];
+		_w set [count _w, 'AKS_GOLD'];
+		_w set [count _w, 'bizon'];
+		_w set [count _w, 'bizon_silenced'];
+		_w set [count _w, 'FN_FAL'];
+		_w set [count _w, 'LeeEnfield'];
+		_w set [count _w, 'PK'];
+		_w set [count _w, 'Pecheneg'];
+		_w set [count _w, 'RPK_74'];
+		_w set [count _w, 'huntingrifle'];
+		_w set [count _w, 'Sa58P_EP1'];
+		_w set [count _w, 'Sa58V_EP1'];
+		_w set [count _w, 'Sa58V_RCO_EP1'];
+		_w set [count _w, 'Sa58V_CCO_EP1'];
+		_w set [count _w, 'SVD'];
+		_w set [count _w, 'SVD_des_EP1'];
+		_w set [count _w, 'SVD_CAMO'];
+		_w set [count _w, 'Saiga12K'];
+		_w set [count _w, 'ksvk'];
+		_w set [count _w, 'VSS_vintorez'];
+		_w set [count _w, 'm8_carbine'];
+		_w set [count _w, 'm8_carbineGL'];
+		_w set [count _w, 'm8_compact'];
+		_w set [count _w, 'm8_sharpshooter'];
+		_w set [count _w, 'm8_SAW'];
 		if (paramDLCPMC) then {
-			_w = _w + ['AA12_PMC'];
-			_w = _w + ['m8_carbine_pmc'];
-			_w = _w + ['m8_compact_pmc'];
-			_w = _w + ['m8_holo_sd'];
+			_w set [count _w, 'AA12_PMC'];
+			_w set [count _w, 'm8_carbine_pmc'];
+			_w set [count _w, 'm8_compact_pmc'];
+			_w set [count _w, 'm8_holo_sd'];
 			if (_tiMode) then {
-				_w = _w + ['m8_tws'];
-				_w = _w + ['m8_tws_sd'];
+				_w set [count _w, 'm8_tws'];
+				_w set [count _w, 'm8_tws_sd'];
 			};
 		};
 		
@@ -118,73 +118,73 @@ if (!isServer || local player) then {
 		/* Secondary. */
 
 		_w = ['RPG7V'];
-		_w = _w + ['RPG18'];
-		_w = _w + ['M47Launcher_EP1'];
-		//_w = _w + ['SMAW']; // Markus - Removing SMAW from OPFOR
-		_w = _w + ['MetisLauncher'];
-		_w = _w + ['Igla'];
-		_w = _w + ['Strela'];
-		_w = _w + ['Laserdesignator'];
+		_w set [count _w, 'RPG18'];
+		_w set [count _w, 'M47Launcher_EP1'];
+		//_w set [count _w, 'SMAW']; // Markus - Removing SMAW from OPFOR
+		_w set [count _w, 'MetisLauncher'];
+		_w set [count _w, 'Igla'];
+		_w set [count _w, 'Strela'];
+		_w set [count _w, 'Laserdesignator'];
 		
 		/* Not all units are able to carry a backpack */
 		_get = getNumber(configFile >> 'CfgVehicles' >> typeOf player >> 'canCarryBackPack');
 		
 		if (_get == 1) then {
-			_w = _w + ['TK_Assault_Pack_EP1'];
-			_w = _w + ['TK_RPG_Backpack_EP1'];
-			_w = _w + ['TK_ALICE_Pack_EP1'];
-			_w = _w + ['Tripod_Bag'];
-			_w = _w + ['KORD_TK_Bag_EP1'];
-			_w = _w + ['KORD_high_TK_Bag_EP1'];
-			_w = _w + ['SPG9_TK_INS_Bag_EP1'];// Markus - Removed SPG-9 bag
-			_w = _w + ['AGS_TK_Bag_EP1'];
-			_w = _w + ['Metis_TK_Bag_EP1'];
-			_w = _w + ['2b14_82mm_TK_Bag_EP1'];
+			_w set [count _w, 'TK_Assault_Pack_EP1'];
+			_w set [count _w, 'TK_RPG_Backpack_EP1'];
+			_w set [count _w, 'TK_ALICE_Pack_EP1'];
+			_w set [count _w, 'Tripod_Bag'];
+			_w set [count _w, 'KORD_TK_Bag_EP1'];
+			_w set [count _w, 'KORD_high_TK_Bag_EP1'];
+			_w set [count _w, 'SPG9_TK_INS_Bag_EP1'];// Markus - Removed SPG-9 bag
+			_w set [count _w, 'AGS_TK_Bag_EP1'];
+			_w set [count _w, 'Metis_TK_Bag_EP1'];
+			_w set [count _w, '2b14_82mm_TK_Bag_EP1'];
 		};
 
 		WF_Logic setVariable ['secondaryClasses',_w];
 
 		/* Sidearms. */
 		_w = ['Makarov'];
-		_w = _w + ['revolver_EP1'];
-		_w = _w + ['revolver_gold_EP1'];
-		_w = _w + ['MakarovSD'];
-		_w = _w + ['Sa61_EP1'];
-		_w = _w + ['UZI_EP1'];
-		_w = _w + ['UZI_SD_EP1'];
+		_w set [count _w, 'revolver_EP1'];
+		_w set [count _w, 'revolver_gold_EP1'];
+		_w set [count _w, 'MakarovSD'];
+		_w set [count _w, 'Sa61_EP1'];
+		_w set [count _w, 'UZI_EP1'];
+		_w set [count _w, 'UZI_SD_EP1'];
 
 		WF_Logic setVariable ['sidearmClasses',_w];
 
 		/* Misc. */
 		_w = ['HandGrenade_East'];
-		_w = _w + ['HandGrenade_Stone'];
-		_w = _w + ['SmokeShell'];
-		_w = _w + ['SmokeShellRed'];
-		_w = _w + ['SmokeShellGreen'];
-		_w = _w + ['SmokeShellBlue'];
-		_w = _w + ['SmokeShellYellow'];
-		_w = _w + ['SmokeShellOrange'];
-		_w = _w + ['SmokeShellPurple'];
-		_w = _w + ['FlareWhite_GP25'];
-		_w = _w + ['FlareYellow_GP25'];
-		_w = _w + ['FlareGreen_GP25'];
-		_w = _w + ['FlareRed_GP25'];
-		_w = _w + ['1Rnd_HE_M203'];
-		_w = _w + ['1Rnd_HE_GP25'];
-		_w = _w + ['1Rnd_SMOKE_GP25'];
-		_w = _w + ['1Rnd_SMOKERED_GP25'];
-		_w = _w + ['1Rnd_SMOKEGREEN_GP25'];
-		_w = _w + ['1Rnd_SMOKEYELLOW_GP25'];
-		_w = _w + ['MineE'];
-		_w = _w + ['PipeBomb'];
-		_w = _w + ['Binocular'];
-		_w = _w + ['NVGoggles'];
-		_w = _w + ['Binocular_Vector'];
-		_w = _w + ['ItemCompass'];
-		_w = _w + ['ItemGPS'];
-		_w = _w + ['ItemMap'];
-		_w = _w + ['ItemRadio'];
-		_w = _w + ['ItemWatch'];
+		_w set [count _w, 'HandGrenade_Stone'];
+		_w set [count _w, 'SmokeShell'];
+		_w set [count _w, 'SmokeShellRed'];
+		_w set [count _w, 'SmokeShellGreen'];
+		_w set [count _w, 'SmokeShellBlue'];
+		_w set [count _w, 'SmokeShellYellow'];
+		_w set [count _w, 'SmokeShellOrange'];
+		_w set [count _w, 'SmokeShellPurple'];
+		_w set [count _w, 'FlareWhite_GP25'];
+		_w set [count _w, 'FlareYellow_GP25'];
+		_w set [count _w, 'FlareGreen_GP25'];
+		_w set [count _w, 'FlareRed_GP25'];
+		_w set [count _w, '1Rnd_HE_M203'];
+		_w set [count _w, '1Rnd_HE_GP25'];
+		_w set [count _w, '1Rnd_SMOKE_GP25'];
+		_w set [count _w, '1Rnd_SMOKERED_GP25'];
+		_w set [count _w, '1Rnd_SMOKEGREEN_GP25'];
+		_w set [count _w, '1Rnd_SMOKEYELLOW_GP25'];
+		_w set [count _w, 'MineE'];
+		_w set [count _w, 'PipeBomb'];
+		_w set [count _w, 'Binocular'];
+		_w set [count _w, 'NVGoggles'];
+		_w set [count _w, 'Binocular_Vector'];
+		_w set [count _w, 'ItemCompass'];
+		_w set [count _w, 'ItemGPS'];
+		_w set [count _w, 'ItemMap'];
+		_w set [count _w, 'ItemRadio'];
+		_w set [count _w, 'ItemWatch'];
 
 		WF_Logic setVariable ['miscClasses',_w];
 
@@ -202,130 +202,130 @@ if (!isServer || local player) then {
 		_l = [0];
 		_b = [true];
 
-		_d = _d + [getText(configFile >> 'CfgWeapons' >> 'AK_107_GL_kobra' >> 'displayName')];
-		_p = _p + [getText(configFile >> 'CfgWeapons' >> 'AK_107_GL_kobra' >> 'picture')];
-		_t = _t + [['AK_107_GL_kobra']];
-		_m = _m + [['30Rnd_545x39_AK','30Rnd_545x39_AK','30Rnd_545x39_AK','30Rnd_545x39_AK','30Rnd_545x39_AK','30Rnd_545x39_AK','30Rnd_545x39_AK','30Rnd_545x39_AK',
+		_d set [count _d, getText(configFile >> 'CfgWeapons' >> 'AK_107_GL_kobra' >> 'displayName')];
+		_p set [count _p, getText(configFile >> 'CfgWeapons' >> 'AK_107_GL_kobra' >> 'picture')];
+		_t set [count _t, ['AK_107_GL_kobra']];
+		_m set [count _m, ['30Rnd_545x39_AK','30Rnd_545x39_AK','30Rnd_545x39_AK','30Rnd_545x39_AK','30Rnd_545x39_AK','30Rnd_545x39_AK','30Rnd_545x39_AK','30Rnd_545x39_AK',
 			'30Rnd_545x39_AK','30Rnd_545x39_AK','HandGrenade_East','HandGrenade_East','1Rnd_HE_GP25','1Rnd_HE_GP25','1Rnd_HE_GP25','1Rnd_HE_GP25','1Rnd_HE_GP25','1Rnd_HE_GP25',
 			'1Rnd_HE_GP25','1Rnd_HE_GP25']];
-		_s = _s + [['Binocular']];
+		_s set [count _s, ['Binocular']];
 		_i set [count _i, _items];
-		_l = _l + [0];
-		_b = _b + [true];
+		_l set [count _l, 0];
+		_b set [count _b, true];
 
-		_d = _d + [getText(configFile >> 'CfgWeapons' >> 'AK_107_pso' >> 'displayName') + '/' + getText(configFile >> 'CfgWeapons' >> 'RPG7V' >> 'displayName')];
-		_p = _p + [getText(configFile >> 'CfgWeapons' >> 'AK_107_pso' >> 'picture')];
-		_t = _t + [['AK_107_pso','RPG7V']];
-		_m = _m + [['30Rnd_545x39_AK','30Rnd_545x39_AK','30Rnd_545x39_AK','30Rnd_545x39_AK','30Rnd_545x39_AK','30Rnd_545x39_AK','PG7V','PG7V','PG7V']];// Markus - Remove VLs
-		_s = _s + [['Binocular','NVGoggles']];
+		_d set [count _d, getText(configFile >> 'CfgWeapons' >> 'AK_107_pso' >> 'displayName') + '/' + getText(configFile >> 'CfgWeapons' >> 'RPG7V' >> 'displayName')];
+		_p set [count _p, getText(configFile >> 'CfgWeapons' >> 'AK_107_pso' >> 'picture')];
+		_t set [count _t, ['AK_107_pso','RPG7V']];
+		_m set [count _m, ['30Rnd_545x39_AK','30Rnd_545x39_AK','30Rnd_545x39_AK','30Rnd_545x39_AK','30Rnd_545x39_AK','30Rnd_545x39_AK','PG7V','PG7V','PG7V']];// Markus - Remove VLs
+		_s set [count _s, ['Binocular','NVGoggles']];
 		_i set [count _i, _items];
-		_l = _l + [1];
-		_b = _b + [false];
+		_l set [count _l, 1];
+		_b set [count _b, false];
 
-		_d = _d + [getText(configFile >> 'CfgWeapons' >> 'AK_74_GL' >> 'displayName') + '/' + getText(configFile >> 'CfgWeapons' >> 'RPG7V' >> 'displayName')];
-		_p = _p + [getText(configFile >> 'CfgWeapons' >> 'AK_74_GL' >> 'picture')];
-		_t = _t + [['AK_74_GL','RPG7V']];
-		_m = _m + [['30Rnd_545x39_AK','30Rnd_545x39_AK','30Rnd_545x39_AK','30Rnd_545x39_AK','30Rnd_545x39_AK','30Rnd_545x39_AK','PG7V',
+		_d set [count _d, getText(configFile >> 'CfgWeapons' >> 'AK_74_GL' >> 'displayName') + '/' + getText(configFile >> 'CfgWeapons' >> 'RPG7V' >> 'displayName')];
+		_p set [count _p, getText(configFile >> 'CfgWeapons' >> 'AK_74_GL' >> 'picture')];
+		_t set [count _t, ['AK_74_GL','RPG7V']];
+		_m set [count _m, ['30Rnd_545x39_AK','30Rnd_545x39_AK','30Rnd_545x39_AK','30Rnd_545x39_AK','30Rnd_545x39_AK','30Rnd_545x39_AK','PG7V',
 			'PG7V','PG7V','1Rnd_HE_GP25','1Rnd_HE_GP25','1Rnd_HE_GP25','1Rnd_HE_GP25','1Rnd_HE_GP25','1Rnd_HE_GP25','1Rnd_HE_GP25','1Rnd_HE_GP25']];
-		_s = _s + [['Binocular','NVGoggles']];
+		_s set [count _s, ['Binocular','NVGoggles']];
 		_i set [count _i, _items];
-		_l = _l + [1];
-		_b = _b + [false];
+		_l set [count _l, 1];
+		_b set [count _b, false];
 
-		_d = _d + [getText(configFile >> 'CfgWeapons' >> 'Sa58V_RCO_EP1' >> 'displayName') + '/' + getText(configFile >> 'CfgWeapons' >> 'RPG7V' >> 'displayName') + '/' + getText(configFile >> 'CfgWeapons' >> 'Makarov' >> 'displayName')];
-		_p = _p + [getText(configFile >> 'CfgWeapons' >> 'Sa58V_RCO_EP1' >> 'picture')];
-		_t = _t + [['Sa58V_RCO_EP1','RPG7V','Makarov']];
-		_m = _m + [['30Rnd_762x39_SA58','30Rnd_762x39_SA58','30Rnd_762x39_SA58','30Rnd_762x39_SA58','30Rnd_762x39_SA58','30Rnd_762x39_SA58','PG7V','PG7V','PG7V',
+		_d set [count _d, getText(configFile >> 'CfgWeapons' >> 'Sa58V_RCO_EP1' >> 'displayName') + '/' + getText(configFile >> 'CfgWeapons' >> 'RPG7V' >> 'displayName') + '/' + getText(configFile >> 'CfgWeapons' >> 'Makarov' >> 'displayName')];
+		_p set [count _p, getText(configFile >> 'CfgWeapons' >> 'Sa58V_RCO_EP1' >> 'picture')];
+		_t set [count _t, ['Sa58V_RCO_EP1','RPG7V','Makarov']];
+		_m set [count _m, ['30Rnd_762x39_SA58','30Rnd_762x39_SA58','30Rnd_762x39_SA58','30Rnd_762x39_SA58','30Rnd_762x39_SA58','30Rnd_762x39_SA58','PG7V','PG7V','PG7V',
 			'8Rnd_9x18_Makarov','8Rnd_9x18_Makarov','8Rnd_9x18_Makarov','8Rnd_9x18_Makarov','8Rnd_9x18_Makarov','8Rnd_9x18_Makarov','8Rnd_9x18_Makarov','8Rnd_9x18_Makarov']];
-		_s = _s + [['Binocular','NVGoggles']];
+		_s set [count _s, ['Binocular','NVGoggles']];
 		_i set [count _i, _items];
-		_l = _l + [1];
-		_b = _b + [true];
+		_l set [count _l, 1];
+		_b set [count _b, true];
 
-		_d = _d + [getText(configFile >> 'CfgWeapons' >> 'AKS_74_kobra' >> 'displayName') + '/' + getText(configFile >> 'CfgWeapons' >> 'MetisLauncher' >> 'displayName') + '/' + getText(configFile >> 'CfgWeapons' >> 'Makarov' >> 'displayName')];
-		_p = _p + [getText(configFile >> 'CfgWeapons' >> 'AKS_74_kobra' >> 'picture')];
-		_t = _t + [['AKS_74_kobra','MetisLauncher','Makarov']];
-		_m = _m + [['30Rnd_545x39_AK','30Rnd_545x39_AK','30Rnd_545x39_AK','30Rnd_545x39_AK','30Rnd_545x39_AK','30Rnd_545x39_AK','AT13',
+		_d set [count _d, getText(configFile >> 'CfgWeapons' >> 'AKS_74_kobra' >> 'displayName') + '/' + getText(configFile >> 'CfgWeapons' >> 'MetisLauncher' >> 'displayName') + '/' + getText(configFile >> 'CfgWeapons' >> 'Makarov' >> 'displayName')];
+		_p set [count _p, getText(configFile >> 'CfgWeapons' >> 'AKS_74_kobra' >> 'picture')];
+		_t set [count _t, ['AKS_74_kobra','MetisLauncher','Makarov']];
+		_m set [count _m, ['30Rnd_545x39_AK','30Rnd_545x39_AK','30Rnd_545x39_AK','30Rnd_545x39_AK','30Rnd_545x39_AK','30Rnd_545x39_AK','AT13',
 			'8Rnd_9x18_Makarov','8Rnd_9x18_Makarov','8Rnd_9x18_Makarov','8Rnd_9x18_Makarov','8Rnd_9x18_Makarov','8Rnd_9x18_Makarov','8Rnd_9x18_Makarov','8Rnd_9x18_Makarov']];
-		_s = _s + [['Binocular','NVGoggles']];
+		_s set [count _s, ['Binocular','NVGoggles']];
 		_i set [count _i, _items];
-		_l = _l + [3];
-		_b = _b + [false];
+		_l set [count _l, 3];
+		_b set [count _b, false];
 
-		_d = _d + [getText(configFile >> 'CfgWeapons' >> 'AK_107_kobra' >> 'displayName') + '/' + getText(configFile >> 'CfgWeapons' >> 'Igla' >> 'displayName') + '/' + getText(configFile >> 'CfgWeapons' >> 'Makarov' >> 'displayName')];
-		_p = _p + [getText(configFile >> 'CfgWeapons' >> 'AK_107_kobra' >> 'picture')];
-		_t = _t + [['AK_107_kobra','Igla','Makarov']];
-		_m = _m + [['30Rnd_545x39_AK','30Rnd_545x39_AK','30Rnd_545x39_AK','30Rnd_545x39_AK','30Rnd_545x39_AK','30Rnd_545x39_AK','Igla',
+		_d set [count _d, getText(configFile >> 'CfgWeapons' >> 'AK_107_kobra' >> 'displayName') + '/' + getText(configFile >> 'CfgWeapons' >> 'Igla' >> 'displayName') + '/' + getText(configFile >> 'CfgWeapons' >> 'Makarov' >> 'displayName')];
+		_p set [count _p, getText(configFile >> 'CfgWeapons' >> 'AK_107_kobra' >> 'picture')];
+		_t set [count _t, ['AK_107_kobra','Igla','Makarov']];
+		_m set [count _m, ['30Rnd_545x39_AK','30Rnd_545x39_AK','30Rnd_545x39_AK','30Rnd_545x39_AK','30Rnd_545x39_AK','30Rnd_545x39_AK','Igla',
 			'8Rnd_9x18_Makarov','8Rnd_9x18_Makarov','8Rnd_9x18_Makarov','8Rnd_9x18_Makarov','8Rnd_9x18_Makarov','8Rnd_9x18_Makarov','8Rnd_9x18_Makarov','8Rnd_9x18_Makarov']];
-		_s = _s + [['Binocular','NVGoggles']];
+		_s set [count _s, ['Binocular','NVGoggles']];
 		_i set [count _i, _items];
-		_l = _l + [2];
-		_b = _b + [false];
+		_l set [count _l, 2];
+		_b set [count _b, false];
 
-		_d = _d + [getText(configFile >> 'CfgWeapons' >> 'bizon_silenced' >> 'displayName') + '/' + getText(configFile >> 'CfgWeapons' >> 'Makarov' >> 'displayName') + '/' + getText(configFile >> 'CfgMagazines' >> 'MineE' >> 'displayName')];
-		_p = _p + [getText(configFile >> 'CfgWeapons' >> 'bizon_silenced' >> 'picture')];
-		_t = _t + [['bizon_silenced','Makarov']];
-		_m = _m + [['64Rnd_9x19_SD_Bizon','64Rnd_9x19_SD_Bizon','64Rnd_9x19_SD_Bizon','64Rnd_9x19_SD_Bizon','64Rnd_9x19_SD_Bizon','64Rnd_9x19_SD_Bizon','MineE','MineE','MineE',
+		_d set [count _d, getText(configFile >> 'CfgWeapons' >> 'bizon_silenced' >> 'displayName') + '/' + getText(configFile >> 'CfgWeapons' >> 'Makarov' >> 'displayName') + '/' + getText(configFile >> 'CfgMagazines' >> 'MineE' >> 'displayName')];
+		_p set [count _p, getText(configFile >> 'CfgWeapons' >> 'bizon_silenced' >> 'picture')];
+		_t set [count _t, ['bizon_silenced','Makarov']];
+		_m set [count _m, ['64Rnd_9x19_SD_Bizon','64Rnd_9x19_SD_Bizon','64Rnd_9x19_SD_Bizon','64Rnd_9x19_SD_Bizon','64Rnd_9x19_SD_Bizon','64Rnd_9x19_SD_Bizon','MineE','MineE','MineE',
 			'8Rnd_9x18_Makarov','8Rnd_9x18_Makarov','8Rnd_9x18_Makarov','8Rnd_9x18_Makarov','8Rnd_9x18_Makarov','8Rnd_9x18_Makarov','8Rnd_9x18_Makarov','8Rnd_9x18_Makarov']];
-		_s = _s + [['Binocular']];
+		_s set [count _s, ['Binocular']];
 		_i set [count _i, _items];
-		_l = _l + [2];
-		_b = _b + [true];
+		_l set [count _l, 2];
+		_b set [count _b, true];
 
 		if (_tiMode) then {
-			_d = _d + [getText(configFile >> 'CfgWeapons' >> 'AKS_74_GOSHAWK' >> 'displayName') + '/' + getText(configFile >> 'CfgWeapons' >> 'MakarovSD' >> 'displayName') + '/' + getText(configFile >> 'CfgMagazines' >> 'PipeBomb' >> 'displayName')];
-			_p = _p + [getText(configFile >> 'CfgWeapons' >> 'AKS_74_GOSHAWK' >> 'picture')];
-			_t = _t + [['AKS_74_GOSHAWK','MakarovSD']];
-			_m = _m + [['30Rnd_545x39_AK','30Rnd_545x39_AK','30Rnd_545x39_AK','30Rnd_545x39_AK','30Rnd_545x39_AK','30Rnd_545x39_AK','PipeBomb','PipeBomb','PipeBomb',
+			_d set [count _d, getText(configFile >> 'CfgWeapons' >> 'AKS_74_GOSHAWK' >> 'displayName') + '/' + getText(configFile >> 'CfgWeapons' >> 'MakarovSD' >> 'displayName') + '/' + getText(configFile >> 'CfgMagazines' >> 'PipeBomb' >> 'displayName')];
+			_p set [count _p, getText(configFile >> 'CfgWeapons' >> 'AKS_74_GOSHAWK' >> 'picture')];
+			_t set [count _t, ['AKS_74_GOSHAWK','MakarovSD']];
+			_m set [count _m, ['30Rnd_545x39_AK','30Rnd_545x39_AK','30Rnd_545x39_AK','30Rnd_545x39_AK','30Rnd_545x39_AK','30Rnd_545x39_AK','PipeBomb','PipeBomb','PipeBomb',
 				'8Rnd_9x18_MakarovSD','8Rnd_9x18_MakarovSD','8Rnd_9x18_MakarovSD','8Rnd_9x18_MakarovSD','8Rnd_9x18_MakarovSD','8Rnd_9x18_MakarovSD','8Rnd_9x18_MakarovSD','8Rnd_9x18_MakarovSD']];
-			_s = _s + [['Binocular','NVGoggles']];
+			_s set [count _s, ['Binocular','NVGoggles']];
 			_i set [count _i, _items];
-			_l = _l + [3]; // Markus - Move GOSHAWK loadout to G3
-			_b = _b + [true];
+			_l set [count _l, 3]; // Markus - Move GOSHAWK loadout to G3
+			_b set [count _b, true];
 		};
 
-		_d = _d + [getText(configFile >> 'CfgWeapons' >> 'PK' >> 'displayName') + '/' + getText(configFile >> 'CfgWeapons' >> 'Makarov' >> 'displayName')];
-		_p = _p + [getText(configFile >> 'CfgWeapons' >> 'PK' >> 'picture')];
-		_t = _t + [['PK','Makarov']];
-		_m = _m + [['100Rnd_762x54_PK','100Rnd_762x54_PK','100Rnd_762x54_PK','100Rnd_762x54_PK','100Rnd_762x54_PK','SmokeShellBlue','SmokeShellBlue','8Rnd_9x18_Makarov',
+		_d set [count _d, getText(configFile >> 'CfgWeapons' >> 'PK' >> 'displayName') + '/' + getText(configFile >> 'CfgWeapons' >> 'Makarov' >> 'displayName')];
+		_p set [count _p, getText(configFile >> 'CfgWeapons' >> 'PK' >> 'picture')];
+		_t set [count _t, ['PK','Makarov']];
+		_m set [count _m, ['100Rnd_762x54_PK','100Rnd_762x54_PK','100Rnd_762x54_PK','100Rnd_762x54_PK','100Rnd_762x54_PK','SmokeShellBlue','SmokeShellBlue','8Rnd_9x18_Makarov',
 			'8Rnd_9x18_Makarov','8Rnd_9x18_Makarov','8Rnd_9x18_Makarov','8Rnd_9x18_Makarov','8Rnd_9x18_Makarov','8Rnd_9x18_Makarov','8Rnd_9x18_Makarov']];
-		_s = _s + [['Binocular']];
+		_s set [count _s, ['Binocular']];
 		_i set [count _i, _items];
-		_l = _l + [0];
-		_b = _b + [true];
+		_l set [count _l, 0];
+		_b set [count _b, true];
 
-		_d = _d + [getText(configFile >> 'CfgWeapons' >> 'SVD_des_EP1' >> 'displayName') + '/' + getText(configFile >> 'CfgWeapons' >> 'MakarovSD' >> 'displayName')];
-		_p = _p + [getText(configFile >> 'CfgWeapons' >> 'SVD_des_EP1' >> 'picture')];
-		_t = _t + [['SVD_des_EP1','MakarovSD']];
-		_m = _m + [['10Rnd_762x54_SVD','10Rnd_762x54_SVD','10Rnd_762x54_SVD','10Rnd_762x54_SVD','10Rnd_762x54_SVD','10Rnd_762x54_SVD','10Rnd_762x54_SVD','10Rnd_762x54_SVD',
+		_d set [count _d, getText(configFile >> 'CfgWeapons' >> 'SVD_des_EP1' >> 'displayName') + '/' + getText(configFile >> 'CfgWeapons' >> 'MakarovSD' >> 'displayName')];
+		_p set [count _p, getText(configFile >> 'CfgWeapons' >> 'SVD_des_EP1' >> 'picture')];
+		_t set [count _t, ['SVD_des_EP1','MakarovSD']];
+		_m set [count _m, ['10Rnd_762x54_SVD','10Rnd_762x54_SVD','10Rnd_762x54_SVD','10Rnd_762x54_SVD','10Rnd_762x54_SVD','10Rnd_762x54_SVD','10Rnd_762x54_SVD','10Rnd_762x54_SVD',
 			'10Rnd_762x54_SVD','10Rnd_762x54_SVD','HandGrenade_East','HandGrenade_East','8Rnd_9x18_MakarovSD','8Rnd_9x18_MakarovSD','8Rnd_9x18_MakarovSD','8Rnd_9x18_MakarovSD','8Rnd_9x18_MakarovSD',
 			'8Rnd_9x18_MakarovSD','8Rnd_9x18_MakarovSD','8Rnd_9x18_MakarovSD']];
-		_s = _s + [['Binocular']];
+		_s set [count _s, ['Binocular']];
 		_i set [count _i, _items];
-		_l = _l + [1];
-		_b = _b + [true];
+		_l set [count _l, 1];
+		_b set [count _b, true];
 
-		_d = _d + [getText(configFile >> 'CfgWeapons' >> 'VSS_vintorez' >> 'displayName') + '/' + getText(configFile >> 'CfgWeapons' >> 'Laserdesignator' >> 'displayName') + '/' + getText(configFile >> 'CfgWeapons' >> 'MakarovSD' >> 'displayName')];
-		_p = _p + [getText(configFile >> 'CfgWeapons' >> 'VSS_vintorez' >> 'picture')];
-		_t = _t + [['VSS_vintorez','Laserdesignator','MakarovSD']];
-		_m = _m + [['20Rnd_9x39_SP5_VSS','20Rnd_9x39_SP5_VSS','20Rnd_9x39_SP5_VSS','20Rnd_9x39_SP5_VSS','20Rnd_9x39_SP5_VSS','20Rnd_9x39_SP5_VSS','20Rnd_9x39_SP5_VSS','20Rnd_9x39_SP5_VSS',
+		_d set [count _d, getText(configFile >> 'CfgWeapons' >> 'VSS_vintorez' >> 'displayName') + '/' + getText(configFile >> 'CfgWeapons' >> 'Laserdesignator' >> 'displayName') + '/' + getText(configFile >> 'CfgWeapons' >> 'MakarovSD' >> 'displayName')];
+		_p set [count _p, getText(configFile >> 'CfgWeapons' >> 'VSS_vintorez' >> 'picture')];
+		_t set [count _t, ['VSS_vintorez','Laserdesignator','MakarovSD']];
+		_m set [count _m, ['20Rnd_9x39_SP5_VSS','20Rnd_9x39_SP5_VSS','20Rnd_9x39_SP5_VSS','20Rnd_9x39_SP5_VSS','20Rnd_9x39_SP5_VSS','20Rnd_9x39_SP5_VSS','20Rnd_9x39_SP5_VSS','20Rnd_9x39_SP5_VSS',
 			'20Rnd_9x39_SP5_VSS','20Rnd_9x39_SP5_VSS','HandGrenade_East','Laserbatteries','8Rnd_9x18_MakarovSD','8Rnd_9x18_MakarovSD','8Rnd_9x18_MakarovSD','8Rnd_9x18_MakarovSD','8Rnd_9x18_MakarovSD',
 			'8Rnd_9x18_MakarovSD','8Rnd_9x18_MakarovSD','8Rnd_9x18_MakarovSD']];
-		_s = _s + [['Binocular_Vector','NVGoggles']];
+		_s set [count _s, ['Binocular_Vector','NVGoggles']];
 		_i set [count _i, _items];
-		_l = _l + [2];
-		_b = _b + [false];
+		_l set [count _l, 2];
+		_b set [count _b, false];
 
-		_d = _d + [getText(configFile >> 'CfgWeapons' >> 'ksvk' >> 'displayName') + '/' + getText(configFile >> 'CfgWeapons' >> 'MakarovSD' >> 'displayName')];
-		_p = _p + [getText(configFile >> 'CfgWeapons' >> 'ksvk' >> 'picture')];
-		_t = _t + [['ksvk','MakarovSD']];
-		_m = _m + [['5Rnd_127x108_KSVK','5Rnd_127x108_KSVK','5Rnd_127x108_KSVK','5Rnd_127x108_KSVK','5Rnd_127x108_KSVK','5Rnd_127x108_KSVK','5Rnd_127x108_KSVK','5Rnd_127x108_KSVK',
+		_d set [count _d, getText(configFile >> 'CfgWeapons' >> 'ksvk' >> 'displayName') + '/' + getText(configFile >> 'CfgWeapons' >> 'MakarovSD' >> 'displayName')];
+		_p set [count _p, getText(configFile >> 'CfgWeapons' >> 'ksvk' >> 'picture')];
+		_t set [count _t, ['ksvk','MakarovSD']];
+		_m set [count _m, ['5Rnd_127x108_KSVK','5Rnd_127x108_KSVK','5Rnd_127x108_KSVK','5Rnd_127x108_KSVK','5Rnd_127x108_KSVK','5Rnd_127x108_KSVK','5Rnd_127x108_KSVK','5Rnd_127x108_KSVK',
 			'5Rnd_127x108_KSVK','5Rnd_127x108_KSVK','HandGrenade_East','HandGrenade_East','8Rnd_9x18_MakarovSD','8Rnd_9x18_MakarovSD','8Rnd_9x18_MakarovSD','8Rnd_9x18_MakarovSD','8Rnd_9x18_MakarovSD',
 			'8Rnd_9x18_MakarovSD','8Rnd_9x18_MakarovSD','8Rnd_9x18_MakarovSD']];
-		_s = _s + [['Binocular_Vector','NVGoggles']];
+		_s set [count _s, ['Binocular_Vector','NVGoggles']];
 		_i set [count _i, _items];
-		_l = _l + [3];
-		_b = _b + [false];
+		_l set [count _l, 3];
+		_b set [count _b, false];
 
 		_c = [];
 		_totalTemplates = count _d;

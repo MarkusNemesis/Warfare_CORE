@@ -10,36 +10,36 @@ _aiTeamUpgrades = _return select 4;
 
 //--- Custom Groups.
 _u		= ["BMP2_CDF"];
-_u = _u + ["BMP2_CDF"];
+_u set [count _u, "BMP2_CDF"];
 
-_aiTeamTemplateName = _aiTeamTemplateName + ["Armor - APC Platoon"];
-_aiTeamTemplates = _aiTeamTemplates + [_u];
-_aiTeamTypes = _aiTeamTypes + [2];
-_aiTeamTemplateRequires = _aiTeamTemplateRequires + [[false,false,true,false]];
-_aiTeamUpgrades = _aiTeamUpgrades + [[0,0,2,0]];
+_aiTeamTemplateName set [count _aiTeamTemplateName, "Armor - APC Platoon"];
+_aiTeamTemplates set [count _aiTeamTemplates, _u];
+_aiTeamTypes set [count _aiTeamTypes, 2];
+_aiTeamTemplateRequires set [count _aiTeamTemplateRequires, [false,false,true,false]];
+_aiTeamUpgrades set [count _aiTeamUpgrades,[0,0,2,0]];
 
 _u		= ["ZSU_CDF"];
-_u = _u + ["ZSU_CDF"];
+_u set [count _u, "ZSU_CDF"];
 
-_aiTeamTemplateName = _aiTeamTemplateName + ["Armor - AA Platoon"];
-_aiTeamTemplates = _aiTeamTemplates + [_u];
-_aiTeamTypes = _aiTeamTypes + [2];
-_aiTeamTemplateRequires = _aiTeamTemplateRequires + [[false,false,true,false]];
-_aiTeamUpgrades = _aiTeamUpgrades + [[0,0,1,0]];
+_aiTeamTemplateName set [count _aiTeamTemplateName, "Armor - AA Platoon"];
+_aiTeamTemplates set [count _aiTeamTemplates, _u];
+_aiTeamTypes set [count _aiTeamTypes, 2];
+_aiTeamTemplateRequires set [count _aiTeamTemplateRequires, [false,false,true,false]];
+_aiTeamUpgrades set [count _aiTeamUpgrades,[0,0,1,0]];
 
 _u		= ["Mi17_CDF"];
-_u = _u + ["CDF_Soldier_Medic"];
-_u = _u + ["CDF_Soldier_MG"];
-_u = _u + ["CDF_Soldier_AR"];
-_u = _u + ["CDF_Soldier_RPG"];
-_u = _u + ["CDF_Soldier_RPG"];
-_u = _u + ["CDF_Soldier_Spotter"];
-_u = _u + ["CDF_Soldier"];
+_u set [count _u, "CDF_Soldier_Medic"];
+_u set [count _u, "CDF_Soldier_MG"];
+_u set [count _u, "CDF_Soldier_AR"];
+_u set [count _u, "CDF_Soldier_RPG"];
+_u set [count _u, "CDF_Soldier_RPG"];
+_u set [count _u, "CDF_Soldier_Spotter"];
+_u set [count _u, "CDF_Soldier"];
 
-_aiTeamTemplateName = _aiTeamTemplateName + ["Air - Mi-8 Infantry Squadron"];
-_aiTeamTemplates = _aiTeamTemplates + [_u];
-_aiTeamTypes = _aiTeamTypes + [3];
-_aiTeamTemplateRequires = _aiTeamTemplateRequires + [[false,false,false,true]];
-_aiTeamUpgrades = _aiTeamUpgrades + [[1,0,0,0]];
+_aiTeamTemplateName set [count _aiTeamTemplateName, "Air - Mi-8 Infantry Squadron"];
+_aiTeamTemplates set [count _aiTeamTemplates, _u];
+_aiTeamTypes set [count _aiTeamTypes, 3];
+_aiTeamTemplateRequires set [count _aiTeamTemplateRequires, [false,false,false,true]];
+_aiTeamUpgrades set [count _aiTeamUpgrades,[1,0,0,0]];
 
 [_aiTeamTemplates,_aiTeamTemplateRequires,_aiTeamTypes,_aiTeamUpgrades,_aiTeamTemplateName]

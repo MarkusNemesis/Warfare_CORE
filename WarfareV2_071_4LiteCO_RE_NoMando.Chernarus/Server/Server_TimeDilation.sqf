@@ -22,5 +22,4 @@ while {true} do
 	TidiMul = TidiMul / 100;
 	PublicVariable 'TidiMul';
 	sleep (30 * _dmul); // Markus - This defines the refresh rate of the Tidi.
-	waituntil {diag_frameno >= diag_frameno + 1}; // Markus - Ensures that loops only run once per tick.
 };

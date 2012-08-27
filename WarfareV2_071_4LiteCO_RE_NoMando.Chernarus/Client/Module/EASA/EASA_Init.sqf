@@ -8,9 +8,9 @@ _easaLoadout = [];
 _easaVehi = [];
 
 /* [[Price], [Description], [Weapon, Ammos], [Weapon, Ammos]...] */
-_easaVehi = 	_easaVehi + ['Su25_TK_EP1'];
-_easaDefault = 	_easaDefault + [[['AirBombLauncher','4Rnd_FAB_250'],['R73Launcher_2','2Rnd_R73']]];
-_easaLoadout = 	_easaLoadout + [
+_easaVehi set [count _easaVehi,'Su25_TK_EP1'];
+_easaDefault set [count _easaDefault,[['AirBombLauncher','4Rnd_FAB_250'],['R73Launcher_2','2Rnd_R73']]];
+_easaLoadout set [count _easaLoadout,
 if (WF_A2_Arrowhead) then {
  [
   [[1200],['R-73 (6)'],['R73Launcher_2','2Rnd_R73','2Rnd_R73','2Rnd_R73']],
@@ -31,9 +31,9 @@ if (WF_A2_Arrowhead) then {
 }
 ];
 
-_easaVehi = 	_easaVehi + ['Su25_Ins'];
-_easaDefault = 	_easaDefault + [[['AirBombLauncher','4Rnd_FAB_250'],['R73Launcher_2','2Rnd_R73']]];
-_easaLoadout = 	_easaLoadout + [
+_easaVehi set [count _easaVehi,'Su25_Ins'];
+_easaDefault set [count _easaDefault,[['AirBombLauncher','4Rnd_FAB_250'],['R73Launcher_2','2Rnd_R73']]];
+_easaLoadout set [count _easaLoadout,
  [
   [[1900],['FAB-250 (6)'],['AirBombLauncher','4Rnd_FAB_250','2Rnd_FAB_250']],
   [[2100],['Ch-29 (6)'],['Ch29Launcher_Su34','6Rnd_Ch29']],
@@ -45,9 +45,9 @@ _easaLoadout = 	_easaLoadout + [
  ]
 ];
 
-_easaVehi = 	_easaVehi + ['Su39'];
-_easaDefault = 	_easaDefault + [[['Ch29Launcher','4Rnd_Ch29'],['R73Launcher_2','2Rnd_R73']]];
-_easaLoadout = 	_easaLoadout + [
+_easaVehi set [count _easaVehi,'Su39'];
+_easaDefault set [count _easaDefault,[['Ch29Launcher','4Rnd_Ch29'],['R73Launcher_2','2Rnd_R73']]];
+_easaLoadout set [count _easaLoadout,
  [
   [[1900],['FAB-250 (6)'],['AirBombLauncher','4Rnd_FAB_250','2Rnd_FAB_250']],
   [[2100],['Ch-29 (6)'],['Ch29Launcher_Su34','6Rnd_Ch29']],
@@ -59,9 +59,9 @@ _easaLoadout = 	_easaLoadout + [
  ]
 ];
 
-_easaVehi = 	_easaVehi + ['Su34'];
-_easaDefault = 	_easaDefault + [[['Ch29Launcher_Su34','6Rnd_Ch29'],['R73Launcher','4Rnd_R73']]];
-_easaLoadout = 	_easaLoadout + [
+_easaVehi set [count _easaVehi,'Su34'];
+_easaDefault set [count _easaDefault,[['Ch29Launcher_Su34','6Rnd_Ch29'],['R73Launcher','4Rnd_R73']]];
+_easaLoadout set [count _easaLoadout,
  [
   [[3200],['FAB-250 (10)'],['AirBombLauncher','4Rnd_FAB_250','4Rnd_FAB_250','2Rnd_FAB_250']],
   [[2950],['FAB-250 (8) | R-73 (2)'],['AirBombLauncher','4Rnd_FAB_250','4Rnd_FAB_250'],['R73Launcher_2','2Rnd_R73']],
@@ -79,9 +79,9 @@ _easaLoadout = 	_easaLoadout + [
  ]
 ];
 /* // Markus - Remove helo AA EASA options
-_easaVehi = 	_easaVehi + ['Mi24_P'];
-_easaDefault = 	_easaDefault + [[['HeliBombLauncher','2Rnd_FAB_250']]];
-_easaLoadout = 	_easaLoadout + [
+_easaVehi set [count _easaVehi,'Mi24_P'];
+_easaDefault set [count _easaDefault,[['HeliBombLauncher','2Rnd_FAB_250']]];
+_easaLoadout set [count _easaLoadout,
  [
   [[500],['FAB-250 (2)'],['HeliBombLauncher','2Rnd_FAB_250']],
   [[300],['R-73 (2)'],['R73Launcher_2','2Rnd_R73']]
@@ -89,9 +89,9 @@ _easaLoadout = 	_easaLoadout + [
 ];
 
 if (paramBalancing) then {
-	_easaVehi = 	_easaVehi + ['Ka52'];
-	_easaDefault = 	_easaDefault + [[['AT9Launcher','4Rnd_AT9_Mi24P','4Rnd_AT9_Mi24P'],['R73Launcher','4Rnd_R73']]];
-	_easaLoadout = 	_easaLoadout + [
+	_easaVehi set [count _easaVehi,'Ka52'];
+	_easaDefault set [count _easaDefault,[['AT9Launcher','4Rnd_AT9_Mi24P','4Rnd_AT9_Mi24P'],['R73Launcher','4Rnd_R73']]];
+	_easaLoadout set [count _easaLoadout,
 	 [
 	  [[2150],['AT-9 (4) | R-73 (8)'],['AT9Launcher','4Rnd_AT9_Mi24P'],['R73Launcher','4Rnd_R73','4Rnd_R73']],
 	  [[2250],['AT-9 (8) | R-73 (4)'],['AT9Launcher','4Rnd_AT9_Mi24P','4Rnd_AT9_Mi24P'],['R73Launcher','4Rnd_R73']],
@@ -100,9 +100,9 @@ if (paramBalancing) then {
 	 ]
 	];
 
-	_easaVehi = 	_easaVehi + ['Ka52Black'];
-	_easaDefault = 	_easaDefault + [[['AT9Launcher','4Rnd_AT9_Mi24P','4Rnd_AT9_Mi24P'],['R73Launcher','4Rnd_R73']]];
-	_easaLoadout = 	_easaLoadout + [
+	_easaVehi set [count _easaVehi,'Ka52Black'];
+	_easaDefault set [count _easaDefault,[['AT9Launcher','4Rnd_AT9_Mi24P','4Rnd_AT9_Mi24P'],['R73Launcher','4Rnd_R73']]];
+	_easaLoadout set [count _easaLoadout,
 	 [
 	  [[2150],['AT-9 (4) | R-73 (8)'],['AT9Launcher','4Rnd_AT9_Mi24P'],['R73Launcher','4Rnd_R73','4Rnd_R73']],
 	  [[2250],['AT-9 (8) | R-73 (4)'],['AT9Launcher','4Rnd_AT9_Mi24P','4Rnd_AT9_Mi24P'],['R73Launcher','4Rnd_R73']],
@@ -112,9 +112,9 @@ if (paramBalancing) then {
 	];
 };
 */
-_easaVehi = 	_easaVehi + ['F35B'];
-_easaDefault = 	_easaDefault + [[['BombLauncherF35','2Rnd_GBU12'],['SidewinderLaucher_F35','2Rnd_Sidewinder_F35']]];
-_easaLoadout = 	_easaLoadout + [
+_easaVehi set [count _easaVehi,'F35B'];
+_easaDefault set [count _easaDefault,[['BombLauncherF35','2Rnd_GBU12'],['SidewinderLaucher_F35','2Rnd_Sidewinder_F35']]];
+_easaLoadout set [count _easaLoadout,
  [
   [[1950],['GBU-12 (4)'],['BombLauncherA10','4Rnd_GBU12']],
   [[1500],['GBU-12 (2) | AIM-9L (2)'],['BombLauncherF35','2Rnd_GBU12'],['SidewinderLaucher_F35','2Rnd_Sidewinder_F35']],
@@ -124,9 +124,9 @@ _easaLoadout = 	_easaLoadout + [
  ]
 ];
 
-_easaVehi = 	_easaVehi + ['AV8B'];
-_easaDefault = 	_easaDefault + [[['BombLauncher','6Rnd_GBU12_AV8B']]];
-_easaLoadout = 	_easaLoadout + [
+_easaVehi set [count _easaVehi,'AV8B'];
+_easaDefault set [count _easaDefault,[['BombLauncher','6Rnd_GBU12_AV8B']]];
+_easaLoadout set [count _easaLoadout,
  [
   [[3600],['Mk82 (6)'],['Mk82BombLauncher_6','6Rnd_Mk82']],
   [[3500],['GBU-12 (6)'],['BombLauncher','6Rnd_GBU12_AV8B']],
@@ -139,9 +139,9 @@ _easaLoadout = 	_easaLoadout + [
  ]
 ];
 
-_easaVehi = 	_easaVehi + ['AV8B2'];
-_easaDefault = 	_easaDefault + [[['Mk82BombLauncher_6','6Rnd_Mk82'],['SidewinderLaucher_AH1Z','2Rnd_Sidewinder_AH1Z']]];
-_easaLoadout = 	_easaLoadout + [
+_easaVehi set [count _easaVehi,'AV8B2'];
+_easaDefault set [count _easaDefault,[['Mk82BombLauncher_6','6Rnd_Mk82'],['SidewinderLaucher_AH1Z','2Rnd_Sidewinder_AH1Z']]];
+_easaLoadout set [count _easaLoadout,
  [
   [[4200],['GBU-12 (8)'],['BombLauncherA10','4Rnd_GBU12','4Rnd_GBU12']],
   [[4100],['GBU-12 (6) | AGM-65 (2)'],['BombLauncher','6Rnd_GBU12_AV8B'],['MaverickLauncher','2Rnd_Maverick_A10']],
@@ -165,9 +165,9 @@ _easaLoadout = 	_easaLoadout + [
  ]
 ];
 
-_easaVehi = 	_easaVehi + ['A10'];
-_easaDefault = 	_easaDefault + [[['BombLauncherA10','4Rnd_GBU12'],['MaverickLauncher','2Rnd_Maverick_A10'],['SidewinderLaucher_AH1Z','2Rnd_Sidewinder_AH1Z']]];
-_easaLoadout = 	_easaLoadout + [
+_easaVehi set [count _easaVehi,'A10'];
+_easaDefault set [count _easaDefault,[['BombLauncherA10','4Rnd_GBU12'],['MaverickLauncher','2Rnd_Maverick_A10'],['SidewinderLaucher_AH1Z','2Rnd_Sidewinder_AH1Z']]];
+_easaLoadout set [count _easaLoadout,
  [
   [[4200],['GBU-12 (8)'],['BombLauncherA10','4Rnd_GBU12','4Rnd_GBU12']],
   [[4100],['GBU-12 (6) | AGM-65 (2)'],['BombLauncher','6Rnd_GBU12_AV8B'],['MaverickLauncher','2Rnd_Maverick_A10']],
@@ -191,9 +191,9 @@ _easaLoadout = 	_easaLoadout + [
  ]
 ];
 
-_easaVehi = 	_easaVehi + ['A10_US_EP1'];
-_easaDefault = 	_easaDefault + [[['BombLauncherA10','4Rnd_GBU12'],['MaverickLauncher','2Rnd_Maverick_A10'],['SidewinderLaucher_AH1Z','2Rnd_Sidewinder_AH1Z']]];
-_easaLoadout = 	_easaLoadout + [
+_easaVehi set [count _easaVehi,'A10_uS_EP1'];
+_easaDefault set [count _easaDefault,[['BombLauncherA10','4Rnd_GBU12'],['MaverickLauncher','2Rnd_Maverick_A10'],['SidewinderLaucher_AH1Z','2Rnd_Sidewinder_AH1Z']]];
+_easaLoadout set [count _easaLoadout,
 if (WF_A2_Arrowhead) then {
  [
   [[4200],['GBU-12 (8)'],['BombLauncherA10','4Rnd_GBU12','4Rnd_GBU12']],
@@ -232,9 +232,9 @@ if (WF_A2_Arrowhead) then {
 }
 ];
 /* // Markus - Remove AA from Helo EASA.
-_easaVehi = 	_easaVehi + ['AH64D'];
-_easaDefault = 	_easaDefault + [[['HellfireLauncher','8Rnd_Hellfire']]];
-_easaLoadout = 	_easaLoadout + [
+_easaVehi set [count _easaVehi,'AH64D'];
+_easaDefault set [count _easaDefault,[['HellfireLauncher','8Rnd_Hellfire']]];
+_easaLoadout set [count _easaLoadout,
 if (WF_A2_Arrowhead) then {
  [
   [[2900],['AGM-114 (8)'],['HellfireLauncher','8Rnd_Hellfire']],
@@ -248,9 +248,9 @@ if (WF_A2_Arrowhead) then {
 }
 ];
 
-_easaVehi = 	_easaVehi + ['AH64D_EP1'];
-_easaDefault = 	_easaDefault + [[['HellfireLauncher','8Rnd_Hellfire']]];
-_easaLoadout = 	_easaLoadout + [
+_easaVehi set [count _easaVehi,'AH64D_EP1'];
+_easaDefault set [count _easaDefault,[['HellfireLauncher','8Rnd_Hellfire']]];
+_easaLoadout set [count _easaLoadout,
 if (WF_A2_Arrowhead) then {
  [
   [[2900],['AGM-114 (8)'],['HellfireLauncher','8Rnd_Hellfire']],
@@ -264,9 +264,9 @@ if (WF_A2_Arrowhead) then {
 }
 ];
 
-_easaVehi = 	_easaVehi + ['AH1Z'];
-_easaDefault = 	_easaDefault + [[['HellfireLauncher','8Rnd_Hellfire']]];
-_easaLoadout = 	_easaLoadout + [
+_easaVehi set [count _easaVehi,'AH1Z'];
+_easaDefault set [count _easaDefault,[['HellfireLauncher','8Rnd_Hellfire']]];
+_easaLoadout set [count _easaLoadout,
  [
   [[2900],['AGM-114 (8)'],['HellfireLauncher','8Rnd_Hellfire']],
   [[3100],['AIM-9L (8)'],['SidewinderLaucher_AH64','8Rnd_Sidewinder_AH64']]

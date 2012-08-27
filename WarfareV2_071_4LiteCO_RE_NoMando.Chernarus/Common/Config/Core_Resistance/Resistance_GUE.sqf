@@ -10,73 +10,73 @@ _n = 	  ["Group"];
 _u = 	  ["Guerrila", "GUE", "Infantry", "GUE_InfSquad"] Call GetGroupFromConfig;
 [Format["WFBE_RES%1UNITS",_n select (count _n - 1)],_u,true] Call SetNamespace;
 
-_n = _n + ["GroupAssault"];
+_n set [count _n, "GroupAssault"];
 _u =	  ["Guerrila", "GUE", "Infantry", "GUE_InfSquad_Assault"] Call GetGroupFromConfig;
 [Format["WFBE_RES%1UNITS",_n select (count _n - 1)],_u,true] Call SetNamespace;
 
-_n = _n + ["GroupWeapons"];
+_n set [count _n, "GroupWeapons"];
 _u		= ["Guerrila", "GUE", "Infantry", "GUE_InfSquad_Weapons"] Call GetGroupFromConfig;
 [Format["WFBE_RES%1UNITS",_n select (count _n - 1)],_u,true] Call SetNamespace;
 
-_n = _n + ["Patrol1"];
+_n set [count _n, "Patrol1"];
 _u		= ["Guerrila", "GUE", "Infantry", "GUE_InfTeam_1"] Call GetGroupFromConfig;
 [Format["WFBE_RES%1UNITS",_n select (count _n - 1)],_u,true] Call SetNamespace;
 
-_n = _n + ["Patrol2"];
+_n set [count _n, "Patrol2"];
 _u		= ["Guerrila", "GUE", "Infantry", "GUE_InfTeam_2"] Call GetGroupFromConfig;
 [Format["WFBE_RES%1UNITS",_n select (count _n - 1)],_u,true] Call SetNamespace;
 
-_n = _n + ["ATTeam"];
+_n set [count _n, "ATTeam"];
 _u		= ["Guerrila", "GUE", "Infantry", "GUE_InfTeam_AT"] Call GetGroupFromConfig;
 [Format["WFBE_RES%1UNITS",_n select (count _n - 1)],_u,true] Call SetNamespace;
 
-_n = _n + ["AATeam"];
+_n set [count _n, "AATeam"];
 _u		= ["Guerrila", "GUE", "Infantry", "GUE_GrpInf_TeamAA"] Call GetGroupFromConfig;
 [Format["WFBE_RES%1UNITS",_n select (count _n - 1)],_u,true] Call SetNamespace;
 
-_n = _n + ["SniperTeam"];
+_n set [count _n, "SniperTeam"];
 _u		= ["Guerrila", "GUE", "Infantry", "GUE_GrpInf_TeamSniper"] Call GetGroupFromConfig;
 [Format["WFBE_RES%1UNITS",_n select (count _n - 1)],_u,true] Call SetNamespace;
 
-_n = _n + ["Militia"];
+_n set [count _n, "Militia"];
 _u		= ["Guerrila", "GUE", "Infantry", "GUE_MilitiaSquad"] Call GetGroupFromConfig;
 [Format["WFBE_RES%1UNITS",_n select (count _n - 1)],_u,true] Call SetNamespace;
 
-_n = _n + ["Technical"];
+_n set [count _n, "Technical"];
 _u		= ["Guerrila", "GUE", "Motorized", "GUE_MotInfSection"] Call GetGroupFromConfig;
 [Format["WFBE_RES%1UNITS",_n select (count _n - 1)],_u,true] Call SetNamespace;
 
-_n = _n + ["MotorizedGroup"];
+_n set [count _n, "MotorizedGroup"];
 _u		= ["Guerrila", "GUE", "Motorized", "GUE_MotInfSquad"] Call GetGroupFromConfig;
 [Format["WFBE_RES%1UNITS",_n select (count _n - 1)],_u,true] Call SetNamespace;
 
-_n = _n + ["MotorizedAATeam"];
+_n set [count _n, "MotorizedAATeam"];
 _u		= ["Guerrila", "GUE", "Mechanized", "GUE_MechInfSection"] Call GetGroupFromConfig;
-_u = _u + ['Ural_ZU23_TK_GUE_EP1'];// Markus - Added Resistance ZSU.
-_u = _u + ['Ural_ZU23_TK_GUE_EP1'];// Markus - Added Resistance ZSU.
-_u = _u + ['Ural_ZU23_TK_GUE_EP1'];// Markus - Added Resistance ZSU.
-_u = _u + ['Ural_ZU23_TK_GUE_EP1'];// Markus - Added Resistance ZSU.
+_u set [count _u, 'Ural_ZU23_TK_GUE_EP1'];// Markus - Added Resistance ZSU.
+_u set [count _u, 'Ural_ZU23_TK_GUE_EP1'];// Markus - Added Resistance ZSU.
+_u set [count _u, 'Ural_ZU23_TK_GUE_EP1'];// Markus - Added Resistance ZSU.
+_u set [count _u, 'Ural_ZU23_TK_GUE_EP1'];// Markus - Added Resistance ZSU.
 [Format["WFBE_RES%1UNITS",_n select (count _n - 1)],_u,true] Call SetNamespace;
 
-_n = _n + ["MechanizedGroup"];
+_n set [count _n, "MechanizedGroup"];
 _u		= ["Guerrila", "GUE", "Mechanized", "GUE_MechInfSquad"] Call GetGroupFromConfig;
-_u = _u + ["GUE_Soldier_1"];
-_u = _u + ["GUE_Soldier_MG"];
-_u = _u + ["GUE_Soldier_MG"];
-_u = _u + ["GUE_Soldier_Medic"];
+_u set [count _u, "GUE_Soldier_1"];
+_u set [count _u, "GUE_Soldier_MG"];
+_u set [count _u, "GUE_Soldier_MG"];
+_u set [count _u, "GUE_Soldier_Medic"];
 [Format["WFBE_RES%1UNITS",_n select (count _n - 1)],_u,true] Call SetNamespace;
 
-_n = _n + ["MechanizedPatrol"];
+_n set [count _n, "MechanizedPatrol"];
 _u		= ["Guerrila", "GUE", "Mechanized", "GUE_MechInfSquad"] Call GetGroupFromConfig;
 [Format["WFBE_RES%1UNITS",_n select (count _n - 1)],_u,true] Call SetNamespace;
 
-_n = _n + ["LightArmor"];
+_n set [count _n, "LightArmor"];
 _u		= ["BMP2_GUE"];
-_u = _u + ["BMP2_GUE"];
-_u = _u + ['Ural_ZU23_TK_GUE_EP1']; // Markus - Added Resistance ZSU.
+_u set [count _u, "BMP2_GUE"];
+_u set [count _u, 'Ural_ZU23_TK_GUE_EP1']; // Markus - Added Resistance ZSU.
 [Format["WFBE_RES%1UNITS",_n select (count _n - 1)],_u,true] Call SetNamespace;
 
-_n = _n + ["HeavyArmor"];
+_n set [count _n, "HeavyArmor"];
 _u		= ["Guerrila", "GUE", "Armored", "GUE_TankSection"] Call GetGroupFromConfig;
 [Format["WFBE_RES%1UNITS",_n select (count _n - 1)],_u,true] Call SetNamespace;
 

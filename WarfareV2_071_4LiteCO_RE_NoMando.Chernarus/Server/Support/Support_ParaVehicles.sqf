@@ -82,7 +82,6 @@ while {true} do {
 	_vehicleCoord = [getPos _pilot select 0,getpos _pilot select 1];
 	_positionCoord = [(_ranPos select _ran) select 0,(_ranPos select _ran) select 1];
 	if (_vehicleCoord distance _positionCoord < 200) exitWith {};
-	waituntil {diag_frameno >= diag_frameno + 1}; // Markus - Ensures that loops only run once per tick.
 };
 
 deleteVehicle _pilot;

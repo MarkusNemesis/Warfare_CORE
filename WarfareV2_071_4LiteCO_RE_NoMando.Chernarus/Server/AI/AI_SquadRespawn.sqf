@@ -103,5 +103,7 @@ while {!gameOver} do {
 		if (_moveMode == "patrol") then {[_team,"resetPatrol"] Call SetTeamMoveMode};
 		if (_moveMode == "defense") then {[_team,"resetDefense"] Call SetTeamMoveMode};
 	};
-	waituntil {diag_frameno >= diag_frameno + 1}; // Markus - Ensures that loops only run once per tick.
+	Private ["_ftlimiter"]; // Markus - The frame time limiter.
+	_ftlimiter = diag_frameno + 1;
+	waituntil {_ftlimiter <= diag_frameno}; // Markus - Ensures that loops only run once per tick.
 };

@@ -29,7 +29,7 @@ for "_i" from 0 to ((count _cfgFaction) - 1) do {
 			if (isClass _classType && !(configName(_classType) in _blacklist)) then {
 				Private ["_factoryPool","_groupUnits","_levels","_nameGroup","_require"];
 				_nameGroup = getText (_classType >> "name");
-				_aiTeamTemplateName = _aiTeamTemplateName + [Format ["%1 - %2",_nameKind,_nameGroup]];
+				_aiTeamTemplateName set [count _aiTeamTemplateName, Format ["%1 - %2",_nameKind,_nameGroup]];
 				_groupUnits = [];
 				_require = [false, false, false, false];
 				_levels = [0,0,0,0];
@@ -65,10 +65,10 @@ for "_i" from 0 to ((count _cfgFaction) - 1) do {
 					case "Air": {3};
 					default {0};
 				};
-				_aiTeamTypes = _aiTeamTypes + [_factoryPool];
-				_aiTeamUpgrades = _aiTeamUpgrades + [_levels];
-				_aiTeamTemplateRequires = _aiTeamTemplateRequires + [_require];
-				_aiTeamTemplates = _aiTeamTemplates + [_groupUnits];
+				_aiTeamTypes set [count _aiTeamTypes, _factoryPool];
+				_aiTeamUpgrades set [count _aiTeamUpgrades,_levels];
+				_aiTeamTemplateRequires set [count _aiTeamTemplateRequires, _require];
+				_aiTeamTemplates set [count _aiTeamTemplates, _groupUnits];
 			};
 		};
 	};

@@ -52,7 +52,7 @@ if (isServer) then {
 	['WFBE_EASTPARAAMMO',['TKBasicAmmunitionBox_EP1','TKBasicWeapons_EP1','TKLaunchers_EP1'],true] Call SetNamespace;
 	
 	//--- Supply Paradropping, Dropped Vehicle.
-	['WFBE_EASTPARAVEHICARGO','UAZ_Unarmed_TK_EP1',true] Call SetNamespace;
+	['WFBE_EASTPARAVEHICARGO','UAZ_unarmed_TK_EP1',true] Call SetNamespace;
 	
 	//--- Supply Paradropping, Vehicle.
 	['WFBE_EASTPARAVEHI','Mi17_TK_EP1',true] Call SetNamespace;

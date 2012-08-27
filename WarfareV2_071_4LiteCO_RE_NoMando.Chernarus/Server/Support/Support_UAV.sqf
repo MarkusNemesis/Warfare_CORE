@@ -13,7 +13,6 @@ diag_log Format["[WFBE (INFORMATION)][frameno:%4 | ticktime:%5] Server_HandleSpe
 while {true} do {
 	sleep 5;
 	if (!(isPlayer (leader _playerTeam)) || !alive _uav) exitWith {};
-	waituntil {diag_frameno >= diag_frameno + 1}; // Markus - Ensures that loops only run once per tick.
 };
 
 if (!isNull _driver) then {if (alive _driver) then {_driver setDammage 1};if (!(_driver in trashQueu)) then {trashQueu = trashQueu + [_driver];_driver Spawn TrashObject}};

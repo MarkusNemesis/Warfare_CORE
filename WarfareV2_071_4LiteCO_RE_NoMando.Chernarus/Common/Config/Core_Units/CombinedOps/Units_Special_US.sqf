@@ -21,13 +21,13 @@ if (worldName in ('WFBE_WORLDWHITELISTVA' Call GetNamespace)) then {
 ['WFBE_WESTREPAIRTRUCKS',['MtvrRepair','MtvrRepair_DES_EP1'],true] Call SetNamespace;
 
 //--- Salvage Trucks.
-['WFBE_WESTSALVAGETRUCK',['WarfareSalvageTruck_USMC','MtvrSalvage_DES_EP1'],true] Call SetNamespace;
+['WFBE_WESTSALVAGETRUCK',['WarfareSalvageTruck_uSMC','MtvrSalvage_DES_EP1'],true] Call SetNamespace;
 
 //--- Supply Trucks.
-['WFBE_WESTSUPPLYTRUCKS',['WarfareSupplyTruck_USMC','MtvrSupply_DES_EP1'],true] Call SetNamespace;
+['WFBE_WESTSUPPLYTRUCKS',['WarfareSupplyTruck_uSMC','MtvrSupply_DES_EP1'],true] Call SetNamespace;
 
 //--- UAV.
-['WFBE_WESTUAV','MQ9PredatorB_US_EP1',true] Call SetNamespace;
+['WFBE_WESTUAV','MQ9PredatorB_uS_EP1',true] Call SetNamespace;
 
 if (isServer) then {
 	//--- Base Patrols.
@@ -44,7 +44,7 @@ if (isServer) then {
 	['WFBE_WESTPARACHUTELEVEL3',['US_Delta_Force_TL_EP1','US_Soldier_HAT_EP1','US_Soldier_HAT_EP1','US_Soldier_HAT_EP1','US_Soldier_HAT_EP1','US_Soldier_AA_EP1','US_Soldier_AA_EP1','US_Delta_Force_AR_EP1','US_Delta_Force_Assault_EP1','US_Soldier_Medic_EP1','US_Delta_Force_M14_EP1','US_Soldier_AT_EP1','US_Soldier_Marksman_EP1'],true] Call SetNamespace;
 
 	//--- Paratroopers, Vehicle.
-	['WFBE_WESTPARACARGO','C130J_US_EP1',true] Call SetNamespace;
+	['WFBE_WESTPARACARGO','C130J_uS_EP1',true] Call SetNamespace;
 		
 	//--- Repair Truck model.
 	['WFBE_WESTREPAIRTRUCK',if (WF_Camo) then {'MtvrRepair'} else {'MtvrRepair_DES_EP1'},false] Call SetNamespace;
@@ -65,7 +65,7 @@ if (isServer) then {
 	['WFBE_WESTPARACHUTE','ParachuteMediumWest_EP1',true] Call SetNamespace;
 	
 	//--- Supply Truck model.
-	['WFBE_WESTSUPPLYTRUCK',if (WF_Camo) then {'WarfareSupplyTruck_USMC'} else {'MtvrSupply_DES_EP1'},false] Call SetNamespace;
+	['WFBE_WESTSUPPLYTRUCK',if (WF_Camo) then {'WarfareSupplyTruck_uSMC'} else {'MtvrSupply_DES_EP1'},false] Call SetNamespace;
 };
 
 if (local player) then {

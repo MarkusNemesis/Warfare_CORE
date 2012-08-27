@@ -1,7 +1,7 @@
 //*****************************************************************************************
 //Description: Creates a small construction site.
 //*****************************************************************************************
-Private ["_construct","_constructed","_direction","_group","_index","_nearLogic","_objects","_position","_rlType","_side","_site","_siteName","_startTime","_structures","_structuresNames","_time","_timeNextUpdate","_type", "_tidimul"];
+Private ["_construct","_constructed","_direction","_group","_index","_nearLogic","_objects","_position","_rlType","_side","_site","_siteName","_startTime","_structures","_structuresNames","_time","_timeNextUpdate","_type", "_tidimul", "_ftlimiter"];
 _type = _this select 0;
 _side = _this select 1;
 _position = _this select 2;
@@ -68,7 +68,8 @@ if !(paramUseWorkers) then {
 	while {true} do {
 		sleep 1;
 		if ((_nearLogic getVariable "WFBE_B_Completion") >= 50) exitWith {};
-		waituntil {diag_frameno >= diag_frameno + 1}; // Markus - Ensures that loops only run once per tick.
+		_ftlimiter = diag_frameno + 1;
+		waituntil {_ftlimiter <= diag_frameno}; // Markus - Ensures that loops only run once per tick.
 	};
 };
 
@@ -89,7 +90,8 @@ if !(paramUseWorkers) then {
 	while {true} do {
 		sleep 1;
 		if ((_nearLogic getVariable "WFBE_B_Completion") >= 100) exitWith {};
-		waituntil {diag_frameno >= diag_frameno + 1}; // Markus - Ensures that loops only run once per tick.
+		_ftlimiter = diag_frameno + 1;
+		waituntil {_ftlimiter <= diag_frameno}; // Markus - Ensures that loops only run once per tick.
 	};
 	
 	//--- Remove the logic from the list since it's built. Add it back if destroyed.

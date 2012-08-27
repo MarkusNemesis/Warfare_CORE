@@ -6,96 +6,96 @@ _i = [];
 /* _i set [count _i, [label, picture, config, belong to type, cost, upgrade level, allowed in camps, belong to the handgun pool, magazines, magazine space, allow two weapons]]*/
 
 /* Magazines - West */
-_u = _u + ['5Rnd_127x99_AS50'];
+_u set [count _u, '5Rnd_127x99_AS50'];
 _i set [count _i, ['','','CfgMagazines','primary',14,0,true,false,0,0,true]];
 
-_u = _u + ['5Rnd_86x70_L115A1'];
+_u set [count _u, '5Rnd_86x70_L115A1'];
 _i set [count _i, ['','','CfgMagazines','primary',8,0,true,false,0,0,true]];	
 
-_u = _u + ['200Rnd_556x45_L110A1'];
+_u set [count _u, '200Rnd_556x45_L110A1'];
 _i set [count _i, ['','','CfgMagazines','primary',12,0,true,false,0,0,true]];
 
-_u = _u + ['NLAW'];
+_u set [count _u, 'NLAW'];
 _i set [count _i, ['','','CfgMagazines','secondary',550,0,false,false,0,0,true]];
 
 /* Primary Weapons - West */
-_u = _u + ['BAF_AS50_scoped'];
+_u set [count _u, 'BAF_AS50_scoped'];
 _i set [count _i, ['','','CfgWeapons','',380,2,true,false,0,0,false]];
 
-_u = _u + ['BAF_AS50_TWS'];
+_u set [count _u, 'BAF_AS50_TWS'];
 _i set [count _i, ['','','CfgWeapons','',460,3,false,false,0,0,false]];
 
-_u = _u + ['BAF_LRR_scoped'];
+_u set [count _u, 'BAF_LRR_scoped'];
 _i set [count _i, ['','','CfgWeapons','',350,2,true,false,0,0,true]];
 
-_u = _u + ['BAF_LRR_scoped_W'];
+_u set [count _u, 'BAF_LRR_scoped_W'];
 _i set [count _i, ['','','CfgWeapons','',330,2,true,false,0,0,true]];
 
-_u = _u + ['BAF_L85A2_RIS_Holo'];
+_u set [count _u, 'BAF_L85A2_RIS_Holo'];
 _i set [count _i, ['','','CfgWeapons','',250,0,true,false,0,0,true]]; // Markus moved to gear 0.
 
-_u = _u + ['BAF_L85A2_UGL_Holo'];
+_u set [count _u, 'BAF_L85A2_uGL_Holo'];
 _i set [count _i, ['','','CfgWeapons','',265,2,true,false,0,0,true]];
 
-_u = _u + ['BAF_L85A2_RIS_SUSAT'];
+_u set [count _u, 'BAF_L85A2_RIS_SUSAT'];
 _i set [count _i, ['','','CfgWeapons','',280,1,true,false,0,0,true]];
 
-_u = _u + ['BAF_L85A2_UGL_SUSAT'];
+_u set [count _u, 'BAF_L85A2_uGL_SUSAT'];
 _i set [count _i, ['','','CfgWeapons','',290,2,true,false,0,0,true]];
 
-_u = _u + ['BAF_L85A2_RIS_ACOG'];
+_u set [count _u, 'BAF_L85A2_RIS_ACOG'];
 _i set [count _i, ['','','CfgWeapons','',300,1,true,false,0,0,true]];
 
-_u = _u + ['BAF_L85A2_UGL_ACOG'];
+_u set [count _u, 'BAF_L85A2_uGL_ACOG'];
 _i set [count _i, ['','','CfgWeapons','',320,2,true,false,0,0,true]];
 
-_u = _u + ['BAF_L85A2_RIS_CWS'];
+_u set [count _u, 'BAF_L85A2_RIS_CWS'];
 _i set [count _i, ['','','CfgWeapons','',400,3,false,false,0,0,true]];
 
-_u = _u + ['BAF_L86A2_ACOG'];
+_u set [count _u, 'BAF_L86A2_ACOG'];
 _i set [count _i, ['','','CfgWeapons','',330,2,true,false,0,0,true]];
 
-_u = _u + ['BAF_L110A1_Aim'];
+_u set [count _u, 'BAF_L110A1_Aim'];
 _i set [count _i, ['','','CfgWeapons','',350,2,false,false,0,0,false]];
 
-_u = _u + ['BAF_L7A2_GPMG'];
+_u set [count _u, 'BAF_L7A2_GPMG'];
 _i set [count _i, ['','','CfgWeapons','',210,0,false,false,0,0,false]];
 
 /* Secondary weapons - West */
 // Markus - NLAW gear 3
-_u = _u + ['BAF_NLAW_Launcher'];
+_u set [count _u, 'BAF_NLAW_Launcher'];
 _i set [count _i, ['','','CfgWeapons','',250,3,false,false,0,0,false]];
 /// Markus
-_u = _u + ['BAF_AssaultPack_RifleAmmo'];
+_u set [count _u, 'BAF_AssaultPack_RifleAmmo'];
 _i set [count _i, ['','','CfgVehicles','',95,2,true,false,0,0,false]];
 
-_u = _u + ['BAF_L2A1_ACOG_minitripod_bag'];
+_u set [count _u, 'BAF_L2A1_ACOG_minitripod_bag'];
 _i set [count _i, ['','','CfgVehicles','',165,1,false,false,0,0,false]];
 
-_u = _u + ['BAF_L2A1_ACOG_tripod_bag'];
+_u set [count _u, 'BAF_L2A1_ACOG_tripod_bag'];
 _i set [count _i, ['','','CfgVehicles','',175,1,false,false,0,0,false]];
 
-_u = _u + ['BAF_GPMG_Minitripod_D_bag'];
+_u set [count _u, 'BAF_GPMG_Minitripod_D_bag'];
 _i set [count _i, ['','','CfgVehicles','',175,0,false,false,0,0,false]];
 
-_u = _u + ['BAF_GMG_ACOG_minitripod_bag'];
+_u set [count _u, 'BAF_GMG_ACOG_minitripod_bag'];
 _i set [count _i, ['','','CfgVehicles','',175,1,false,false,0,0,false]];
 
 /* Misc - West */
-_u = _u + ['BAF_L109A1_HE'];
+_u set [count _u, 'BAF_L109A1_HE'];
 _i set [count _i, ['','','CfgMagazines','CfgMagazines',12,0,true,false,0,0,true]];
 
 /* Misc - East */
-_u = _u + ['BAF_ied_v1'];
+_u set [count _u, 'BAF_ied_v1'];
 _i set [count _i, ['','','CfgMagazines','CfgMagazines',25,0,true,false,0,0,true]];
 
-_u = _u + ['BAF_ied_v2'];
+_u set [count _u, 'BAF_ied_v2'];
 _i set [count _i, ['','','CfgMagazines','CfgMagazines',35,1,true,false,0,0,true]];
 
-_u = _u + ['BAF_ied_v3'];
+_u set [count _u, 'BAF_ied_v3'];
 _i set [count _i, ['','','CfgMagazines','CfgMagazines',45,2,true,false,0,0,true]];
 
-_u = _u + ['BAF_ied_v4'];
+_u set [count _u, 'BAF_ied_v4'];
 _i set [count _i, ['','','CfgMagazines','CfgMagazines',55,2,true,false,0,0,true]];
 
 for '_z' from 0 to (count _u)-1 do {

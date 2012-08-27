@@ -6,487 +6,487 @@ _i = [];
 /* _i set [count _i, [label, picture, config, belong to type, cost, upgrade level, allowed in camps, belong to the handgun pool, magazines, magazine space, allow two weapons]]*/
 
 /* Magazines - West */
-_u = _u + ['5Rnd_762x51_M24'];
+_u set [count _u, '5Rnd_762x51_M24'];
 _i set [count _i, ['','','CfgMagazines','primary',7,0,true,false,0,0,true]];
 
-_u = _u + ['8Rnd_B_Beneli_74Slug'];
+_u set [count _u, '8Rnd_B_Beneli_74Slug'];
 _i set [count _i, ['','','CfgMagazines','primary',4,0,true,false,0,0,true]];
 
-_u = _u + ['10Rnd_127x99_m107'];
+_u set [count _u, '10Rnd_127x99_m107'];
 _i set [count _i, ['','','CfgMagazines','primary',18,0,true,false,0,0,true]];
 
-_u = _u + ['20Rnd_762x51_DMR'];
+_u set [count _u, '20Rnd_762x51_DMR'];
 _i set [count _i, ['','','CfgMagazines','primary',9,0,true,false,0,0,true]];
 
-_u = _u + ['20Rnd_556x45_Stanag'];
+_u set [count _u, '20Rnd_556x45_Stanag'];
 _i set [count _i, ['','','CfgMagazines','primary',4,0,true,false,0,0,true]];
 
-_u = _u + ['30Rnd_9x19_MP5'];
+_u set [count _u, '30Rnd_9x19_MP5'];
 _i set [count _i, ['','','CfgMagazines','primary',3,0,true,false,0,0,true]];
 
-_u = _u + ['30Rnd_9x19_MP5SD'];
+_u set [count _u, '30Rnd_9x19_MP5SD'];
 _i set [count _i, ['','','CfgMagazines','primary',4,0,true,false,0,0,true]];
 
-//_u = _u + ['30Rnd_556x45_G36'];
+//_u set [count _u, '30Rnd_556x45_G36'];
 //_i set [count _i, ['','','CfgMagazines','primary',7,0,true,false,0,0,true]];
 
-//_u = _u + ['30Rnd_556x45_G36SD'];
+//_u set [count _u, '30Rnd_556x45_G36SD'];
 //_i set [count _i, ['','','CfgMagazines','primary',9,0,true,false,0,0,true]];
 
-_u = _u + ['30Rnd_556x45_Stanag'];
+_u set [count _u, '30Rnd_556x45_Stanag'];
 _i set [count _i, ['','','CfgMagazines','primary',5,0,true,false,0,0,true]];
 
-_u = _u + ['30Rnd_556x45_StanagSD'];
+_u set [count _u, '30Rnd_556x45_StanagSD'];
 _i set [count _i, ['','','CfgMagazines','primary',7,0,true,false,0,0,true]];
 /* // Markus - Remove BetaC Magazines
-_u = _u + ['100Rnd_556x45_BetaCMag'];
+_u set [count _u, '100Rnd_556x45_BetaCMag'];
 _i set [count _i, ['','','CfgMagazines','primary',16,0,true,false,0,0,true]];
 */
-_u = _u + ['100Rnd_762x51_M240'];
+_u set [count _u, '100Rnd_762x51_M240'];
 _i set [count _i, ['','','CfgMagazines','primary',14,0,true,false,0,0,true]];
 
-_u = _u + ['200Rnd_556x45_M249'];
+_u set [count _u, '200Rnd_556x45_M249'];
 _i set [count _i, ['','','CfgMagazines','primary',24,0,true,false,0,0,true]];
 
-_u = _u + ['Laserbatteries'];
+_u set [count _u, 'Laserbatteries'];
 _i set [count _i, ['','','CfgMagazines','secondary',20,3,true,false,0,0,true]];
 
-_u = _u + ['Javelin'];
+_u set [count _u, 'Javelin'];
 _i set [count _i, ['','','CfgMagazines','secondary',670,3,false,false,0,0,true]];
 
-_u = _u + ['M136'];
+_u set [count _u, 'M136'];
 _i set [count _i, ['','','CfgMagazines','secondary',335,0,true,false,0,0,true]];
 // Markus - Removing the HEAA rounds from the SMAW
-//_u = _u + ['SMAW_HEAA'];
+//_u set [count _u, 'SMAW_HEAA'];
 //_i set [count _i, ['','','CfgMagazines','secondary',225,2,false,false,0,0,true]];
 /// Markus
-_u = _u + ['SMAW_HEDP'];
+_u set [count _u, 'SMAW_HEDP'];
 _i set [count _i, ['','','CfgMagazines','secondary',190,1,false,false,0,0,true]]; // Markus - Making HEDP rounds available at gear 1
 
-_u = _u + ['Stinger'];
+_u set [count _u, 'Stinger'];
 _i set [count _i, ['','','CfgMagazines','secondary',100,2,false,false,0,0,true]];
 
-_u = _u + ['7Rnd_45ACP_1911'];
+_u set [count _u, '7Rnd_45ACP_1911'];
 _i set [count _i, ['','','CfgMagazines','sidearm',2,0,true,true,0,0,true]];
 
-_u = _u + ['15Rnd_9x19_M9'];
+_u set [count _u, '15Rnd_9x19_M9'];
 _i set [count _i, ['','','CfgMagazines','sidearm',2,0,true,true,0,0,true]];
 
-_u = _u + ['15Rnd_9x19_M9SD'];
+_u set [count _u, '15Rnd_9x19_M9SD'];
 _i set [count _i, ['','','CfgMagazines','sidearm',3,0,true,true,0,0,true]];
 
 /* Magazines - East */
-_u = _u + ['5x_22_LR_17_HMR'];
+_u set [count _u, '5x_22_LR_17_HMR'];
 _i set [count _i, ['','','CfgMagazines','primary',3,0,true,false,0,0,true]];
 
-_u = _u + ['5Rnd_127x108_KSVK'];
+_u set [count _u, '5Rnd_127x108_KSVK'];
 _i set [count _i, ['','','CfgMagazines','primary',11,0,true,false,0,0,true]];
 
-_u = _u + ['8Rnd_B_Saiga12_74Slug'];
+_u set [count _u, '8Rnd_B_Saiga12_74Slug'];
 _i set [count _i, ['','','CfgMagazines','primary',5,0,true,false,0,0,true]];
 
-_u = _u + ['10Rnd_9x39_SP5_VSS'];
+_u set [count _u, '10Rnd_9x39_SP5_VSS'];
 _i set [count _i, ['','','CfgMagazines','primary',5,0,true,false,0,0,true]];
 
-_u = _u + ['10Rnd_762x54_SVD'];
+_u set [count _u, '10Rnd_762x54_SVD'];
 _i set [count _i, ['','','CfgMagazines','primary',6,0,true,false,0,0,true]];
 
-_u = _u + ['20Rnd_9x39_SP5_VSS'];
+_u set [count _u, '20Rnd_9x39_SP5_VSS'];
 _i set [count _i, ['','','CfgMagazines','primary',9,0,true,false,0,0,true]];
 
-_u = _u + ['30Rnd_545x39_AK'];
+_u set [count _u, '30Rnd_545x39_AK'];
 _i set [count _i, ['','','CfgMagazines','primary',4,0,true,false,0,0,true]];
 
-_u = _u + ['30Rnd_545x39_AKSD'];
+_u set [count _u, '30Rnd_545x39_AKSD'];
 _i set [count _i, ['','','CfgMagazines','primary',6,0,true,false,0,0,true]];
 
-_u = _u + ['30Rnd_762x39_AK47'];
+_u set [count _u, '30Rnd_762x39_AK47'];
 _i set [count _i, ['','','CfgMagazines','primary',3,0,true,false,0,0,true]];
 
-_u = _u + ['64Rnd_9x19_Bizon'];
+_u set [count _u, '64Rnd_9x19_Bizon'];
 _i set [count _i, ['','','CfgMagazines','primary',6,0,true,false,0,0,true]];
 
-_u = _u + ['64Rnd_9x19_SD_Bizon'];
+_u set [count _u, '64Rnd_9x19_SD_Bizon'];
 _i set [count _i, ['','','CfgMagazines','primary',8,0,true,false,0,0,true]];
 
-_u = _u + ['75Rnd_545x39_RPK'];
+_u set [count _u, '75Rnd_545x39_RPK'];
 _i set [count _i, ['','','CfgMagazines','primary',9,0,true,false,0,0,true]];
 
-_u = _u + ['100Rnd_762x54_PK'];
+_u set [count _u, '100Rnd_762x54_PK'];
 _i set [count _i, ['','','CfgMagazines','primary',12,0,true,false,0,0,true]];
 
-_u = _u + ['AT13'];
+_u set [count _u, 'AT13'];
 _i set [count _i, ['','','CfgMagazines','secondary',800,3,false,false,0,0,true]];
 
-_u = _u + ['Igla'];
+_u set [count _u, 'Igla'];
 _i set [count _i, ['','','CfgMagazines','secondary',110,2,false,false,0,0,true]];
 
-_u = _u + ['OG7'];
+_u set [count _u, 'OG7'];
 _i set [count _i, ['','','CfgMagazines','secondary',95,2,false,false,0,0,true]];
 
-_u = _u + ['PG7V'];
+_u set [count _u, 'PG7V'];
 _i set [count _i, ['','','CfgMagazines','secondary',208,0,true,false,0,0,true]];
 
-_u = _u + ['PG7VR'];
+_u set [count _u, 'PG7VR'];
 _i set [count _i, ['','','CfgMagazines','secondary',510,2,false,false,0,0,true]];
 
-_u = _u + ['PG7VL'];
+_u set [count _u, 'PG7VL'];
 _i set [count _i, ['','','CfgMagazines','secondary',320,2,true,false,0,0,true]];
 
-_u = _u + ['RPG18'];
+_u set [count _u, 'RPG18'];
 _i set [count _i, ['','','CfgMagazines','secondary',300,0,true,false,0,0,true]];
 
-_u = _u + ['Strela'];
+_u set [count _u, 'Strela'];
 _i set [count _i, ['','','CfgMagazines','secondary',100,0,false,false,0,0,true]];
 
-_u = _u + ['8Rnd_9x18_Makarov'];
+_u set [count _u, '8Rnd_9x18_Makarov'];
 _i set [count _i, ['','','CfgMagazines','sidearm',2,0,true,true,0,0,true]];
 
-_u = _u + ['8Rnd_9x18_MakarovSD'];
+_u set [count _u, '8Rnd_9x18_MakarovSD'];
 _i set [count _i, ['','','CfgMagazines','sidearm',3,0,true,true,0,0,true]];
 
 /* Primary weapons - West */
-_u = _u + ['DMR'];
+_u set [count _u, 'DMR'];
 _i set [count _i, ['','','CfgWeapons','',270,2,false,false,0,0,true]];
 
-_u = _u + ['G36a'];
+_u set [count _u, 'G36a'];
 _i set [count _i, ['','','CfgWeapons','',225,1,false,false,0,0,true]];
 
-_u = _u + ['G36C'];
+_u set [count _u, 'G36C'];
 _i set [count _i, ['','','CfgWeapons','',195,0,true,false,0,0,true]];
 
-_u = _u + ['G36_C_SD_eotech'];
+_u set [count _u, 'G36_C_SD_eotech'];
 _i set [count _i, ['','','CfgWeapons','',210,2,false,false,0,0,true]];
 
-_u = _u + ['G36K'];
+_u set [count _u, 'G36K'];
 _i set [count _i, ['','','CfgWeapons','',205,1,false,false,0,0,true]];
 
-_u = _u + ['M16A2'];
+_u set [count _u, 'M16A2'];
 _i set [count _i, ['','','CfgWeapons','',60,0,true,false,0,0,true]];
 
-_u = _u + ['M16A2GL'];
+_u set [count _u, 'M16A2GL'];
 _i set [count _i, ['','','CfgWeapons','',70,0,true,false,0,0,true]];
 
-_u = _u + ['m16a4'];
+_u set [count _u, 'm16a4'];
 _i set [count _i, ['','','CfgWeapons','',75,0,true,false,0,0,true]];
 
-_u = _u + ['m16a4_acg'];
+_u set [count _u, 'm16a4_acg'];
 _i set [count _i, ['','','CfgWeapons','',85,1,true,false,0,0,true]];
 
-_u = _u + ['M16A4_ACG_GL'];
+_u set [count _u, 'M16A4_ACG_GL'];
 _i set [count _i, ['','','CfgWeapons','',95,1,true,false,0,0,true]];
 
-_u = _u + ['M16A4_GL'];
+_u set [count _u, 'M16A4_GL'];
 _i set [count _i, ['','','CfgWeapons','',90,0,true,false,0,0,true]];
 
-_u = _u + ['M24'];
+_u set [count _u, 'M24'];
 _i set [count _i, ['','','CfgWeapons','',140,0,true,false,0,0,true]];
 
-_u = _u + ['M40A3'];
+_u set [count _u, 'M40A3'];
 _i set [count _i, ['','','CfgWeapons','',155,2,false,false,0,0,true]];
 
-_u = _u + ['M240'];
+_u set [count _u, 'M240'];
 _i set [count _i, ['','','CfgWeapons','',150,0,true,false,0,0,false]];
 
-_u = _u + ['M249'];
+_u set [count _u, 'M249'];
 _i set [count _i, ['','','CfgWeapons','',185,2,true,false,0,0,false]];
 
-_u = _u + ['M4A1'];
+_u set [count _u, 'M4A1'];
 _i set [count _i, ['','','CfgWeapons','',95,0,true,false,0,0,true]];
 
-_u = _u + ['M4A1_Aim'];
+_u set [count _u, 'M4A1_Aim'];
 _i set [count _i, ['','','CfgWeapons','',105,0,true,false,0,0,true]];
 
-_u = _u + ['M4A1_Aim_camo'];
+_u set [count _u, 'M4A1_Aim_camo'];
 _i set [count _i, ['','','CfgWeapons','',150,1,true,false,0,0,true]];
 
-_u = _u + ['M4SPR'];
+_u set [count _u, 'M4SPR'];
 _i set [count _i, ['','','CfgWeapons','',160,1,true,false,0,0,true]];
 
-_u = _u + ['M4A1_RCO_GL'];
+_u set [count _u, 'M4A1_RCO_GL'];
 _i set [count _i, ['','','CfgWeapons','',115,2,true,false,0,0,true]];
 
-_u = _u + ['M4A1_AIM_SD_camo'];
+_u set [count _u, 'M4A1_AIM_SD_camo'];
 _i set [count _i, ['','','CfgWeapons','',165,3,false,false,0,0,true]];
 
-_u = _u + ['M4A1_HWS_GL_SD_Camo'];
+_u set [count _u, 'M4A1_HWS_GL_SD_Camo'];
 _i set [count _i, ['','','CfgWeapons','',200,3,false,false,0,0,true]];
 
-_u = _u + ['M4A1_HWS_GL'];
+_u set [count _u, 'M4A1_HWS_GL'];
 _i set [count _i, ['','','CfgWeapons','',180,3,false,false,0,0,true]];
 
-_u = _u + ['M4A1_HWS_GL_camo'];
+_u set [count _u, 'M4A1_HWS_GL_camo'];
 _i set [count _i, ['','','CfgWeapons','',195,3,false,false,0,0,true]];
 
-_u = _u + ['m8_carbine'];
+_u set [count _u, 'm8_carbine'];
 _i set [count _i, ['','','CfgWeapons','',280,2,true,false,0,0,true]];
 
-_u = _u + ['m8_carbineGL'];
+_u set [count _u, 'm8_carbineGL'];
 _i set [count _i, ['','','CfgWeapons','',290,3,true,false,0,0,true]];
 
-_u = _u + ['m8_compact'];
+_u set [count _u, 'm8_compact'];
 _i set [count _i, ['','','CfgWeapons','',285,2,false,false,0,0,true]];
 
-_u = _u + ['m8_SAW'];
+_u set [count _u, 'm8_SAW'];
 _i set [count _i, ['','','CfgWeapons','',310,3,false,false,0,0,false]];
 
-_u = _u + ['m8_sharpshooter'];
+_u set [count _u, 'm8_sharpshooter'];
 _i set [count _i, ['','','CfgWeapons','',295,3,false,false,0,0,true]];
 
-_u = _u + ['m107'];
+_u set [count _u, 'm107'];
 _i set [count _i, ['','','CfgWeapons','',310,3,false,false,0,0,false]];
 
-_u = _u + ['M1014'];
+_u set [count _u, 'M1014'];
 _i set [count _i, ['','','CfgWeapons','',60,0,true,false,0,0,true]];
 
-_u = _u + ['Mk_48'];
+_u set [count _u, 'Mk_48'];
 _i set [count _i, ['','','CfgWeapons','',220,3,false,false,0,0,false]];
 
-//_u = _u + ['MP5A5'];
+//_u set [count _u, 'MP5A5'];
 //_i set [count _i, ['','','CfgWeapons','',70,0,true,false,["30Rnd_9x19_MP5","30Rnd_9x19_MP5SD"],0,true]];
 
-//_u = _u + ['MP5SD'];
+//_u set [count _u, 'MP5SD'];
 //_i set [count _i, ['','','CfgWeapons','',90,1,true,false,["30Rnd_9x19_MP5SD"],0,true]];
 
-_u = _u + ['MG36'];
+_u set [count _u, 'MG36'];
 _i set [count _i, ['','','CfgWeapons','',240,2,false,false,0,0,true]];
 
 /* Primary weapons - East */
-_u = _u + ['AK_47_M'];
+_u set [count _u, 'AK_47_M'];
 _i set [count _i, ['','','CfgWeapons','',40,0,true,false,0,0,true]];
 
-_u = _u + ['AK_47_S'];
+_u set [count _u, 'AK_47_S'];
 _i set [count _i, ['','','CfgWeapons','',50,0,true,false,0,0,true]];
 
-_u = _u + ['AK_74'];
+_u set [count _u, 'AK_74'];
 _i set [count _i, ['','','CfgWeapons','',60,0,true,false,0,0,true]];
 
-_u = _u + ['AK_74_GL'];
+_u set [count _u, 'AK_74_GL'];
 _i set [count _i, ['','','CfgWeapons','',70,0,true,false,0,0,true]];
 
-_u = _u + ['AK_107_kobra'];
+_u set [count _u, 'AK_107_kobra'];
 _i set [count _i, ['','','CfgWeapons','',110,0,true,false,0,0,true]];
 
-_u = _u + ['AK_107_GL_kobra'];
+_u set [count _u, 'AK_107_GL_kobra'];
 _i set [count _i, ['','','CfgWeapons','',120,0,true,false,0,0,true]];
 
-_u = _u + ['AK_107_pso'];
+_u set [count _u, 'AK_107_pso'];
 _i set [count _i, ['','','CfgWeapons','',125,1,false,false,0,0,true]];
 
-_u = _u + ['AK_107_GL_pso'];
+_u set [count _u, 'AK_107_GL_pso'];
 _i set [count _i, ['','','CfgWeapons','',135,1,false,false,0,0,true]];
 
-_u = _u + ['AKS_74_kobra'];
+_u set [count _u, 'AKS_74_kobra'];
 _i set [count _i, ['','','CfgWeapons','',90,0,true,false,0,0,true]];
 
-_u = _u + ['AKS_74_pso'];
+_u set [count _u, 'AKS_74_pso'];
 _i set [count _i, ['','','CfgWeapons','',105,1,true,false,0,0,true]];
 
-_u = _u + ['AKS_74_U'];
+_u set [count _u, 'AKS_74_u'];
 _i set [count _i, ['','','CfgWeapons','',115,0,true,false,0,0,true]];
 
-_u = _u + ['AKS_74_UN_kobra'];
+_u set [count _u, 'AKS_74_uN_kobra'];
 _i set [count _i, ['','','CfgWeapons','',155,2,true,false,0,0,true]];
 
-_u = _u + ['AKS_GOLD'];
+_u set [count _u, 'AKS_GOLD'];
 _i set [count _i, ['','','CfgWeapons','',350,2,true,false,0,0,true]];
 
-_u = _u + ['bizon'];
+_u set [count _u, 'bizon'];
 _i set [count _i, ['','','CfgWeapons','',155,1,true,false,0,0,true]];
 
-_u = _u + ['bizon_silenced'];
+_u set [count _u, 'bizon_silenced'];
 _i set [count _i, ['','','CfgWeapons','',175,2,false,false,0,0,true]];
 
-_u = _u + ['PK'];
+_u set [count _u, 'PK'];
 _i set [count _i, ['','','CfgWeapons','',190,0,true,false,0,0,false]];
 
-_u = _u + ['Pecheneg'];
+_u set [count _u, 'Pecheneg'];
 _i set [count _i, ['','','CfgWeapons','',225,2,false,false,0,0,false]];
 
-_u = _u + ['RPK_74'];
+_u set [count _u, 'RPK_74'];
 _i set [count _i, ['','','CfgWeapons','',185,0,true,false,0,0,true]]; // Markus - RPK now gear 0.
 
-_u = _u + ['huntingrifle'];
+_u set [count _u, 'huntingrifle'];
 _i set [count _i, ['','','CfgWeapons','',120,0,true,false,0,0,true]];
 
-_u = _u + ['SVD'];
+_u set [count _u, 'SVD'];
 _i set [count _i, ['','','CfgWeapons','',160,2,true,false,0,0,true]]; // Markus - SVD gear 2
 
-_u = _u + ['SVD_CAMO'];
+_u set [count _u, 'SVD_CAMO'];
 _i set [count _i, ['','','CfgWeapons','',180,2,false,false,0,0,true]];
 
-_u = _u + ['Saiga12K'];
+_u set [count _u, 'Saiga12K'];
 _i set [count _i, ['','','CfgWeapons','',85,0,true,false,0,0,true]];
 
-_u = _u + ['ksvk'];
+_u set [count _u, 'ksvk'];
 _i set [count _i, ['','','CfgWeapons','',255,3,false,false,0,0,false]];
 
-_u = _u + ['VSS_vintorez'];
+_u set [count _u, 'VSS_vintorez'];
 _i set [count _i, ['','','CfgWeapons','',220,2,false,false,0,0,true]];
 
 /* Secondary weapons - West */
-_u = _u + ['Javelin'];
+_u set [count _u, 'Javelin'];
 _i set [count _i, ['','','CfgWeapons','',350,3,false,false,0,0,false]];
 
-_u = _u + ['Laserdesignator'];
+_u set [count _u, 'Laserdesignator'];
 _i set [count _i, ['','','CfgWeapons','Special',275,3,true,false,0,0,true]]; // Markus - Laser designator now binocular
 
-_u = _u + ['M136'];
+_u set [count _u, 'M136'];
 _i set [count _i, ['','','CfgWeapons','',55,0,true,false,0,0,false]];
 
-_u = _u + ['SMAW'];
+_u set [count _u, 'SMAW'];
 _i set [count _i, ['','','CfgWeapons','',150,1,false,false,0,0,false]]; // Markus - Making SMAW Gear 1
 
-_u = _u + ['Stinger'];
+_u set [count _u, 'Stinger'];
 _i set [count _i, ['','','CfgWeapons','',250,2,false,false,0,0,false]];
 
 /* Secondary weapons - East */
-_u = _u + ['Igla'];
+_u set [count _u, 'Igla'];
 _i set [count _i, ['','','CfgWeapons','',250,2,false,false,0,0,false]];
 
-_u = _u + ['MetisLauncher'];
+_u set [count _u, 'MetisLauncher'];
 _i set [count _i, ['','','CfgWeapons','',350,3,false,false,0,0,false]];
 
-_u = _u + ['RPG7V'];
+_u set [count _u, 'RPG7V'];
 _i set [count _i, ['','','CfgWeapons','',90,1,true,false,0,0,false]];
 
-_u = _u + ['RPG18'];
+_u set [count _u, 'RPG18'];
 _i set [count _i, ['','','CfgWeapons','',50,0,true,false,0,0,false]];
 
-_u = _u + ['Strela'];
+_u set [count _u, 'Strela'];
 _i set [count _i, ['','','CfgWeapons','',230,2,false,false,0,0,false]];
 
 /* Pistols - West */
-_u = _u + ['Colt1911'];
+_u set [count _u, 'Colt1911'];
 _i set [count _i, ['','','CfgWeapons','',15,0,true,false,0,0,true]];
 
-_u = _u + ['M9'];
+_u set [count _u, 'M9'];
 _i set [count _i, ['','','CfgWeapons','',20,0,true,false,0,0,true]];
 
-_u = _u + ['M9SD'];
+_u set [count _u, 'M9SD'];
 _i set [count _i, ['','','CfgWeapons','',25,0,true,false,0,0,true]];
 
 /* Pistols - East */
-_u = _u + ['Makarov'];
+_u set [count _u, 'Makarov'];
 _i set [count _i, ['','','CfgWeapons','',8,0,true,false,0,0,true]];
 
-_u = _u + ['MakarovSD'];
+_u set [count _u, 'MakarovSD'];
 _i set [count _i, ['','','CfgWeapons','',15,0,true,false,0,0,true]];
 
 /* Misc - West */
-_u = _u + ['HandGrenade_West'];
+_u set [count _u, 'HandGrenade_West'];
 _i set [count _i, ['','','CfgMagazines','CfgMagazines',10,0,true,false,0,0,true]];
 
-_u = _u + ['HandGrenade_Stone'];
+_u set [count _u, 'HandGrenade_Stone'];
 _i set [count _i, ['','','CfgMagazines','CfgMagazines',1,0,true,false,0,0,true]];
 
-_u = _u + ['SmokeShell'];
+_u set [count _u, 'SmokeShell'];
 _i set [count _i, ['','','CfgMagazines','CfgMagazines',8,0,true,false,0,0,true]];
 
-_u = _u + ['SmokeShellRed'];
+_u set [count _u, 'SmokeShellRed'];
 _i set [count _i, ['','','CfgMagazines','CfgMagazines',8,0,true,false,0,0,true]];
 
-_u = _u + ['SmokeShellGreen'];
+_u set [count _u, 'SmokeShellGreen'];
 _i set [count _i, ['','','CfgMagazines','CfgMagazines',8,0,true,false,0,0,true]];
 
-_u = _u + ['SmokeShellBlue'];
+_u set [count _u, 'SmokeShellBlue'];
 _i set [count _i, ['','','CfgMagazines','CfgMagazines',8,0,true,false,0,0,true]];
 
-_u = _u + ['SmokeShellYellow'];
+_u set [count _u, 'SmokeShellYellow'];
 _i set [count _i, ['','','CfgMagazines','CfgMagazines',8,0,true,false,0,0,true]];
 
-_u = _u + ['SmokeShellOrange'];
+_u set [count _u, 'SmokeShellOrange'];
 _i set [count _i, ['','','CfgMagazines','CfgMagazines',8,0,true,false,0,0,true]];
 
-_u = _u + ['SmokeShellPurple'];
+_u set [count _u, 'SmokeShellPurple'];
 _i set [count _i, ['','','CfgMagazines','CfgMagazines',8,0,true,false,0,0,true]];
 
-_u = _u + ['FlareWhite_M203'];
+_u set [count _u, 'FlareWhite_M203'];
 _i set [count _i, ['','','CfgMagazines','CfgMagazines',9,0,true,true,0,0,true]];
 
-_u = _u + ['FlareYellow_M203'];
+_u set [count _u, 'FlareYellow_M203'];
 _i set [count _i, ['','','CfgMagazines','CfgMagazines',9,0,true,true,0,0,true]];
 
-_u = _u + ['FlareGreen_M203'];
+_u set [count _u, 'FlareGreen_M203'];
 _i set [count _i, ['','','CfgMagazines','CfgMagazines',9,0,true,true,0,0,true]];
 
-_u = _u + ['FlareRed_M203'];
+_u set [count _u, 'FlareRed_M203'];
 _i set [count _i, ['','','CfgMagazines','CfgMagazines',9,0,true,true,0,0,true]];
 
-_u = _u + ['1Rnd_HE_M203'];
+_u set [count _u, '1Rnd_HE_M203'];
 _i set [count _i, ['','','CfgMagazines','CfgMagazines',15,0,true,true,0,0,true]];
 
-_u = _u + ['1Rnd_Smoke_M203'];
+_u set [count _u, '1Rnd_Smoke_M203'];
 _i set [count _i, ['','','CfgMagazines','CfgMagazines',12,0,true,true,0,0,true]];
 
-_u = _u + ['1Rnd_SmokeRed_M203'];
+_u set [count _u, '1Rnd_SmokeRed_M203'];
 _i set [count _i, ['','','CfgMagazines','CfgMagazines',12,0,true,true,0,0,true]];
 
-_u = _u + ['1Rnd_SmokeGreen_M203'];
+_u set [count _u, '1Rnd_SmokeGreen_M203'];
 _i set [count _i, ['','','CfgMagazines','CfgMagazines',12,0,true,true,0,0,true]];
 
-_u = _u + ['1Rnd_SmokeYellow_M203'];
+_u set [count _u, '1Rnd_SmokeYellow_M203'];
 _i set [count _i, ['','','CfgMagazines','CfgMagazines',12,0,true,true,0,0,true]];
 
-_u = _u + ['Mine'];
+_u set [count _u, 'Mine'];
 _i set [count _i, ['','','CfgMagazines','CfgMagazines',35,0,true,false,0,0,true]];
 
-_u = _u + ['PipeBomb'];
+_u set [count _u, 'PipeBomb'];
 _i set [count _i, ['','','CfgMagazines','CfgMagazines',250,2,true,false,0,0,true]];// Markus - Satchels G2, price tweak
 
-_u = _u + ['Binocular'];
+_u set [count _u, 'Binocular'];
 _i set [count _i, ['','','CfgWeapons','Special',10,0,true,false,0,0,true]];
 
-_u = _u + ['NVGoggles'];
+_u set [count _u, 'NVGoggles'];
 _i set [count _i, ['','','CfgWeapons','Special',20,0,true,false,0,0,true]];
 
-_u = _u + ['ItemCompass'];
+_u set [count _u, 'ItemCompass'];
 _i set [count _i, ['','','CfgWeapons','Item',4,0,true,false,0,0,true]];
 
-_u = _u + ['ItemGPS'];
+_u set [count _u, 'ItemGPS'];
 _i set [count _i, ['','','CfgWeapons','Item',25,0,true,false,0,0,true]];
 
-_u = _u + ['ItemMap'];
+_u set [count _u, 'ItemMap'];
 _i set [count _i, ['','','CfgWeapons','Item',5,0,true,false,0,0,true]];
 
-_u = _u + ['ItemRadio'];
+_u set [count _u, 'ItemRadio'];
 _i set [count _i, ['','','CfgWeapons','Item',10,0,true,false,0,0,true]];
 
-_u = _u + ['ItemWatch'];
+_u set [count _u, 'ItemWatch'];
 _i set [count _i, ['','','CfgWeapons','Item',5,0,true,false,0,0,true]];
 
 /* Misc - East */
-_u = _u + ['HandGrenade_East'];
+_u set [count _u, 'HandGrenade_East'];
 _i set [count _i, ['','','CfgMagazines','CfgMagazines',9,0,true,false,0,0,true]];
 
-_u = _u + ['FlareWhite_GP25'];
+_u set [count _u, 'FlareWhite_GP25'];
 _i set [count _i, ['','','CfgMagazines','CfgMagazines',8,0,true,true,0,0,true]];
 
-_u = _u + ['FlareYellow_GP25'];
+_u set [count _u, 'FlareYellow_GP25'];
 _i set [count _i, ['','','CfgMagazines','CfgMagazines',8,0,true,true,0,0,true]];
 
-_u = _u + ['FlareGreen_GP25'];
+_u set [count _u, 'FlareGreen_GP25'];
 _i set [count _i, ['','','CfgMagazines','CfgMagazines',8,0,true,true,0,0,true]];
 
-_u = _u + ['FlareRed_GP25'];
+_u set [count _u, 'FlareRed_GP25'];
 _i set [count _i, ['','','CfgMagazines','CfgMagazines',8,0,true,true,0,0,true]];
 
-_u = _u + ['1Rnd_HE_GP25'];
+_u set [count _u, '1Rnd_HE_GP25'];
 _i set [count _i, ['','','CfgMagazines','CfgMagazines',13,0,true,true,0,0,true]];
 
-_u = _u + ['1Rnd_SMOKE_GP25'];
+_u set [count _u, '1Rnd_SMOKE_GP25'];
 _i set [count _i, ['','','CfgMagazines','CfgMagazines',10,0,true,true,0,0,true]];
 
-_u = _u + ['1Rnd_SMOKERED_GP25'];
+_u set [count _u, '1Rnd_SMOKERED_GP25'];
 _i set [count _i, ['','','CfgMagazines','CfgMagazines',10,0,true,true,0,0,true]];
 
-_u = _u + ['1Rnd_SMOKEGREEN_GP25'];
+_u set [count _u, '1Rnd_SMOKEGREEN_GP25'];
 _i set [count _i, ['','','CfgMagazines','CfgMagazines',10,0,true,true,0,0,true]];
 
-_u = _u + ['1Rnd_SMOKEYELLOW_GP25'];
+_u set [count _u, '1Rnd_SMOKEYELLOW_GP25'];
 _i set [count _i, ['','','CfgMagazines','CfgMagazines',10,0,true,true,0,0,true]];
 
-_u = _u + ['MineE'];
+_u set [count _u, 'MineE'];
 _i set [count _i, ['','','CfgMagazines','CfgMagazines',40,0,true,false,0,0,true]];
 
 for '_z' from 0 to (count _u)-1 do {

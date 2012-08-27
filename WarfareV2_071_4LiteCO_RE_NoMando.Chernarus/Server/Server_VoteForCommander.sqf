@@ -1,4 +1,4 @@
-Private ['_aibase','_commanderTeam','_comVoteTime','_delay','_side','_sideText', '_tidimul'];
+Private ['_aibase','_commanderTeam','_comVoteTime','_delay','_side','_sideText', '_tidimul', '_ftlimiter'];
 _side = _this select 0;
 _sideText = _side;
 _tidimul = WF_Logic getVariable 'Tidimul';
@@ -10,7 +10,8 @@ while {_comVoteTime > 0} do {
 	_comVoteTime = _comVoteTime - 1;
 	WF_Logic setVariable [Format["%1CommanderVoteTime",_sideText],_comVoteTime,true];
 	_tidimul = WF_Logic getVariable 'Tidimul';
-	waituntil {diag_frameno >= diag_frameno + 1}; // Markus - Ensures that loops only run once per tick.
+	_ftlimiter = diag_frameno + 1;
+	waituntil {_ftlimiter <= diag_frameno}; // Markus - Ensures that loops only run once per tick.
 };
 	
 WF_Logic setVariable [Format["%1CommanderVoteTime",_sideText],_comVoteTime,true];

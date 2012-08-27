@@ -10,115 +10,115 @@ _n		= ["Group"];
 _u		= ["Guerrila", "PMC_BAF", "Infantry", "PMC_Field_Security_Team"] Call GetGroupFromConfig;
 [Format["WFBE_RES%1UNITS",_n select (count _n - 1)],_u,true] Call SetNamespace;
 
-_n = _n + ["GroupAssault"];
+_n set [count _n, "GroupAssault"];
 _u		= ["Guerrila", "PMC_BAF", "Infantry", "PMC_Security_Detail"] Call GetGroupFromConfig;
 [Format["WFBE_RES%1UNITS",_n select (count _n - 1)],_u,true] Call SetNamespace;
 
-_n = _n + ["GroupWeapons"];
+_n set [count _n, "GroupWeapons"];
 _u		= ["Guerrila", "PMC_BAF", "Infantry", "PMC_Security_Specialists"] Call GetGroupFromConfig;
 [Format["WFBE_RES%1UNITS",_n select (count _n - 1)],_u,true] Call SetNamespace;
 
-_n = _n + ["Patrol1"];
+_n set [count _n, "Patrol1"];
 _u		= ["Guerrila", "PMC_BAF", "Infantry", "PMC_VIP_Bodyguard"] Call GetGroupFromConfig;
 [Format["WFBE_RES%1UNITS",_n select (count _n - 1)],_u,true] Call SetNamespace;
 
-_n = _n + ["Patrol2"];
+_n set [count _n, "Patrol2"];
 _u		= ["Guerrila", "PMC_BAF", "Infantry", "PMC_Field_Security_Patrol"] Call GetGroupFromConfig;
 [Format["WFBE_RES%1UNITS",_n select (count _n - 1)],_u,true] Call SetNamespace;
 
-_n = _n + ["ATTeam"];
+_n set [count _n, "ATTeam"];
 _u		= ["Soldier_AT_PMC"];
-_u = _u + ["Soldier_AT_PMC"];
-_u = _u + ["Soldier_AT_PMC"];
-_u = _u + ["Soldier_AT_PMC"];
-_u = _u + ["Soldier_AT_PMC"];
-_u = _u + ["Soldier_AT_PMC"];
-_u = _u + ["Offroad_SPG9_TK_GUE_EP1"];
-_u = _u + ["Offroad_SPG9_TK_GUE_EP1"];
+_u set [count _u, "Soldier_AT_PMC"];
+_u set [count _u, "Soldier_AT_PMC"];
+_u set [count _u, "Soldier_AT_PMC"];
+_u set [count _u, "Soldier_AT_PMC"];
+_u set [count _u, "Soldier_AT_PMC"];
+_u set [count _u, "Offroad_SPG9_TK_GUE_EP1"];
+_u set [count _u, "Offroad_SPG9_TK_GUE_EP1"];
 [Format["WFBE_RES%1UNITS",_n select (count _n - 1)],_u,true] Call SetNamespace;
 
-_n = _n + ["AATeam"];
+_n set [count _n, "AATeam"];
 _u		= ["Soldier_TL_PMC"];
-_u = _u + ["Soldier_AA_PMC"];
-_u = _u + ["Soldier_AA_PMC"];
-_u = _u + ["Soldier_AA_PMC"];
-_u = _u + ["Soldier_AA_PMC"];
+_u set [count _u, "Soldier_AA_PMC"];
+_u set [count _u, "Soldier_AA_PMC"];
+_u set [count _u, "Soldier_AA_PMC"];
+_u set [count _u, "Soldier_AA_PMC"];
 [Format["WFBE_RES%1UNITS",_n select (count _n - 1)],_u,true] Call SetNamespace;
 
-_n = _n + ["SniperTeam"];
+_n set [count _n, "SniperTeam"];
 _u		= ["Soldier_Sniper_KSVK_PMC"];
-_u = _u + ["Soldier_Sniper_PMC"];
+_u set [count _u, "Soldier_Sniper_PMC"];
 _u		= ["Soldier_Sniper_KSVK_PMC"];
-_u = _u + ["Soldier_Sniper_PMC"];
+_u set [count _u, "Soldier_Sniper_PMC"];
 _u		= ["Soldier_Sniper_KSVK_PMC"];
-_u = _u + ["Soldier_Sniper_PMC"];
+_u set [count _u, "Soldier_Sniper_PMC"];
 [Format["WFBE_RES%1UNITS",_n select (count _n - 1)],_u,true] Call SetNamespace;
 
-_n = _n + ["Militia"];
+_n set [count _n, "Militia"];
 _u		= ["Guerrila", "PMC_BAF", "Infantry", "PMC_Field_Support_Team"] Call GetGroupFromConfig;
 [Format["WFBE_RES%1UNITS",_n select (count _n - 1)],_u,true] Call SetNamespace;
 
-_n = _n + ["Technical"];
+_n set [count _n, "Technical"];
 _u		= ["Soldier_TL_PMC"];
-_u = _u + ["Offroad_DSHKM_TK_GUE_EP1"];
-_u = _u + ["Offroad_SPG9_TK_GUE_EP1"];
-_u = _u + ["ArmoredSUV_PMC"];
-_u = _u + ["Soldier_MG_PMC"];
-_u = _u + ["Soldier_GL_PMC"];
-_u = _u + ["Soldier_Sniper_KSVK_PMC"];
-_u = _u + ["Soldier_AT_PMC"];
-_u = _u + ["Soldier_Bodyguard_M4_PMC"];
-_u = _u + ["Soldier_Medic_PMC"];
+_u set [count _u, "Offroad_DSHKM_TK_GUE_EP1"];
+_u set [count _u, "Offroad_SPG9_TK_GUE_EP1"];
+_u set [count _u, "ArmoredSUV_PMC"];
+_u set [count _u, "Soldier_MG_PMC"];
+_u set [count _u, "Soldier_GL_PMC"];
+_u set [count _u, "Soldier_Sniper_KSVK_PMC"];
+_u set [count _u, "Soldier_AT_PMC"];
+_u set [count _u, "Soldier_Bodyguard_M4_PMC"];
+_u set [count _u, "Soldier_Medic_PMC"];
 [Format["WFBE_RES%1UNITS",_n select (count _n - 1)],_u,true] Call SetNamespace;
 
-_n = _n + ["MotorizedGroup"];
+_n set [count _n, "MotorizedGroup"];
 _u		= ["Guerrila", "PMC_BAF", "Motorized", "PMC_Armored_Patrol"] Call GetGroupFromConfig;
 [Format["WFBE_RES%1UNITS",_n select (count _n - 1)],_u,true] Call SetNamespace;
 
-_n = _n + ["MotorizedAATeam"];
+_n set [count _n, "MotorizedAATeam"];
 _u		= ["Soldier_TL_PMC"];
-_u = _u + ['Ural_ZU23_TK_GUE_EP1'];// Markus - Added Resistance ZSU.
-_u = _u + ['Ural_ZU23_TK_GUE_EP1'];// Markus - Added Resistance ZSU.
-_u = _u + ['Ural_ZU23_TK_GUE_EP1'];// Markus - Added Resistance ZSU.
-_u = _u + ['Ural_ZU23_TK_GUE_EP1'];// Markus - Added Resistance ZSU.
-_u = _u + ["Soldier_AA_PMC"];
-_u = _u + ["Soldier_AA_PMC"];
-_u = _u + ["Soldier_AA_PMC"];
-_u = _u + ["Soldier_AA_PMC"];
-_u = _u + ["Soldier_AA_PMC"];
-_u = _u + ["Soldier_AA_PMC"];
+_u set [count _u, 'Ural_ZU23_TK_GUE_EP1'];// Markus - Added Resistance ZSU.
+_u set [count _u, 'Ural_ZU23_TK_GUE_EP1'];// Markus - Added Resistance ZSU.
+_u set [count _u, 'Ural_ZU23_TK_GUE_EP1'];// Markus - Added Resistance ZSU.
+_u set [count _u, 'Ural_ZU23_TK_GUE_EP1'];// Markus - Added Resistance ZSU.
+_u set [count _u, "Soldier_AA_PMC"];
+_u set [count _u, "Soldier_AA_PMC"];
+_u set [count _u, "Soldier_AA_PMC"];
+_u set [count _u, "Soldier_AA_PMC"];
+_u set [count _u, "Soldier_AA_PMC"];
+_u set [count _u, "Soldier_AA_PMC"];
 [Format["WFBE_RES%1UNITS",_n select (count _n - 1)],_u,true] Call SetNamespace;
 
-_n = _n + ["MechanizedPatrol"];
+_n set [count _n, "MechanizedPatrol"];
 _u		= ["Soldier_Bodyguard_M4_PMC"];
-_u = _u + ["BTR40_MG_TK_GUE_EP1"];
-_u = _u + ["BRDM2_TK_GUE_EP1"];
-_u = _u + ["Soldier_Bodyguard_AA12_PMC"];
-_u = _u + ["Soldier_PMC"];
-_u = _u + ['Ural_ZU23_TK_GUE_EP1'];// Markus - Added Resistance ZSU.
+_u set [count _u, "BTR40_MG_TK_GUE_EP1"];
+_u set [count _u, "BRDM2_TK_GUE_EP1"];
+_u set [count _u, "Soldier_Bodyguard_AA12_PMC"];
+_u set [count _u, "Soldier_PMC"];
+_u set [count _u, 'Ural_ZU23_TK_GUE_EP1'];// Markus - Added Resistance ZSU.
 [Format["WFBE_RES%1UNITS",_n select (count _n - 1)],_u,true] Call SetNamespace;
 
-_n = _n + ["MechanizedGroup"];
+_n set [count _n, "MechanizedGroup"];
 _u		= ["Soldier_TL_PMC"];
-_u = _u + ["T34_TK_GUE_EP1"];
-_u = _u + ["ArmoredSUV_PMC"];
-_u = _u + ["Soldier_MG_PMC"];
-_u = _u + ["Soldier_Bodyguard_AA12_PMC"];
-_u = _u + ["Soldier_AT_PMC"];
-_u = _u + ["Soldier_Bodyguard_M4_PMC"];
-_u = _u + ["Soldier_Sniper_KSVK_PMC"];
-_u = _u + ["Soldier_AT_PMC"];
+_u set [count _u, "T34_TK_GUE_EP1"];
+_u set [count _u, "ArmoredSUV_PMC"];
+_u set [count _u, "Soldier_MG_PMC"];
+_u set [count _u, "Soldier_Bodyguard_AA12_PMC"];
+_u set [count _u, "Soldier_AT_PMC"];
+_u set [count _u, "Soldier_Bodyguard_M4_PMC"];
+_u set [count _u, "Soldier_Sniper_KSVK_PMC"];
+_u set [count _u, "Soldier_AT_PMC"];
 [Format["WFBE_RES%1UNITS",_n select (count _n - 1)],_u,true] Call SetNamespace;
 
-_n = _n + ["LightArmor"];
+_n set [count _n, "LightArmor"];
 _u		= ["T34_TK_GUE_EP1"];
-_u = _u + ["T34_TK_GUE_EP1"];
-_u = _u + ['Ural_ZU23_TK_GUE_EP1'];
+_u set [count _u, "T34_TK_GUE_EP1"];
+_u set [count _u, 'Ural_ZU23_TK_GUE_EP1'];
 [Format["WFBE_RES%1UNITS",_n select (count _n - 1)],_u,true] Call SetNamespace;
 
-_n = _n + ["HeavyArmor"];
+_n set [count _n, "HeavyArmor"];
 _u		= ["T55_TK_GUE_EP1"];
-_u = _u + ["T55_TK_GUE_EP1"];
+_u set [count _u, "T55_TK_GUE_EP1"];
 [Format["WFBE_RES%1UNITS",_n select (count _n - 1)],_u,true] Call SetNamespace;
 
 //--- Patroling Resistance.

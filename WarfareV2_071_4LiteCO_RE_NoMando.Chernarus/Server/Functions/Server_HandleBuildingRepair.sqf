@@ -99,7 +99,9 @@ while {true} do {
 		deleteVehicle _logic;
 		deleteGroup _group;
 	};
-	waituntil {diag_frameno >= diag_frameno + 1}; // Markus - Ensures that loops only run once per tick.
+	Private ["_ftlimiter"]; // Markus - The frame time limiter.
+	_ftlimiter = diag_frameno + 1;
+	waituntil {_ftlimiter <= diag_frameno}; // Markus - Ensures that loops only run once per tick.
 };
 
 deleteVehicle _ruins;

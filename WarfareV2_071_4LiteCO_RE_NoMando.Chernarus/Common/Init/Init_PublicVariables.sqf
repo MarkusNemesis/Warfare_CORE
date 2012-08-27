@@ -1,47 +1,47 @@
 Private ['_clientCommandPV','_count','_l','_serverCommandPV'];
 
 _l		= ["RequestVehicleLock"];
-_l = _l + ["RequestChangeScore"];
-_l = _l + ["RequestCommanderVote"];
-_l = _l + ["RequestStructure"];
-_l = _l + ["RequestDefense"];
-_l = _l + ["RequestJoin"];
-_l = _l + ["RequestMHQRepair"];
-_l = _l + ["RequestSpecial"];
-_l = _l + ["RequestTeamUpdate"];
-_l = _l + ["RequestUpgrade"];
-if (paramUseWorkers) then {_l = _l + ["RequestWorker"]};
+_l set [count _l, "RequestChangeScore"];
+_l set [count _l, "RequestCommanderVote"];
+_l set [count _l, "RequestStructure"];
+_l set [count _l, "RequestDefense"];
+_l set [count _l, "RequestJoin"];
+_l set [count _l, "RequestMHQRepair"];
+_l set [count _l, "RequestSpecial"];
+_l set [count _l, "RequestTeamUpdate"];
+_l set [count _l, "RequestUpgrade"];
+if (paramUseWorkers) then {_l set [count _l, "RequestWorker"]};
 
 _serverCommandPV = _l;
 
 _l =      ["AllCampsCaptured"];
-_l = _l + ["AwardBounty"];
-_l = _l + ["CampCaptured"];
-_l = _l + ["CanJoin"];
-_l = _l + ["ChangeScore"];
-_l = _l + ["CommanderVote"];
-_l = _l + ["DisplayICBM"];
-_l = _l + ["EndGame"];
-_l = _l + ["ISIS_AddAction"];
-_l = _l + ["LocalizeMessage"];
-_l = _l + ["Penalty"];
-_l = _l + ["PerformAction"];
-_l = _l + ["SetHQStatus"];
-_l = _l + ["SetTask"];
-_l = _l + ["SetVehicleLock"];
-_l = _l + ["TownCaptured"];
-_l = _l + ["TownCapturedPublic"];
-_l = _l + ["UAV_Reveal"];
-_l = _l + ["VoteForCommander"];
+_l set [count _l, "AwardBounty"];
+_l set [count _l, "CampCaptured"];
+_l set [count _l, "CanJoin"];
+_l set [count _l, "ChangeScore"];
+_l set [count _l, "CommanderVote"];
+_l set [count _l, "DisplayICBM"];
+_l set [count _l, "EndGame"];
+_l set [count _l, "ISIS_AddAction"];
+_l set [count _l, "LocalizeMessage"];
+_l set [count _l, "Penalty"];
+_l set [count _l, "PerformAction"];
+_l set [count _l, "SetHQStatus"];
+_l set [count _l, "SetTask"];
+_l set [count _l, "SetVehicleLock"];
+_l set [count _l, "TownCaptured"];
+_l set [count _l, "TownCapturedPublic"];
+_l set [count _l, "UAV_Reveal"];
+_l set [count _l, "VoteForCommander"];
 
 /* Add missions Clients PVF here */
 if (paramSecondaryMissions) then {
-	_l = _l + ['M_BASE_Attack'];
-	_l = _l + ['M_TOWN_Attack'];
-	_l = _l + ['M_UAV_RetrieveModule'];
+	_l set [count _l, 'M_BASE_Attack'];
+	_l set [count _l, 'M_TOWN_Attack'];
+	_l set [count _l, 'M_UAV_RetrieveModule'];
 	/* OA/CO Specific PVF */
 	if !(WF_A2_Vanilla) then {
-		_l = _l + ['M_PLAYERS_Attack_Air'];
+		_l set [count _l, 'M_PLAYERS_Attack_Air'];
 	};
 };
 
