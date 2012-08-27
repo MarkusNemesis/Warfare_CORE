@@ -191,7 +191,7 @@ _easaLoadout set [count _easaLoadout,
  ]
 ];
 
-_easaVehi set [count _easaVehi,'A10_US_EP1'];
+_easaVehi set [count _easaVehi,'A10_uS_EP1'];
 _easaDefault set [count _easaDefault,[['BombLauncherA10','4Rnd_GBU12'],['MaverickLauncher','2Rnd_Maverick_A10'],['SidewinderLaucher_AH1Z','2Rnd_Sidewinder_AH1Z']]];
 _easaLoadout set [count _easaLoadout,
 if (WF_A2_Arrowhead) then {

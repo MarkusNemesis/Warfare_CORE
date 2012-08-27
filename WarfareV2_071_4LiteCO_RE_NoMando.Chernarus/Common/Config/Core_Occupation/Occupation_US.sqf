@@ -74,8 +74,8 @@ _u set [count _u, "M1126_ICV_M2_EP1"];
 
 _n set [count _n, "MediumVehTeam2"];
 _u		= ["US_Soldier_TL_EP1"];
-_u set [count _u, "M1A1_US_DES_EP1"];
-_u set [count _u, "M1A1_US_DES_EP1"];
+_u set [count _u, "M1A1_uS_DES_EP1"];
+_u set [count _u, "M1A1_uS_DES_EP1"];
 _u set [count _u, "HMMWV_Ambulance_DES_EP1"];
 [Format["WFBE_WEST%1UNITS",_n select (count _n - 1)],_u,true] Call SetNamespace;
 
@@ -83,7 +83,7 @@ _n set [count _n, "MediumVehTeam3"];
 _u		= ["US_Soldier_TL_EP1"];
 _u set [count _u, "M1126_ICV_M2_EP1"];
 _u set [count _u, "HMMWV_M998_crows_M2_DES_EP1"];
-_u set [count _u, "M1A1_US_DES_EP1"];
+_u set [count _u, "M1A1_uS_DES_EP1"];
 [Format["WFBE_WEST%1UNITS",_n select (count _n - 1)],_u,true] Call SetNamespace;
 
 _n set [count _n, "LargeTeam1"];
@@ -121,26 +121,26 @@ _u set [count _u, "US_Soldier_LAT_EP1"];
 
 _n set [count _n, "LargeVehTeam1"];
 _u		= ["US_Soldier_TL_EP1"];
-_u set [count _u, "M1A2_US_TUSK_MG_EP1"];
-_u set [count _u, "M1A2_US_TUSK_MG_EP1"];
-_u set [count _u, "M1A2_US_TUSK_MG_EP1"];
-_u set [count _u, "M1A2_US_TUSK_MG_EP1"];
+_u set [count _u, "M1A2_uS_TUSK_MG_EP1"];
+_u set [count _u, "M1A2_uS_TUSK_MG_EP1"];
+_u set [count _u, "M1A2_uS_TUSK_MG_EP1"];
+_u set [count _u, "M1A2_uS_TUSK_MG_EP1"];
 [Format["WFBE_WEST%1UNITS",_n select (count _n - 1)],_u,true] Call SetNamespace;
 
 _n set [count _n, "LargeVehTeam2"];
 _u		= ["US_Soldier_TL_EP1"];
-_u set [count _u, "M1A2_US_TUSK_MG_EP1"];
-_u set [count _u, "M1A2_US_TUSK_MG_EP1"];
+_u set [count _u, "M1A2_uS_TUSK_MG_EP1"];
+_u set [count _u, "M1A2_uS_TUSK_MG_EP1"];
 _u set [count _u, "MLRS_DES_EP1"];
-_u set [count _u, "M1A2_US_TUSK_MG_EP1"];
+_u set [count _u, "M1A2_uS_TUSK_MG_EP1"];
 [Format["WFBE_WEST%1UNITS",_n select (count _n - 1)],_u,true] Call SetNamespace;
 
 _n set [count _n, "LargeVehTeam3"];
 _u		= ["US_Soldier_TL_EP1"];
-_u set [count _u, "M1A2_US_TUSK_MG_EP1"];
-_u set [count _u, "M1A2_US_TUSK_MG_EP1"];
-_u set [count _u, "M1A2_US_TUSK_MG_EP1"];
-_u set [count _u, "M6__USEP1"];
+_u set [count _u, "M1A2_uS_TUSK_MG_EP1"];
+_u set [count _u, "M1A2_uS_TUSK_MG_EP1"];
+_u set [count _u, "M1A2_uS_TUSK_MG_EP1"];
+_u set [count _u, "M6_EP1"];
 [Format["WFBE_WEST%1UNITS",_n select (count _n - 1)],_u,true] Call SetNamespace;
 
 //--- AA Units used by towns occupation in case of 'air assault' only.
@@ -169,4 +169,4 @@ _u set [count _u, "M6_EP1"];
 _u set [count _u, "M6_EP1"];
 [Format["WFBE_WEST%1UNITS",_n select (count _n - 1)],_u,true] Call SetNamespace;
 
-diag_log Format ["[WFBE (INIT)][frameno:%1 | ticktime:%2] Occupation_US: Initialization - [Done]",diag_frameno,diag_tickTime];
+diag_log Format ["[WFBE (INIT)][frameno:%1 | ticktime:%2] Occupation_uS: Initialization - [Done]",diag_frameno,diag_tickTime];

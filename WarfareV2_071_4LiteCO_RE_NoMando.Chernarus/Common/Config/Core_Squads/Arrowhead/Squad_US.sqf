@@ -1,7 +1,7 @@
 Private ['_aiTeamTemplateRequires','_aiTeamTemplateName','_aiTeamTemplates','_aiTeamTypes','_aiTeamUpgrades','_return','_u'];
 
 //--- Overall Dump.
-_return = ["West", "BIS_US", ["US_AH6XFlight","US_C130JFlight","US_MQ9Flight"]] Call Compile preprocessFile "Common\Config\Core_Squads\Squads_GetFactionGroups.sqf";
+_return = ["West", "BIS_uS", ["US_AH6XFlight","US_C130JFlight","US_MQ9Flight"]] Call Compile preprocessFile "Common\Config\Core_Squads\Squads_GetFactionGroups.sqf";
 _aiTeamTemplates = _return select 0;
 _aiTeamTemplateName = _return select 1;
 _aiTeamTemplateRequires = _return select 2;

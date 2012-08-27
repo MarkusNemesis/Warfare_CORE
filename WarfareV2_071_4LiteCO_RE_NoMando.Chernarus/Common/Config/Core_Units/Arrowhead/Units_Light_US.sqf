@@ -1,8 +1,8 @@
 Private ['_u'];
 
 //--- US Light Vehicles.
-_u 			= ['M1030_US_DES_EP1'];
-_u set [count _u,'ATV_US_EP1'];
+_u 			= ['M1030_uS_DES_EP1'];
+_u set [count _u,'ATV_uS_EP1'];
 _u set [count _u,'HMMWV_DES_EP1'];
 _u set [count _u,'HMMWV_M1035_DES_EP1'];
 //_u set [count _u,'HMMWV_Terminal_EP1'];

@@ -49,7 +49,7 @@ _dir set [count _dir, 90];
 
 _v set [count _v, "CommandCenter"];
 _n set [count _n, WESTCC];
-_d set [count _d, localize "STR_WF_CommandCenter_USMC"];
+_d set [count _d, localize "STR_WF_CommandCenter_uSMC"];
 _c set [count _c, 1200];
 _t set [count _t, if (WF_Debug) then {1} else {110}];
 _s set [count _s, "SmallSite"];
@@ -110,21 +110,21 @@ for [{_count = count _v - 1},{_count >= 0},{_count = _count - 1}] do {
 ['WFBE_WESTSTRUCTURESCRIPTS',_s,true] Call SetNamespace;
 
 /* Defenses */
-_n			= ["WarfareBMGNest_M240_US_EP1"];
-_n set [count _n, "M2HD_mini_TriPod_US_EP1"];
-_n set [count _n, "SearchLight_US_EP1"];
-_n set [count _n, "M2StaticMG_US_EP1"];
+_n			= ["WarfareBMGNest_M240_uS_EP1"];
+_n set [count _n, "M2HD_mini_TriPod_uS_EP1"];
+_n set [count _n, "SearchLight_uS_EP1"];
+_n set [count _n, "M2StaticMG_uS_EP1"];
 if (paramDLCBAF) then {
 	_n set [count _n, "BAF_GPMG_Minitripod_W"];
 	_n set [count _n, "BAF_GMG_Tripod_W"];
 	_n set [count _n, "BAF_L2A1_Minitripod_W"];
 	_n set [count _n, "BAF_L2A1_Tripod_W"];
 };
-_n set [count _n, "MK19_TriPod_US_EP1"];
-_n set [count _n, "TOW_TriPod_US_EP1"];
-_n set [count _n, "Stinger_Pod_US_EP1"];
-_n set [count _n, "M252_US_EP1"];
-_n set [count _n, "M119_US_EP1"];
+_n set [count _n, "MK19_TriPod_uS_EP1"];
+_n set [count _n, "TOW_TriPod_uS_EP1"];
+_n set [count _n, "Stinger_Pod_uS_EP1"];
+_n set [count _n, "M252_uS_EP1"];
+_n set [count _n, "M119_uS_EP1"];
 _n set [count _n, "Land_HBarrier3"];
 _n set [count _n, "Land_HBarrier5"];
 _n set [count _n, "Land_HBarrier_large"];
@@ -156,11 +156,11 @@ _n set [count _n, "USLaunchers_EP1"];
 _n set [count _n, "USSpecialWeapons_EP1"];
 
 /* Class used for AI, AI will attempt to build those */
-['WFBE_WESTDEFENSES_MG',['M2StaticMG_US_EP1'],true] Call SetNamespace;
-['WFBE_WESTDEFENSES_GL',['MK19_TriPod_US_EP1'],true] Call SetNamespace;
-['WFBE_WESTDEFENSES_AAPOD',['Stinger_Pod_US_EP1'],true] Call SetNamespace;
-['WFBE_WESTDEFENSES_ATPOD',['TOW_TriPod_US_EP1'],true] Call SetNamespace;
-['WFBE_WESTDEFENSES_CANNON',['M119_US_EP1'],true] Call SetNamespace;
+['WFBE_WESTDEFENSES_MG',['M2StaticMG_uS_EP1'],true] Call SetNamespace;
+['WFBE_WESTDEFENSES_GL',['MK19_TriPod_uS_EP1'],true] Call SetNamespace;
+['WFBE_WESTDEFENSES_AAPOD',['Stinger_Pod_uS_EP1'],true] Call SetNamespace;
+['WFBE_WESTDEFENSES_ATPOD',['TOW_TriPod_uS_EP1'],true] Call SetNamespace;
+['WFBE_WESTDEFENSES_CANNON',['M119_uS_EP1'],true] Call SetNamespace;
 ['WFBE_WESTDEFENSES_MASH',['MASH_EP1'],true] Call SetNamespace;
 
 ['WFBE_WESTDEFENSENAMES',_n,true] Call SetNamespace;

@@ -49,7 +49,7 @@ _dir set [count _dir, 90];
 
 _v set [count _v, "CommandCenter"];
 _n set [count _n, WESTCC];
-_d set [count _d, localize "STR_WF_CommandCenter_USMC"];
+_d set [count _d, localize "STR_WF_CommandCenter_uSMC"];
 _c set [count _c, 1200];
 _t set [count _t, if (WF_Debug) then {1} else {110}];
 _s set [count _s, "SmallSite"];
