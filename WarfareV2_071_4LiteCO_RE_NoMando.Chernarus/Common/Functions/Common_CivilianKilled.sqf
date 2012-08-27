@@ -12,7 +12,7 @@ if (_sideKiller == sideEnemy) then {
 
 //--- Benny's Garbage Collector.
 if (WF_A2_Vanilla) then {
-	trashQueu = trashQueu + [_killed];
+	trashQueu set [count trashQueu,_killed];
 	_killed Spawn TrashObject;
 };
 

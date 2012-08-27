@@ -4,114 +4,114 @@ if (!isServer || local player) then {
 	if (side player == WEST) then {
 		/* Magazines. */
 		_m = ["30Rnd_556x45_Stanag"];
-		_m = _m + ["30Rnd_556x45_StanagSD"];
-		_m = _m + ["20Rnd_556x45_Stanag"];
-		//_m = _m + ["30Rnd_556x45_G36"];
-		//_m = _m + ["30Rnd_556x45_G36SD"];
-		//_m = _m + ["100Rnd_556x45_BetaCMag"]; // Markus - Removed BetaC mags
-		_m = _m + ["5Rnd_762x51_M24"];
-		_m = _m + ["20Rnd_762x51_DMR"];
-		_m = _m + ["10Rnd_127x99_m107"];
-		_m = _m + ["100Rnd_762x51_M240"];
-		_m = _m + ["200Rnd_556x45_M249"];
-		_m = _m + ["30Rnd_9x19_MP5"];
-		_m = _m + ["30Rnd_9x19_MP5SD"];
-		_m = _m + ["8Rnd_B_Beneli_74Slug"];
-		_m = _m + ["M136"];
-		_m = _m + ["SMAW_HEAA"];
-		_m = _m + ["SMAW_HEDP"];
-		_m = _m + ["Javelin"];
-		_m = _m + ["Stinger"];
-		_m = _m + ["Laserbatteries"];
-		_m = _m + ["15Rnd_9x19_M9"];
-		_m = _m + ["15Rnd_9x19_M9SD"];
-		_m = _m + ["7Rnd_45ACP_1911"];
+		_m set [count _m,"30Rnd_556x45_StanagSD"];
+		_m set [count _m,"20Rnd_556x45_Stanag"];
+		//_m set [count _m,"30Rnd_556x45_G36"];
+		//_m set [count _m,"30Rnd_556x45_G36SD"];
+		//_m set [count _m,"100Rnd_556x45_BetaCMag"]; // Markus - Removed BetaC mags
+		_m set [count _m,"5Rnd_762x51_M24"];
+		_m set [count _m,"20Rnd_762x51_DMR"];
+		_m set [count _m,"10Rnd_127x99_m107"];
+		_m set [count _m,"100Rnd_762x51_M240"];
+		_m set [count _m,"200Rnd_556x45_M249"];
+		_m set [count _m,"30Rnd_9x19_MP5"];
+		_m set [count _m,"30Rnd_9x19_MP5SD"];
+		_m set [count _m,"8Rnd_B_Beneli_74Slug"];
+		_m set [count _m,"M136"];
+		_m set [count _m,"SMAW_HEAA"];
+		_m set [count _m,"SMAW_HEDP"];
+		_m set [count _m,"Javelin"];
+		_m set [count _m,"Stinger"];
+		_m set [count _m,"Laserbatteries"];
+		_m set [count _m,"15Rnd_9x19_M9"];
+		_m set [count _m,"15Rnd_9x19_M9SD"];
+		_m set [count _m,"7Rnd_45ACP_1911"];
 
 		WF_Logic setVariable ['magazineClasses',_m];
 
 		/* Primary. */
 		_w = ['M16A2'];
-		_w = _w + ['M16A2GL'];
-		_w = _w + ['m16a4'];
-		_w = _w + ['m16a4_acg'];
-		_w = _w + ['M16A4_GL'];
-		_w = _w + ['M16A4_ACG_GL'];
-		_w = _w + ['M24'];
-		_w = _w + ['M40A3'];
-		_w = _w + ['M240'];
-		_w = _w + ['Mk_48'];
-		_w = _w + ['M249'];
-		_w = _w + ['M4A1'];
-		_w = _w + ['M4A1_Aim'];
-		_w = _w + ['M4A1_Aim_camo'];
-		_w = _w + ['M4SPR'];
-		_w = _w + ['M4A1_RCO_GL'];
-		_w = _w + ['M4A1_AIM_SD_camo'];
-		_w = _w + ['M4A1_HWS_GL_SD_Camo'];
-		_w = _w + ['M4A1_HWS_GL'];
-		_w = _w + ['M4A1_HWS_GL_camo'];
-		_w = _w + ['MP5SD'];
-		_w = _w + ['MP5A5'];
-		_w = _w + ['G36C'];
-		_w = _w + ['G36_C_SD_eotech'];
-		_w = _w + ['G36a'];
-		_w = _w + ['G36K'];
-		_w = _w + ['MG36'];
-		_w = _w + ['DMR'];
-		_w = _w + ['M1014'];
-		_w = _w + ['m107'];
-		_w = _w + ['m8_carbine'];
-		_w = _w + ['m8_carbineGL'];
-		_w = _w + ['m8_compact'];
-		_w = _w + ['m8_sharpshooter'];
-		_w = _w + ['m8_SAW'];
+		_w set [count _w,'M16A2GL'];
+		_w set [count _w,'m16a4'];
+		_w set [count _w,'m16a4_acg'];
+		_w set [count _w,'M16A4_GL'];
+		_w set [count _w,'M16A4_ACG_GL'];
+		_w set [count _w,'M24'];
+		_w set [count _w,'M40A3'];
+		_w set [count _w,'M240'];
+		_w set [count _w,'Mk_48'];
+		_w set [count _w,'M249'];
+		_w set [count _w,'M4A1'];
+		_w set [count _w,'M4A1_Aim'];
+		_w set [count _w,'M4A1_Aim_camo'];
+		_w set [count _w,'M4SPR'];
+		_w set [count _w,'M4A1_RCO_GL'];
+		_w set [count _w,'M4A1_AIM_SD_camo'];
+		_w set [count _w,'M4A1_HWS_GL_SD_Camo'];
+		_w set [count _w,'M4A1_HWS_GL'];
+		_w set [count _w,'M4A1_HWS_GL_camo'];
+		_w set [count _w,'MP5SD'];
+		_w set [count _w,'MP5A5'];
+		_w set [count _w,'G36C'];
+		_w set [count _w,'G36_C_SD_eotech'];
+		_w set [count _w,'G36a'];
+		_w set [count _w,'G36K'];
+		_w set [count _w,'MG36'];
+		_w set [count _w,'DMR'];
+		_w set [count _w,'M1014'];
+		_w set [count _w,'m107'];
+		_w set [count _w,'m8_carbine'];
+		_w set [count _w,'m8_carbineGL'];
+		_w set [count _w,'m8_compact'];
+		_w set [count _w,'m8_sharpshooter'];
+		_w set [count _w,'m8_SAW'];
 
 		WF_Logic setVariable ['primaryClasses',_w];
 
 		/* Secondary. */
 		_w = ['M136'];
-		_w = _w + ['SMAW'];
-		_w = _w + ['Javelin'];
-		_w = _w + ['Stinger'];
-		_w = _w + ['Laserdesignator'];
+		_w set [count _w,'SMAW'];
+		_w set [count _w,'Javelin'];
+		_w set [count _w,'Stinger'];
+		_w set [count _w,'Laserdesignator'];
 
 		WF_Logic setVariable ['secondaryClasses',_w];
 
 		/* Sidearms. */
 		_w = ['Colt1911'];
-		_w = _w + ['M9'];
-		_w = _w + ['M9SD'];
+		_w set [count _w,'M9'];
+		_w set [count _w,'M9SD'];
 
 		WF_Logic setVariable ['sidearmClasses',_w];
 
 		/* Misc. */
 		_w = ['HandGrenade_West'];
-		_w = _w + ['HandGrenade_Stone'];
-		_w = _w + ['SmokeShell'];
-		_w = _w + ['SmokeShellRed'];
-		_w = _w + ['SmokeShellGreen'];
-		_w = _w + ['SmokeShellBlue'];
-		_w = _w + ['SmokeShellYellow'];
-		_w = _w + ['SmokeShellOrange'];
-		_w = _w + ['SmokeShellPurple'];
-		_w = _w + ['FlareWhite_M203'];
-		_w = _w + ['FlareYellow_M203'];
-		_w = _w + ['FlareGreen_M203'];
-		_w = _w + ['FlareRed_M203'];
-		_w = _w + ['1Rnd_HE_M203'];
-		_w = _w + ['1Rnd_Smoke_M203'];
-		_w = _w + ['1Rnd_SmokeRed_M203'];
-		_w = _w + ['1Rnd_SmokeGreen_M203'];
-		_w = _w + ['1Rnd_SmokeYellow_M203'];
-		_w = _w + ['Mine'];
-		_w = _w + ['PipeBomb'];
-		_w = _w + ['Binocular'];
-		_w = _w + ['NVGoggles'];
-		_w = _w + ['ItemCompass'];
-		_w = _w + ['ItemGPS'];
-		_w = _w + ['ItemMap'];
-		_w = _w + ['ItemRadio'];
-		_w = _w + ['ItemWatch'];
+		_w set [count _w,'HandGrenade_Stone'];
+		_w set [count _w,'SmokeShell'];
+		_w set [count _w,'SmokeShellRed'];
+		_w set [count _w,'SmokeShellGreen'];
+		_w set [count _w,'SmokeShellBlue'];
+		_w set [count _w,'SmokeShellYellow'];
+		_w set [count _w,'SmokeShellOrange'];
+		_w set [count _w,'SmokeShellPurple'];
+		_w set [count _w,'FlareWhite_M203'];
+		_w set [count _w,'FlareYellow_M203'];
+		_w set [count _w,'FlareGreen_M203'];
+		_w set [count _w,'FlareRed_M203'];
+		_w set [count _w,'1Rnd_HE_M203'];
+		_w set [count _w,'1Rnd_Smoke_M203'];
+		_w set [count _w,'1Rnd_SmokeRed_M203'];
+		_w set [count _w,'1Rnd_SmokeGreen_M203'];
+		_w set [count _w,'1Rnd_SmokeYellow_M203'];
+		_w set [count _w,'Mine'];
+		_w set [count _w,'PipeBomb'];
+		_w set [count _w,'Binocular'];
+		_w set [count _w,'NVGoggles'];
+		_w set [count _w,'ItemCompass'];
+		_w set [count _w,'ItemGPS'];
+		_w set [count _w,'ItemMap'];
+		_w set [count _w,'ItemRadio'];
+		_w set [count _w,'ItemWatch'];
 
 		WF_Logic setVariable ['miscClasses',_w];
 
@@ -129,138 +129,138 @@ if (!isServer || local player) then {
 		_l = [0];
 		_b = [true];
 
-		_d = _d + [getText(configFile >> 'CfgWeapons' >> 'M16A4_GL' >> 'displayName')];
-		_p = _p + [getText(configFile >> 'CfgWeapons' >> 'M16A4_GL' >> 'picture')];
-		_t = _t + [['M16A4_GL']];
-		_m = _m + [['30Rnd_556x45_Stanag','30Rnd_556x45_Stanag','30Rnd_556x45_Stanag','30Rnd_556x45_Stanag','30Rnd_556x45_Stanag','30Rnd_556x45_Stanag','30Rnd_556x45_Stanag','30Rnd_556x45_Stanag',
+		_d set [count _d,getText(configFile >> 'CfgWeapons' >> 'M16A4_GL' >> 'displayName')];
+		_p set [count _p,getText(configFile >> 'CfgWeapons' >> 'M16A4_GL' >> 'picture')];
+		_t set [count _t,['M16A4_GL']];
+		_m set [count _m,['30Rnd_556x45_Stanag','30Rnd_556x45_Stanag','30Rnd_556x45_Stanag','30Rnd_556x45_Stanag','30Rnd_556x45_Stanag','30Rnd_556x45_Stanag','30Rnd_556x45_Stanag','30Rnd_556x45_Stanag',
 			'30Rnd_556x45_Stanag','30Rnd_556x45_Stanag','HandGrenade_West','HandGrenade_West','1Rnd_HE_M203','1Rnd_HE_M203','1Rnd_HE_M203','1Rnd_HE_M203','1Rnd_HE_M203','1Rnd_HE_M203',
 			'1Rnd_HE_M203','1Rnd_HE_M203']];
-		_s = _s + [['Binocular']];
+		_s set [count _s,['Binocular']];
 		_i set [count _i, _items];
-		_l = _l + [0];
-		_b = _b + [true];
+		_l set [count _l,0];
+		_b set [count _b,true];
 
-		_d = _d + [getText(configFile >> 'CfgWeapons' >> 'G36C' >> 'displayName') + '/' + getText(configFile >> 'CfgWeapons' >> 'M136' >> 'displayName')];
-		_p = _p + [getText(configFile >> 'CfgWeapons' >> 'G36C' >> 'picture')];
-		_t = _t + [['G36C','M136']];
-		_m = _m + [['30Rnd_556x45_G36','30Rnd_556x45_G36','30Rnd_556x45_G36','30Rnd_556x45_G36','30Rnd_556x45_G36','30Rnd_556x45_G36','M136']];
-		_s = _s + [['Binocular']];
+		_d set [count _d,getText(configFile >> 'CfgWeapons' >> 'G36C' >> 'displayName') + '/' + getText(configFile >> 'CfgWeapons' >> 'M136' >> 'displayName')];
+		_p set [count _p,getText(configFile >> 'CfgWeapons' >> 'G36C' >> 'picture')];
+		_t set [count _t,['G36C','M136']];
+		_m set [count _m,['30Rnd_556x45_G36','30Rnd_556x45_G36','30Rnd_556x45_G36','30Rnd_556x45_G36','30Rnd_556x45_G36','30Rnd_556x45_G36','M136']];
+		_s set [count _s,['Binocular']];
 		_i set [count _i, _items];
-		_l = _l + [0];
-		_b = _b + [true];
+		_l set [count _l,0];
+		_b set [count _b,true];
 
-		_d = _d + [getText(configFile >> 'CfgWeapons' >> 'M4A1_HWS_GL_SD_Camo' >> 'displayName') + '/' + getText(configFile >> 'CfgWeapons' >> 'SMAW' >> 'displayName')];
-		_p = _p + [getText(configFile >> 'CfgWeapons' >> 'M4A1_HWS_GL_SD_Camo' >> 'picture')];
-		_t = _t + [['M4A1_HWS_GL_SD_Camo','SMAW']];
-		_m = _m + [['30Rnd_556x45_StanagSD','30Rnd_556x45_StanagSD','30Rnd_556x45_StanagSD','30Rnd_556x45_StanagSD','30Rnd_556x45_StanagSD','30Rnd_556x45_StanagSD','SMAW_HEAA',
+		_d set [count _d,getText(configFile >> 'CfgWeapons' >> 'M4A1_HWS_GL_SD_Camo' >> 'displayName') + '/' + getText(configFile >> 'CfgWeapons' >> 'SMAW' >> 'displayName')];
+		_p set [count _p,getText(configFile >> 'CfgWeapons' >> 'M4A1_HWS_GL_SD_Camo' >> 'picture')];
+		_t set [count _t,['M4A1_HWS_GL_SD_Camo','SMAW']];
+		_m set [count _m,['30Rnd_556x45_StanagSD','30Rnd_556x45_StanagSD','30Rnd_556x45_StanagSD','30Rnd_556x45_StanagSD','30Rnd_556x45_StanagSD','30Rnd_556x45_StanagSD','SMAW_HEAA',
 			'SMAW_HEAA','SMAW_HEDP','1Rnd_HE_M203','1Rnd_HE_M203','1Rnd_HE_M203','1Rnd_HE_M203','1Rnd_HE_M203','1Rnd_HE_M203','1Rnd_HE_M203','1Rnd_HE_M203']];
-		_s = _s + [['Binocular','NVGoggles']];
+		_s set [count _s,['Binocular','NVGoggles']];
 		_i set [count _i, _items];
-		_l = _l + [3];
-		_b = _b + [false];
+		_l set [count _l,3];
+		_b set [count _b,false];
 
-		_d = _d + [getText(configFile >> 'CfgWeapons' >> 'm8_carbine' >> 'displayName') + '/' + getText(configFile >> 'CfgWeapons' >> 'SMAW' >> 'displayName') + '/' + getText(configFile >> 'CfgWeapons' >> 'M9' >> 'displayName')];
-		_p = _p + [getText(configFile >> 'CfgWeapons' >> 'm8_carbine' >> 'picture')];
-		_t = _t + [['m8_carbine','SMAW','M9']];
-		_m = _m + [['30Rnd_556x45_G36','30Rnd_556x45_G36','30Rnd_556x45_G36','30Rnd_556x45_G36','30Rnd_556x45_G36','30Rnd_556x45_G36','SMAW_HEAA','SMAW_HEAA','SMAW_HEDP',
+		_d set [count _d,getText(configFile >> 'CfgWeapons' >> 'm8_carbine' >> 'displayName') + '/' + getText(configFile >> 'CfgWeapons' >> 'SMAW' >> 'displayName') + '/' + getText(configFile >> 'CfgWeapons' >> 'M9' >> 'displayName')];
+		_p set [count _p,getText(configFile >> 'CfgWeapons' >> 'm8_carbine' >> 'picture')];
+		_t set [count _t,['m8_carbine','SMAW','M9']];
+		_m set [count _m,['30Rnd_556x45_G36','30Rnd_556x45_G36','30Rnd_556x45_G36','30Rnd_556x45_G36','30Rnd_556x45_G36','30Rnd_556x45_G36','SMAW_HEAA','SMAW_HEAA','SMAW_HEDP',
 			'15Rnd_9x19_M9','15Rnd_9x19_M9','15Rnd_9x19_M9','15Rnd_9x19_M9','15Rnd_9x19_M9','15Rnd_9x19_M9','15Rnd_9x19_M9','15Rnd_9x19_M9']];
-		_s = _s + [['Binocular','NVGoggles']];
+		_s set [count _s,['Binocular','NVGoggles']];
 		_i set [count _i, _items];
-		_l = _l + [2];
-		_b = _b + [false];
+		_l set [count _l,2];
+		_b set [count _b,false];
 
-		_d = _d + [getText(configFile >> 'CfgWeapons' >> 'M4A1_Aim' >> 'displayName') + '/' + getText(configFile >> 'CfgWeapons' >> 'Javelin' >> 'displayName') + '/' + getText(configFile >> 'CfgWeapons' >> 'Colt1911' >> 'displayName')];
-		_p = _p + [getText(configFile >> 'CfgWeapons' >> 'M4A1_Aim' >> 'picture')];
-		_t = _t + [['M4A1_Aim','Javelin','Colt1911']];
-		_m = _m + [['30Rnd_556x45_Stanag','30Rnd_556x45_Stanag','30Rnd_556x45_Stanag','30Rnd_556x45_Stanag','30Rnd_556x45_Stanag','30Rnd_556x45_Stanag','Javelin',
+		_d set [count _d,getText(configFile >> 'CfgWeapons' >> 'M4A1_Aim' >> 'displayName') + '/' + getText(configFile >> 'CfgWeapons' >> 'Javelin' >> 'displayName') + '/' + getText(configFile >> 'CfgWeapons' >> 'Colt1911' >> 'displayName')];
+		_p set [count _p,getText(configFile >> 'CfgWeapons' >> 'M4A1_Aim' >> 'picture')];
+		_t set [count _t,['M4A1_Aim','Javelin','Colt1911']];
+		_m set [count _m,['30Rnd_556x45_Stanag','30Rnd_556x45_Stanag','30Rnd_556x45_Stanag','30Rnd_556x45_Stanag','30Rnd_556x45_Stanag','30Rnd_556x45_Stanag','Javelin',
 			'7Rnd_45ACP_1911','7Rnd_45ACP_1911','7Rnd_45ACP_1911','7Rnd_45ACP_1911','7Rnd_45ACP_1911','7Rnd_45ACP_1911','7Rnd_45ACP_1911','7Rnd_45ACP_1911']];
-		_s = _s + [['Binocular','NVGoggles']];
+		_s set [count _s,['Binocular','NVGoggles']];
 		_i set [count _i, _items];
-		_l = _l + [3];
-		_b = _b + [false];
+		_l set [count _l,3];
+		_b set [count _b,false];
 
-		_d = _d + [getText(configFile >> 'CfgWeapons' >> 'M16A2' >> 'displayName') + '/' + getText(configFile >> 'CfgWeapons' >> 'Stinger' >> 'displayName') + '/' + getText(configFile >> 'CfgWeapons' >> 'M9' >> 'displayName')];
-		_p = _p + [getText(configFile >> 'CfgWeapons' >> 'M16A2' >> 'picture')];
-		_t = _t + [['M16A2','Stinger','M9']];
-		_m = _m + [['30Rnd_556x45_Stanag','30Rnd_556x45_Stanag','30Rnd_556x45_Stanag','30Rnd_556x45_Stanag','30Rnd_556x45_Stanag','30Rnd_556x45_Stanag','Stinger',
+		_d set [count _d,getText(configFile >> 'CfgWeapons' >> 'M16A2' >> 'displayName') + '/' + getText(configFile >> 'CfgWeapons' >> 'Stinger' >> 'displayName') + '/' + getText(configFile >> 'CfgWeapons' >> 'M9' >> 'displayName')];
+		_p set [count _p,getText(configFile >> 'CfgWeapons' >> 'M16A2' >> 'picture')];
+		_t set [count _t,['M16A2','Stinger','M9']];
+		_m set [count _m,['30Rnd_556x45_Stanag','30Rnd_556x45_Stanag','30Rnd_556x45_Stanag','30Rnd_556x45_Stanag','30Rnd_556x45_Stanag','30Rnd_556x45_Stanag','Stinger',
 			'15Rnd_9x19_M9','15Rnd_9x19_M9','15Rnd_9x19_M9','15Rnd_9x19_M9','15Rnd_9x19_M9','15Rnd_9x19_M9','15Rnd_9x19_M9','15Rnd_9x19_M9']];
-		_s = _s + [['Binocular','NVGoggles']];
+		_s set [count _s,['Binocular','NVGoggles']];
 		_i set [count _i, _items];
-		_l = _l + [2];
-		_b = _b + [false];
+		_l set [count _l,2];
+		_b set [count _b,false];
 
-		_d = _d + [getText(configFile >> 'CfgWeapons' >> 'M1014' >> 'displayName') + '/' + getText(configFile >> 'CfgWeapons' >> 'M9' >> 'displayName') + '/' + getText(configFile >> 'CfgMagazines' >> 'Mine' >> 'displayName')];
-		_p = _p + [getText(configFile >> 'CfgWeapons' >> 'M1014' >> 'picture')];
-		_t = _t + [['M1014','M9']];
-		_m = _m + [['8Rnd_B_Beneli_74Slug','8Rnd_B_Beneli_74Slug','8Rnd_B_Beneli_74Slug','8Rnd_B_Beneli_74Slug','8Rnd_B_Beneli_74Slug','8Rnd_B_Beneli_74Slug','Mine','Mine','Mine',
+		_d set [count _d,getText(configFile >> 'CfgWeapons' >> 'M1014' >> 'displayName') + '/' + getText(configFile >> 'CfgWeapons' >> 'M9' >> 'displayName') + '/' + getText(configFile >> 'CfgMagazines' >> 'Mine' >> 'displayName')];
+		_p set [count _p,getText(configFile >> 'CfgWeapons' >> 'M1014' >> 'picture')];
+		_t set [count _t,['M1014','M9']];
+		_m set [count _m,['8Rnd_B_Beneli_74Slug','8Rnd_B_Beneli_74Slug','8Rnd_B_Beneli_74Slug','8Rnd_B_Beneli_74Slug','8Rnd_B_Beneli_74Slug','8Rnd_B_Beneli_74Slug','Mine','Mine','Mine',
 			'15Rnd_9x19_M9','15Rnd_9x19_M9','15Rnd_9x19_M9','15Rnd_9x19_M9','15Rnd_9x19_M9','15Rnd_9x19_M9','15Rnd_9x19_M9','15Rnd_9x19_M9']];
-		_s = _s + [['Binocular']];
+		_s set [count _s,['Binocular']];
 		_i set [count _i, _items];
-		_l = _l + [0];
-		_b = _b + [true];
+		_l set [count _l,0];
+		_b set [count _b,true];
 
-		_d = _d + [getText(configFile >> 'CfgWeapons' >> 'MP5SD' >> 'displayName') + '/' + getText(configFile >> 'CfgWeapons' >> 'M9SD' >> 'displayName') + '/' + getText(configFile >> 'CfgMagazines' >> 'PipeBomb' >> 'displayName')];
-		_p = _p + [getText(configFile >> 'CfgWeapons' >> 'MP5SD' >> 'picture')];
-		_t = _t + [['MP5SD','M9SD']];
-		_m = _m + [['30Rnd_9x19_MP5SD','30Rnd_9x19_MP5SD','30Rnd_9x19_MP5SD','30Rnd_9x19_MP5SD','30Rnd_9x19_MP5SD','30Rnd_9x19_MP5SD','PipeBomb','PipeBomb','PipeBomb',
+		_d set [count _d,getText(configFile >> 'CfgWeapons' >> 'MP5SD' >> 'displayName') + '/' + getText(configFile >> 'CfgWeapons' >> 'M9SD' >> 'displayName') + '/' + getText(configFile >> 'CfgMagazines' >> 'PipeBomb' >> 'displayName')];
+		_p set [count _p,getText(configFile >> 'CfgWeapons' >> 'MP5SD' >> 'picture')];
+		_t set [count _t,['MP5SD','M9SD']];
+		_m set [count _m,['30Rnd_9x19_MP5SD','30Rnd_9x19_MP5SD','30Rnd_9x19_MP5SD','30Rnd_9x19_MP5SD','30Rnd_9x19_MP5SD','30Rnd_9x19_MP5SD','PipeBomb','PipeBomb','PipeBomb',
 			'15Rnd_9x19_M9SD','15Rnd_9x19_M9SD','15Rnd_9x19_M9SD','15Rnd_9x19_M9SD','15Rnd_9x19_M9SD','15Rnd_9x19_M9SD','15Rnd_9x19_M9SD','15Rnd_9x19_M9SD']];
-		_s = _s + [['Binocular','NVGoggles']];
+		_s set [count _s,['Binocular','NVGoggles']];
 		_i set [count _i, _items];
-		_l = _l + [1];
-		_b = _b + [true];
+		_l set [count _l,1];
+		_b set [count _b,true];
 
-		_d = _d + [getText(configFile >> 'CfgWeapons' >> 'M240' >> 'displayName') + '/' + getText(configFile >> 'CfgWeapons' >> 'Colt1911' >> 'displayName')];
-		_p = _p + [getText(configFile >> 'CfgWeapons' >> 'M240' >> 'picture')];
-		_t = _t + [['M240','Colt1911']];
-		_m = _m + [['100Rnd_762x51_M240','100Rnd_762x51_M240','100Rnd_762x51_M240','100Rnd_762x51_M240','100Rnd_762x51_M240','SmokeShellRed','SmokeShellRed','7Rnd_45ACP_1911',
+		_d set [count _d,getText(configFile >> 'CfgWeapons' >> 'M240' >> 'displayName') + '/' + getText(configFile >> 'CfgWeapons' >> 'Colt1911' >> 'displayName')];
+		_p set [count _p,getText(configFile >> 'CfgWeapons' >> 'M240' >> 'picture')];
+		_t set [count _t,['M240','Colt1911']];
+		_m set [count _m,['100Rnd_762x51_M240','100Rnd_762x51_M240','100Rnd_762x51_M240','100Rnd_762x51_M240','100Rnd_762x51_M240','SmokeShellRed','SmokeShellRed','7Rnd_45ACP_1911',
 			'7Rnd_45ACP_1911','7Rnd_45ACP_1911','7Rnd_45ACP_1911','7Rnd_45ACP_1911','7Rnd_45ACP_1911','7Rnd_45ACP_1911','7Rnd_45ACP_1911']];
-		_s = _s + [['Binocular']];
+		_s set [count _s,['Binocular']];
 		_i set [count _i, _items];
-		_l = _l + [0];
-		_b = _b + [true];
+		_l set [count _l,0];
+		_b set [count _b,true];
 
-		_d = _d + [getText(configFile >> 'CfgWeapons' >> 'M249' >> 'displayName') + '/' + getText(configFile >> 'CfgWeapons' >> 'Colt1911' >> 'displayName')];
-		_p = _p + [getText(configFile >> 'CfgWeapons' >> 'M249' >> 'picture')];
-		_t = _t + [['M249','Colt1911']];
-		_m = _m + [['200Rnd_556x45_M249','200Rnd_556x45_M249','200Rnd_556x45_M249','200Rnd_556x45_M249','200Rnd_556x45_M249','SmokeShellRed','SmokeShellRed','7Rnd_45ACP_1911',
+		_d set [count _d,getText(configFile >> 'CfgWeapons' >> 'M249' >> 'displayName') + '/' + getText(configFile >> 'CfgWeapons' >> 'Colt1911' >> 'displayName')];
+		_p set [count _p,getText(configFile >> 'CfgWeapons' >> 'M249' >> 'picture')];
+		_t set [count _t,['M249','Colt1911']];
+		_m set [count _m,['200Rnd_556x45_M249','200Rnd_556x45_M249','200Rnd_556x45_M249','200Rnd_556x45_M249','200Rnd_556x45_M249','SmokeShellRed','SmokeShellRed','7Rnd_45ACP_1911',
 			'7Rnd_45ACP_1911','7Rnd_45ACP_1911','7Rnd_45ACP_1911','7Rnd_45ACP_1911','7Rnd_45ACP_1911','7Rnd_45ACP_1911','7Rnd_45ACP_1911']];
-		_s = _s + [['Binocular','NVGoggles']];
+		_s set [count _s,['Binocular','NVGoggles']];
 		_i set [count _i, _items];
-		_l = _l + [2];
-		_b = _b + [true];
+		_l set [count _l,2];
+		_b set [count _b,true];
 
-		_d = _d + [getText(configFile >> 'CfgWeapons' >> 'DMR' >> 'displayName') + '/' + getText(configFile >> 'CfgWeapons' >> 'M9SD' >> 'displayName')];
-		_p = _p + [getText(configFile >> 'CfgWeapons' >> 'DMR' >> 'picture')];
-		_t = _t + [['DMR','M9SD']];
-		_m = _m + [['20Rnd_762x51_DMR','20Rnd_762x51_DMR','20Rnd_762x51_DMR','20Rnd_762x51_DMR','20Rnd_762x51_DMR','20Rnd_762x51_DMR','20Rnd_762x51_DMR','20Rnd_762x51_DMR',
+		_d set [count _d,getText(configFile >> 'CfgWeapons' >> 'DMR' >> 'displayName') + '/' + getText(configFile >> 'CfgWeapons' >> 'M9SD' >> 'displayName')];
+		_p set [count _p,getText(configFile >> 'CfgWeapons' >> 'DMR' >> 'picture')];
+		_t set [count _t,['DMR','M9SD']];
+		_m set [count _m,['20Rnd_762x51_DMR','20Rnd_762x51_DMR','20Rnd_762x51_DMR','20Rnd_762x51_DMR','20Rnd_762x51_DMR','20Rnd_762x51_DMR','20Rnd_762x51_DMR','20Rnd_762x51_DMR',
 			'20Rnd_762x51_DMR','20Rnd_762x51_DMR','HandGrenade_West','HandGrenade_West','15Rnd_9x19_M9SD','15Rnd_9x19_M9SD','15Rnd_9x19_M9SD','15Rnd_9x19_M9SD','15Rnd_9x19_M9SD',
 			'15Rnd_9x19_M9SD','15Rnd_9x19_M9SD','15Rnd_9x19_M9SD']];
-		_s = _s + [['Binocular','NVGoggles']];
+		_s set [count _s,['Binocular','NVGoggles']];
 		_i set [count _i, _items];
-		_l = _l + [2];
-		_b = _b + [false];
+		_l set [count _l,2];
+		_b set [count _b,false];
 
-		_d = _d + [getText(configFile >> 'CfgWeapons' >> 'M40A3' >> 'displayName') + '/' + getText(configFile >> 'CfgWeapons' >> 'Laserdesignator' >> 'displayName') + '/' + getText(configFile >> 'CfgWeapons' >> 'M9SD' >> 'displayName')];
-		_p = _p + [getText(configFile >> 'CfgWeapons' >> 'M40A3' >> 'picture')];
-		_t = _t + [['M40A3','Laserdesignator','M9SD']];
-		_m = _m + [['5Rnd_762x51_M24','5Rnd_762x51_M24','5Rnd_762x51_M24','5Rnd_762x51_M24','5Rnd_762x51_M24','5Rnd_762x51_M24','5Rnd_762x51_M24','5Rnd_762x51_M24',
+		_d set [count _d,getText(configFile >> 'CfgWeapons' >> 'M40A3' >> 'displayName') + '/' + getText(configFile >> 'CfgWeapons' >> 'Laserdesignator' >> 'displayName') + '/' + getText(configFile >> 'CfgWeapons' >> 'M9SD' >> 'displayName')];
+		_p set [count _p,getText(configFile >> 'CfgWeapons' >> 'M40A3' >> 'picture')];
+		_t set [count _t,['M40A3','Laserdesignator','M9SD']];
+		_m set [count _m,['5Rnd_762x51_M24','5Rnd_762x51_M24','5Rnd_762x51_M24','5Rnd_762x51_M24','5Rnd_762x51_M24','5Rnd_762x51_M24','5Rnd_762x51_M24','5Rnd_762x51_M24',
 			'5Rnd_762x51_M24','5Rnd_762x51_M24','HandGrenade_West','Laserbatteries','15Rnd_9x19_M9SD','15Rnd_9x19_M9SD','15Rnd_9x19_M9SD','15Rnd_9x19_M9SD','15Rnd_9x19_M9SD',
 			'15Rnd_9x19_M9SD','15Rnd_9x19_M9SD','15Rnd_9x19_M9SD']];
-		_s = _s + [['Binocular','NVGoggles']];
+		_s set [count _s,['Binocular','NVGoggles']];
 		_i set [count _i, _items];
-		_l = _l + [2];
-		_b = _b + [false];
+		_l set [count _l,2];
+		_b set [count _b,false];
 
-		_d = _d + [getText(configFile >> 'CfgWeapons' >> 'm107' >> 'displayName') + '/' + getText(configFile >> 'CfgWeapons' >> 'M9SD' >> 'displayName')];
-		_p = _p + [getText(configFile >> 'CfgWeapons' >> 'm107' >> 'picture')];
-		_t = _t + [['m107','M9SD']];
-		_m = _m + [['10Rnd_127x99_m107','10Rnd_127x99_m107','10Rnd_127x99_m107','10Rnd_127x99_m107','10Rnd_127x99_m107','10Rnd_127x99_m107','10Rnd_127x99_m107','10Rnd_127x99_m107',
+		_d set [count _d,getText(configFile >> 'CfgWeapons' >> 'm107' >> 'displayName') + '/' + getText(configFile >> 'CfgWeapons' >> 'M9SD' >> 'displayName')];
+		_p set [count _p,getText(configFile >> 'CfgWeapons' >> 'm107' >> 'picture')];
+		_t set [count _t,['m107','M9SD']];
+		_m set [count _m,['10Rnd_127x99_m107','10Rnd_127x99_m107','10Rnd_127x99_m107','10Rnd_127x99_m107','10Rnd_127x99_m107','10Rnd_127x99_m107','10Rnd_127x99_m107','10Rnd_127x99_m107',
 			'10Rnd_127x99_m107','10Rnd_127x99_m107','HandGrenade_West','HandGrenade_West','15Rnd_9x19_M9SD','15Rnd_9x19_M9SD','15Rnd_9x19_M9SD','15Rnd_9x19_M9SD','15Rnd_9x19_M9SD',
 			'15Rnd_9x19_M9SD','15Rnd_9x19_M9SD','15Rnd_9x19_M9SD']];
-		_s = _s + [['Binocular','NVGoggles']];
+		_s set [count _s,['Binocular','NVGoggles']];
 		_i set [count _i, _items];
-		_l = _l + [3];
-		_b = _b + [false];
+		_l set [count _l,3];
+		_b set [count _b,false];
 
 		_c = [];
 		_totalTemplates = count _d;

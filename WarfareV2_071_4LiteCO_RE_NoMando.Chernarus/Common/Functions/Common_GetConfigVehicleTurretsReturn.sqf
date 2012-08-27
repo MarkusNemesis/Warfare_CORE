@@ -33,16 +33,16 @@ for "_i" from 0 to ((count _entry) - 1) do
 		{
 			if (_hasGunner == 1) then 
 			{
-				_turrets = _turrets + [_turretIndex];
+				_turrets set [count _turrets,_turretIndex];
 				
 				//Include sub-turrets, if present.
 				if (isClass (_subEntry >> "Turrets")) then 
 				{
-					_turrets = _turrets + [[_subEntry >> "Turrets"] Call Compile preprocessFile "Common\Functions\Common_GetConfigVehicleTurretsReturn.sqf"];
+					_turrets set [count _turrets,[_subEntry >> "Turrets"] Call Compile preprocessFile "Common\Functions\Common_GetConfigVehicleTurretsReturn.sqf"];
 				} 
 				else 
 				{
-					_turrets = _turrets + [[]];
+					_turrets set [count _turrets,[]];
 				};
 			};
 		};

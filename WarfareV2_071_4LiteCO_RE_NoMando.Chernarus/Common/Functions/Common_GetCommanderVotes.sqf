@@ -6,7 +6,7 @@ _teams = (Format["WFBE_%1TEAMS",str _side] Call GetNamespace);
 _total = Count _teams + 1;
 
 _votes = [];
-for [{_count = 0},{_count < _total},{_count = _count + 1}] do {_votes = _votes + [0]};
+for [{_count = 0},{_count < _total},{_count = _count + 1}] do {_votes set [count _votes,0]};
 
 //Count votes.
 for [{_count = 1},{_count < _total},{_count = _count + 1}] do {
