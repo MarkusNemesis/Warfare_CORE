@@ -65,8 +65,8 @@ if (!isServer || local player) then {
 			_m set [count _m, "ACE_40Rnd_B_46x30_MP7"];
 			_m set [count _m, "ACE_25Rnd_1143x23_B_uMP45"];
 			_m set [count _m, "ACE_25Rnd_1143x23_S_uMP45"];
-			_m set [count _m, "ACE_12Rnd_45ACP_uSP"];
-			_m set [count _m, "ACE_12Rnd_45ACP_uSPSD"];
+			_m set [count _m, "ACE_12Rnd_45ACP_USP"];
+			_m set [count _m, "ACE_12Rnd_45ACP_USPSD"];
 			_m set [count _m, "ACE_20Rnd_762x51_B_HK417"];
 			_m set [count _m, "ACE_20Rnd_762x51_T_HK417"];
 		};
@@ -304,11 +304,11 @@ if (!isServer || local player) then {
 				_w set [count _w, 'BAF_GMG_ACOG_minitripod_bag'];
 			};
 
-			_w set [count _w, 'M2HD_mini_TriPod_uS_Bag_EP1'];
-			_w set [count _w, 'M2StaticMG_uS_Bag_EP1'];
-			_w set [count _w, 'MK19_TriPod_uS_Bag_EP1'];
-			_w set [count _w, 'TOW_TriPod_uS_Bag_EP1'];
-			_w set [count _w, 'M252_uS_Bag_EP1'];
+			_w set [count _w, 'M2HD_mini_TriPod_US_Bag_EP1'];
+			_w set [count _w, 'M2StaticMG_US_Bag_EP1'];
+			_w set [count _w, 'MK19_TriPod_US_Bag_EP1'];
+			_w set [count _w, 'TOW_TriPod_US_Bag_EP1'];
+			_w set [count _w, 'M252_US_Bag_EP1'];
 			
 			if (modACE) then {
 				_w set [count _w, 'ACE_M224TripodProxy'];
@@ -330,8 +330,8 @@ if (!isServer || local player) then {
 		_w set [count _w, 'M9SD'];
 		_w set [count _w, 'glock17_EP1'];
 		if (modACE) then {
-			_w set [count _w, 'ACE_uSP'];
-			_w set [count _w, 'ACE_uSPSD'];
+			_w set [count _w, 'ACE_USP'];
+			_w set [count _w, 'ACE_USPSD'];
 			_w set [count _w, 'ACE_P226'];
 			_w set [count _w, 'ACE_P8'];
 		};
@@ -382,7 +382,7 @@ if (!isServer || local player) then {
 			_w set [count _w, 'ACE_FlareIR_M203'];
 			_w set [count _w, 'ACE_Earplugs'];
 			_w set [count _w, 'ACE_GlassesBalaklava'];
-			_w set [count _w, 'ACE_GlassesGasMask_uS'];
+			_w set [count _w, 'ACE_GlassesGasMask_US'];
 			_w set [count _w, 'ACE_GlassesTactical'];
 			_w set [count _w, 'ACE_GlassesLHD_glasses'];
 			_w set [count _w, 'ACE_HuntIR_monitor'];

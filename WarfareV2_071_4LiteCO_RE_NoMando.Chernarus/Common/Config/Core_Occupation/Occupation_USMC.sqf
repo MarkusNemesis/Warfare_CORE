@@ -170,4 +170,4 @@ _u set [count _u, "HMMWV_Avenger"];
 _u set [count _u, "HMMWV_Armored"];
 [Format["WFBE_WEST%1UNITS",_n select (count _n - 1)],_u,true] Call SetNamespace;
 
-diag_log Format ["[WFBE (INIT)][frameno:%1 | ticktime:%2] Occupation_uSMC: Initialization - [Done]",diag_frameno,diag_tickTime];
+diag_log Format ["[WFBE (INIT)][frameno:%1 | ticktime:%2] Occupation_USMC: Initialization - [Done]",diag_frameno,diag_tickTime];

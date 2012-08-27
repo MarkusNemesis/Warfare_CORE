@@ -57,10 +57,10 @@ _i set [count _i, ['','','CfgMagazines','primary',5,0,true,true,0,0,true]];
 _u set [count _u, 'ACE_25Rnd_1143x23_S_uMP45'];
 _i set [count _i, ['','','CfgMagazines','primary',7,0,true,true,0,0,true]];
 
-_u set [count _u, 'ACE_12Rnd_45ACP_uSP'];
+_u set [count _u, 'ACE_12Rnd_45ACP_USP'];
 _i set [count _i, ['','','CfgMagazines','sidearm',3,0,true,true,0,0,true]];
 
-_u set [count _u, 'ACE_12Rnd_45ACP_uSPSD'];
+_u set [count _u, 'ACE_12Rnd_45ACP_USPSD'];
 _i set [count _i, ['','','CfgMagazines','sidearm',4,0,true,true,0,0,true]];
 
 /* Primary weapons - West */
@@ -303,10 +303,10 @@ _u set [count _u, 'ACE_M252TripodProxy'];
 _i set [count _i, ['','','CfgVehicles','',40,1,false,false,0,0,false]];
 
 /* Pistols - West */
-_u set [count _u, 'ACE_uSP'];
+_u set [count _u, 'ACEP'];
 _i set [count _i, ['','','CfgWeapons','',35,1,true,false,0,0,true]];
 
-_u set [count _u, 'ACE_uSPSD'];
+_u set [count _u, 'ACE_USPSD'];
 _i set [count _i, ['','','CfgWeapons','',45,2,true,false,0,0,true]];
 
 _u set [count _u, 'ACE_P226'];
@@ -328,7 +328,7 @@ _i set [count _i, ['','','CfgWeapons','Item',2,0,true,false,0,0,true]];
 _u set [count _u, 'ACE_GlassesBalaklava'];
 _i set [count _i, ['','','CfgWeapons','Item',5,0,true,false,0,0,true]];
 
-_u set [count _u, 'ACE_GlassesGasMask_uS'];
+_u set [count _u, 'ACE_GlassesGasMask_US'];
 _i set [count _i, ['','','CfgWeapons','Item',15,0,true,false,0,0,true]];
 
 _u set [count _u, 'ACE_GlassesTactical'];

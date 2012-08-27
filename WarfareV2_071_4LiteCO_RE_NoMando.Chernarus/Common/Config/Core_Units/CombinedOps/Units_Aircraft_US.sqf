@@ -20,11 +20,11 @@ if (_r == 0 || _r == 1) then {
 };
 if (_r == 0) then {
 	_u set [count _u,'MV22'];
-	_u set [count _u,'C130J_uS_EP1'];
+	_u set [count _u,'C130J_US_EP1'];
 	_u set [count _u,'F35B'];
 	_u set [count _u,'AV8B'];
 	_u set [count _u,'AV8B2'];
-	_u set [count _u,'A10_uS_EP1'];
+	_u set [count _u,'A10_US_EP1'];
 };
 if (paramDLCBAF) then {
 	_u set [count _u,'BAF_Merlin_HC3_D'];
