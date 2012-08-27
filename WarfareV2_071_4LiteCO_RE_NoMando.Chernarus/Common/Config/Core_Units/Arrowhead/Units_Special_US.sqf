@@ -23,7 +23,7 @@
 ['WFBE_WESTSUPPLYTRUCKS',['MtvrSupply_DES_EP1'],true] Call SetNamespace;
 
 //--- UAV.
-['WFBE_WESTUAV','MQ9PredatorB_uS_EP1',true] Call SetNamespace;
+['WFBE_WESTUAV','MQ9PredatorB_US_EP1',true] Call SetNamespace;
 
 if (isServer) then {
 	//--- Base Patrols.
@@ -40,7 +40,7 @@ if (isServer) then {
 	['WFBE_WESTPARACHUTELEVEL3',['US_Delta_Force_TL_EP1','US_Soldier_HAT_EP1','US_Soldier_HAT_EP1','US_Soldier_HAT_EP1','US_Soldier_HAT_EP1','US_Soldier_AA_EP1','US_Soldier_AA_EP1','US_Delta_Force_AR_EP1','US_Delta_Force_Assault_EP1','US_Soldier_Medic_EP1','US_Delta_Force_M14_EP1','US_Soldier_AT_EP1','US_Soldier_Marksman_EP1'],true] Call SetNamespace;
 
 	//--- Paratroopers, Vehicle.
-	['WFBE_WESTPARACARGO','C130J_uS_EP1',true] Call SetNamespace;
+	['WFBE_WESTPARACARGO','C130J_US_EP1',true] Call SetNamespace;
 		
 	//--- Repair Truck model.
 	['WFBE_WESTREPAIRTRUCK','MtvrRepair_DES_EP1',true] Call SetNamespace;

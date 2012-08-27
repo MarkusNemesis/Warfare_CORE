@@ -177,11 +177,11 @@ if (!isServer || local player) then {
 				_w set [count _w, 'BAF_GMG_ACOG_minitripod_bag'];
 			};
 
-			_w set [count _w, 'M2HD_mini_TriPod_uS_Bag_EP1'];
-			_w set [count _w, 'M2StaticMG_uS_Bag_EP1'];
-			_w set [count _w, 'MK19_TriPod_uS_Bag_EP1'];
-			_w set [count _w, 'TOW_TriPod_uS_Bag_EP1'];
-			_w set [count _w, 'M252_uS_Bag_EP1'];
+			_w set [count _w, 'M2HD_mini_TriPod_US_Bag_EP1'];
+			_w set [count _w, 'M2StaticMG_US_Bag_EP1'];
+			_w set [count _w, 'MK19_TriPod_US_Bag_EP1'];
+			_w set [count _w, 'TOW_TriPod_US_Bag_EP1'];
+			_w set [count _w, 'M252_US_Bag_EP1'];
 		};
 
 		WF_Logic setVariable ['secondaryClasses',_w];

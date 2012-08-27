@@ -416,19 +416,19 @@ _i set [count _i, ['','','CfgVehicles','',90,2,true,false,0,0,false]];
 _u 'Tripod_Bag'];
 _i set [count _i, ['','','CfgVehicles','',25,0,true,false,0,0,false]];
 
-_u 'M2HD_mini_TriPod_uS_Bag_EP1'];
+_u 'M2HD_mini_TriPod_US_Bag_EP1'];
 _i set [count _i, ['','','CfgVehicles','',155,0,false,false,0,0,false]];
 
-_u 'M2StaticMG_uS_Bag_EP1'];
+_u 'M2StaticMG_US_Bag_EP1'];
 _i set [count _i, ['','','CfgVehicles','',190,0,false,false,0,0,false]];
 
-_u 'MK19_TriPod_uS_Bag_EP1'];
+_u 'MK19_TriPod_US_Bag_EP1'];
 _i set [count _i, ['','','CfgVehicles','',450,1,false,false,0,0,false]];
 
-_u 'TOW_TriPod_uS_Bag_EP1'];
+_u 'TOW_TriPod_US_Bag_EP1'];
 _i set [count _i, ['','','CfgVehicles','',600,2,false,false,0,0,false]];
 
-_u 'M252_uS_Bag_EP1'];
+_u 'M252_US_Bag_EP1'];
 _i set [count _i, ['','','CfgVehicles','',750,1,false,false,0,0,false]];
 
 /* Secondary weapons - East */
